@@ -1,0 +1,148 @@
+% 
+% Sjabloon voor de master ingenieurswetenschappen: computerwetenschappen
+%
+\documentclass[master=cws]{kulemt}
+%%%%%%%%%%%%%%  Wijzig niets boven deze regel  %%%%%%%%%%%%%
+% 
+% Vul de titel van jouw masterproef hieronder in tussen { en }.
+\setup{title={Melodische transformatie en evalutie van muziek},
+%
+% Vul hieronder namen in, steeds Voornaam Naam.
+% Indien meerdere auteurs, assessoren, assistenten, scheidt hun namen
+%   met \and .
+  author={Elias Moons},
+  promotor={Prof.\,dr.\,D. De Schreye},
+  assessor={Prof. Onbekend},
+  assistant={Ir.\ V. Nys}}
+% 
+\setup{filingcard,   % Deze regel niet wijzigen
+%
+% Vul de vertaalde titel van jouw masterproef hieronder in tussen { en }.
+  translatedtitle={Melodische transformatie en evalutie van muziek},
+%
+% UDC nummer is richtingafhankelijk. 
+% Zie http://www.udcc.org/udcsummary/php/index.php
+% voor het UDC nummer.
+% Dit voorbeeld (519.6) verwijst naar 'Computational mathematics'
+  udc=004.9,
+%
+% Hieronder, tussen { en } een korte samenvatting toevoegen.
+% Lege regels en het commando \par zijn niet toegelaten.
+% Wees voorzichtig met speciale TeX-tekens #$%&^_~{}\ !!
+  shortabstract={%
+    Hier komt een heel bondig abstract van hooguit 500
+    woorden. \LaTeX\ commando's mogen hier gebruikt worden.
+    Voorbeelden van letters met accenten zijn 
+    ``{\'e}{\"\i}{\c{c}}{\`a}{\^o}''.
+   (Gebruik {\"\i} in plaats van {\"i}, om geen 3 puntjes te hebben.)
+   }}
+% Verwijder de "%" op de volgende lijn als je de kaft wil afdrukken
+%\setup{coverpageonly}
+% Verwijder de "%" op de volgende lijn als je enkel de eerste pagina's wil
+% afdrukken en de rest bv. via Word aanmaken.
+%\setup{frontpagesonly}
+
+% Kies de fonts voor de gewone tekst, bv. Latin Modern
+\setup{font=lm}
+
+% Hier kun je dan nog andere pakketten laden of eigen definities voorzien
+
+% Tenslotte wordt hyperref gebruikt voor pdf bestanden.
+% Dit mag verwijderd worden voor de af te drukken versie.
+\usepackage[pdfusetitle,colorlinks,plainpages=false]{hyperref}
+
+%%%%%%%
+% Om wat tekst te genereren wordt hier het lipsum pakket gebruikt.
+% Bij een echte masterproef heb je dit natuurlijk nooit nodig!
+\IfFileExists{lipsum.sty}%
+ {\usepackage{lipsum}\setlipsumdefault{11-13}}%
+ {\newcommand{\lipsum}[1][11-13]{\par Hier komt wat tekst: lipsum ##1.\par}}
+%%%%%%%
+
+%Eigen toegevoegde packages
+\usepackage{pdfpages}
+\usepackage{amsmath} %tijdssignatuur muziekstuk
+\usepackage{xr} %cross referencing tussen verschillende tex files
+\externaldocument{1_Muzikale_Achtergrond/muzikale_achtergrond}
+\externaldocument{2_Objectieve_Beoordeling/objectieve_beoordeling}
+\externaldocument{3_Melodische_Transformatie/melodische_transformatie}
+\externaldocument{4_Efficient_Toepassen_Transformatie/efficient_toepassen_transformatie}
+\externaldocument{5_Experimenten_Resultaten/experimenten_resultaten}
+\externaldocument{6_Besluit/besluit}
+\externaldocument{Appendix_0_Broncode/broncode}
+\usepackage{listings}
+\lstset{breaklines}
+
+\begin{document}
+
+\begin{preface}
+  TODO: iedereen bedanken...
+\end{preface}
+
+\tableofcontents*
+
+\begin{abstract}
+  Deze masterproef beschrijft methodes om melodielijnen van een muziekstuk melodisch te transformeren to nieuwe melodielijnen. Verder wordt er ook aandacht besteed aan een referentiekader waarin deze transformaties ge\"evalueerd kunnen worden. Tot slot wordt er ook nog gekeken naar wanneer bepaalde transformaties nuttig kunnen zijn om de consonantie van een muziekstuk te verhogen. Om dit te verwezenlijken is een algoritme beschreven dat gebaseerd is op de principes van \textit{dynamic programming}. Dit algoritme zal, gegeven een aantal mogelijke transformaties en een melodielijn, de best mogelijke getransformeerde melodielijn teruggeven, dit volgens het gedefini\"eerde referentiemodel.
+\end{abstract}
+
+% Een lijst van figuren en tabellen is optioneel
+%\listoffigures
+%\listoftables
+% Bij een beperkt aantal figuren en tabellen gebruik je liever het volgende:
+\listoffiguresandtables
+% De lijst van symbolen is eveneens optioneel.
+% Deze lijst moet wel manueel aangemaakt worden, bv. als volgt:
+\chapter{Lijst van afkortingen en symbolen}
+\section*{Afkortingen}
+\begin{flushleft}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+    LoG   & Laplacian-of-Gaussian \\
+    MSE   & Mean Square error \\
+    PSNR  & Peak Signal-to-Noise ratio \\
+  \end{tabularx}
+\end{flushleft}
+\section*{Symbolen}
+\begin{flushleft}
+  \renewcommand{\arraystretch}{1.1}
+  \begin{tabularx}{\textwidth}{@{}p{12mm}X@{}}
+    42    & ``The Answer to the Ultimate Question of Life, the Universe,
+            and Everything'' volgens de \cite{h2g2} \\
+    $c$   & Lichtsnelheid \\
+    $E$   & Energie \\
+    $m$   & Massa \\
+    $\pi$ & Het getal pi \\
+  \end{tabularx}
+\end{flushleft}
+
+% Nu begint de eigenlijke tekst
+\mainmatter
+
+\include{0_Inleiding/inleiding}
+\include{1_Muzikale_Achtergrond/muzikale_achtergrond}
+\include{2_Objectieve_Beoordeling/objectieve_beoordeling}
+\include{3_Melodische_Transformatie/melodische_transformatie}
+\include{4_Efficient_Toepassen_Transformatie/efficient_toepassen_transformatie}
+\include{5_Experimenten_Resultaten/experimenten_resultaten}
+\include{6_Besluit/besluit}
+
+% Indien er bijlagen zijn:
+\appendixpage*          % indien gewenst
+\appendix
+\include{Appendix_0_Broncode/broncode}
+\include{Appendix_1_Paper/paper}
+\include{Appendix_2_Poster/poster}
+
+
+\backmatter
+% Na de bijlagen plaatst men nog de bibliografie.
+% Je kan de  standaard "abbrv" bibliografiestijl vervangen door een andere.
+\bibliographystyle{abbrv}
+\bibliography{referenties}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

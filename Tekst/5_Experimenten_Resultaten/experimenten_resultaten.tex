@@ -1,0 +1,70 @@
+\chapter{Experimenten en Resultaten}
+\label{hoofdstuk:ER}
+Een hoofdstuk behandelt een samenhangend geheel dat min of meer op zichzelf
+staat. Het is dan ook logisch dat het begint met een inleiding, namelijk
+het gedeelte van de tekst dat je nu aan het lezen bent.
+
+\section{Eerste onderwerp in dit hoofdstuk}
+De inleidende informatie van dit onderwerp.
+
+\subsection{Een item}
+Een tekst staat nooit alleen. Dit wil zeggen dat er zeker ook referenties
+nodig zijn. Dit kan zowel naar on-line documenten\cite{wiki} als naar
+boeken\cite{pratchett06:_good_omens}.
+
+\section{Figuren}
+Figuren worden gebruikt om illustraties toe te voegen. Dit is dan ook de
+manier om beeldmateriaal toe te voegen zoals getoond wordt in
+figuur~\ref{fig:logo}.
+
+\begin{figure}
+  \centering
+  \includegraphics{logokul}
+  \caption{Het KU~Leuven logo.}
+  \label{fig:logo}
+\end{figure}
+
+\section{Tabellen}
+Tabellen kunnen gebruikt worden om informatie op een overzichtelijke te
+groeperen. Een tabel is echter geen rekenblad! Vergelijk maar eens
+tabel~\ref{tab:verkeerd} en tabel~\ref{tab:juist}. Welke tabel vind jij het
+duidelijkst?
+
+\begin{table}
+  \centering
+  \begin{tabular}{||l|lr||} \hline
+    gnats     & gram      & \$13.65 \\ \cline{2-3}
+              & each      & .01 \\ \hline
+    gnu       & stuffed   & 92.50 \\ \cline{1-1} \cline{3-3}
+    emu       &           & 33.33 \\ \hline
+    armadillo & frozen    & 8.99 \\ \hline
+  \end{tabular}
+  \caption{Een tabel zoals het niet moet.}
+  \label{tab:verkeerd}
+\end{table}
+
+\begin{table}
+  \centering
+  \begin{tabular}{@{}llr@{}} \toprule
+    \multicolumn{2}{c}{Item} \\ \cmidrule(r){1-2}
+    Animal    & Description & Price (\$)\\ \midrule
+    Gnat      & per gram    & 13.65 \\
+              & each        & 0.01 \\
+    Gnu       & stuffed     & 92.50 \\
+    Emu       & stuffed     & 33.33 \\
+    Armadillo & frozen      & 8.99 \\ \bottomrule
+  \end{tabular}
+  \caption{Een tabel zoals het beter is.}
+  \label{tab:juist}
+\end{table}
+
+\section{Besluit van dit hoofdstuk}
+Als je in dit hoofdstuk tot belangrijke resultaten of besluiten gekomen
+bent, dan is het ook logisch om het hoofdstuk af te ronden met een
+overzicht ervan. Voor hoofdstukken zoals de inleiding en het
+literatuuroverzicht is dit niet strikt nodig.
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "masterproef"
+%%% End: 
