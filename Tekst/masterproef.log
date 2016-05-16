@@ -1,9 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  14 MAY 2016 17:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  16 MAY 2016 11:04
 entering extended mode
 **masterproef.tex
-
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\ma
-sterproef.tex"
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -782,12 +780,10 @@ File: listings.cfg 2014/03/04 1.5c listings configuration
 ))
 Package: listings 2014/03/04 1.5c (Carsten Heinz)
 
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\ma
-sterproef.aux"
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\0_
-Inleiding/inleiding.aux")
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\1_
-Muzikale_Achtergrond/muzikale_achtergrond.aux"
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.aux
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\0_Inleiding/inleiding.aux)
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\1_Muzikale_Achtergrond/muzikale_a
+chtergrond.aux
 
 LaTeX Warning: Label `hoofdstuk:MA' multiply defined.
 
@@ -810,8 +806,8 @@ LaTeX Warning: Label `figuur:do_groot' multiply defined.
 LaTeX Warning: Label `figuur:la_klein' multiply defined.
 
 )
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\2_
-Objectieve_Beoordeling/objectieve_beoordeling.aux"
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\2_Objectieve_Beoordeling/objectie
+ve_beoordeling.aux
 
 LaTeX Warning: Label `hoofdstuk:OBM' multiply defined.
 
@@ -825,8 +821,8 @@ LaTeX Warning: Label `tab:verkeerd' multiply defined.
 LaTeX Warning: Label `tab:juist' multiply defined.
 
 )
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\3_
-Melodische_Transformatie/melodische_transformatie.aux"
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\3_Melodische_Transformatie/melodi
+sche_transformatie.aux
 
 LaTeX Warning: Label `hoofdstuk:MT' multiply defined.
 
@@ -834,8 +830,8 @@ LaTeX Warning: Label `hoofdstuk:MT' multiply defined.
 LaTeX Warning: Label `MT:afstand_vorige' multiply defined.
 
 )
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\4_
-Efficient_Toepassen_Transformatie/efficient_toepassen_transformatie.aux"
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\4_Efficient_Toepassen_Transformat
+ie/efficient_toepassen_transformatie.aux
 
 LaTeX Warning: Label `hoofdstuk:ETT' multiply defined.
 
@@ -846,8 +842,8 @@ LaTeX Warning: Label `ETT:algo1' multiply defined.
 LaTeX Warning: Label `ETT:algo2' multiply defined.
 
 )
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\5_
-Experimenten_Resultaten/experimenten_resultaten.aux"
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\5_Experimenten_Resultaten/experim
+enten_resultaten.aux
 
 LaTeX Warning: Label `hoofdstuk:ER' multiply defined.
 
@@ -860,9 +856,7 @@ LaTeX Warning: Label `tab:verkeerd' multiply defined.
 
 LaTeX Warning: Label `tab:juist' multiply defined.
 
-)
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\6_
-Besluit/besluit.aux"
+) (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\6_Besluit/besluit.aux
 
 LaTeX Warning: Label `hoofdstuk:B' multiply defined.
 
@@ -876,8 +870,7 @@ LaTeX Warning: Label `tab:verkeerd' multiply defined.
 LaTeX Warning: Label `tab:juist' multiply defined.
 
 )
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\Ap
-pendix_0_Broncode/broncode.aux"
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/broncode.aux
 
 LaTeX Warning: Label `app:broncode' multiply defined.
 
@@ -887,11 +880,8 @@ LaTeX Warning: Label `Broncode:algo1' multiply defined.
 
 LaTeX Warning: Label `Broncode:algo2' multiply defined.
 
-)
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\Ap
-pendix_1_Paper/paper.aux")
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\Ap
-pendix_2_Poster/poster.aux"))
+) (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_1_Paper/paper.aux)
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_2_Poster/poster.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
 LaTeX Font Info:    ... okay on input line 76.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
@@ -976,11 +966,8 @@ LaTeX Info: Redefining \nameref on input line 76.
 LaTeX Info: Redefining \ref on input line 76.
 LaTeX Info: Redefining \pageref on input line 76.
 LaTeX Info: Redefining \nameref on input line 76.
-
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\ma
-sterproef.out")
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\ma
-sterproef.out")
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.out)
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.out)
 \@outlinefile=\write4
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
@@ -1037,10 +1024,10 @@ Package microtype Info: Loading generic settings for font family
 
 
 ]
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\ma
-sterproef.toc"
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.toc
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 8.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 8.
@@ -1069,10 +1056,8 @@ Package microtype Info: Character `029' is missing
  [3] [4
 
 ]
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\ma
-sterproef.lof")
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\ma
-sterproef.lot") [5
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.lof)
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.lot) [5
 
 
 ]
@@ -1083,9 +1068,7 @@ niverse, and Everything''
 
 [6
 
-]
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\0_
-Inleiding/inleiding.tex"
+] (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\0_Inleiding/inleiding.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
@@ -1104,10 +1087,9 @@ File: 0_Inleiding/fibo.png Graphic file (type png)
 <use 0_Inleiding/fibo.png>
 Package pdftex.def Info: 0_Inleiding/fibo.png used on input line 20.
 (pdftex.def)             Requested size: 199.0pt x 112.08382pt.
- [2 <C:/Users/Elias/Dropbox/KULeuven/Burgerlijk Ingenieur/Master 2/Thesis/Tekst
-/0_Inleiding/fibo.png>]) [3]
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\1_
-Muzikale_Achtergrond/muzikale_achtergrond.tex" [4
+ [2 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/0_Inleiding/fibo.png>]) [3]
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\1_Muzikale_Achtergrond/muzikale_a
+chtergrond.tex [4
 
 
 
@@ -1131,10 +1113,9 @@ File: 1_Muzikale_Achtergrond/nootlengtes.png Graphic file (type png)
 Package pdftex.def Info: 1_Muzikale_Achtergrond/nootlengtes.png used on input l
 ine 37.
 (pdftex.def)             Requested size: 199.0pt x 36.05446pt.
- [6 <C:/Users/Elias/Dropbox/KULeuven/Burgerlijk Ingenieur/Master 2/Thesis/Tekst
-/1_Muzikale_Achtergrond/tijdssignatuur.png> <C:/Users/Elias/Dropbox/KULeuven/Bu
-rgerlijk Ingenieur/Master 2/Thesis/Tekst/1_Muzikale_Achtergrond/nootlengtes.png
->]
+ [6 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergrond/tijdss
+ignatuur.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergr
+ond/nootlengtes.png>]
 <1_Muzikale_Achtergrond/toonladder.jpeg, id=341, 501.875pt x 130.4875pt>
 File: 1_Muzikale_Achtergrond/toonladder.jpeg Graphic file (type jpg)
 
@@ -1142,9 +1123,9 @@ File: 1_Muzikale_Achtergrond/toonladder.jpeg Graphic file (type jpg)
 Package pdftex.def Info: 1_Muzikale_Achtergrond/toonladder.jpeg used on input l
 ine 62.
 (pdftex.def)             Requested size: 199.0pt x 51.7401pt.
- [7 <C:/Users/Elias/Dropbox/KULeuven/Burgerlijk Ingenieur/Master 2/Thesis/Tekst
-/1_Muzikale_Achtergrond/toonladder.jpeg>] <1_Muzikale_Achtergrond/do_groot.png,
- id=351, 322.3242pt x 113.7048pt>
+ [7 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergrond/toonla
+dder.jpeg>]
+<1_Muzikale_Achtergrond/do_groot.png, id=351, 322.3242pt x 113.7048pt>
 File: 1_Muzikale_Achtergrond/do_groot.png Graphic file (type png)
 
 <use 1_Muzikale_Achtergrond/do_groot.png>
@@ -1159,39 +1140,38 @@ File: 1_Muzikale_Achtergrond/la_klein.png Graphic file (type png)
 Package pdftex.def Info: 1_Muzikale_Achtergrond/la_klein.png used on input line
  84.
 (pdftex.def)             Requested size: 199.0pt x 58.30653pt.
-) [8] [9 <C:/Users/Elias/Dropbox/KULeuven/Burgerlijk Ingenieur/Master 2/Thesis/
-Tekst/1_Muzikale_Achtergrond/do_groot.png> <C:/Users/Elias/Dropbox/KULeuven/Bur
-gerlijk Ingenieur/Master 2/Thesis/Tekst/1_Muzikale_Achtergrond/la_klein.png>]
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\2_
-Objectieve_Beoordeling/objectieve_beoordeling.tex" [10
+) [8] [9 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergrond/d
+o_groot.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergro
+nd/la_klein.png>]
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\2_Objectieve_Beoordeling/objectie
+ve_beoordeling.tex [10
 
 
 
-]
-<logokul.pdf, id=372, 159.33528pt x 56.90298pt>
+] <logokul.pdf, id=372, 159.33528pt x 56.90298pt>
 File: logokul.pdf Graphic file (type pdf)
- <use logokul.pdf>
+
+<use logokul.pdf>
 Package pdftex.def Info: logokul.pdf used on input line 22.
 (pdftex.def)             Requested size: 159.33487pt x 56.90283pt.
 
 Underfull \vbox (badness 1661) has occurred while \output is active []
 
  [11 <C:/Program Files/KUL_Tex/tex/latex/kulemt/logokul.pdf>]) [12]
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\3_
-Melodische_Transformatie/melodische_transformatie.tex") [13
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\3_Melodische_Transformatie/melodi
+sche_transformatie.tex) [13
 
 
 
 ]
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\4_
-Efficient_Toepassen_Transformatie/efficient_toepassen_transformatie.tex"
-[14
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\4_Efficient_Toepassen_Transformat
+ie/efficient_toepassen_transformatie.tex [14
 
 
 
 ] [15] [16] [17] [18]) [19]
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\5_
-Experimenten_Resultaten/experimenten_resultaten.tex" [20
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\5_Experimenten_Resultaten/experim
+enten_resultaten.tex [20
 
 
 
@@ -1200,12 +1180,11 @@ File: logokul.pdf Graphic file (type pdf)
  <use logokul.pdf>
 Package pdftex.def Info: logokul.pdf used on input line 22.
 (pdftex.def)             Requested size: 159.33487pt x 56.90283pt.
-
-[21]) [22]
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\6_
-Besluit/besluit.tex"
+ [21]) [22]
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\6_Besluit/besluit.tex
 File: logokul.pdf Graphic file (type pdf)
- <use logokul.pdf>
+
+<use logokul.pdf>
 Package pdftex.def Info: logokul.pdf used on input line 22.
 (pdftex.def)             Requested size: 159.33487pt x 56.90283pt.
  [23
@@ -1216,24 +1195,23 @@ Package pdftex.def Info: logokul.pdf used on input line 22.
 
 
 ] [26]
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\Ap
-pendix_0_Broncode/broncode.tex"
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/broncode.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 6.
 
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\Ap
-pendix_0_Broncode/BestSequenceCleaned.py" [27
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/BestSequenceC
+leaned.py [27
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28])
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\Ap
-pendix_0_Broncode/BestCoordinatedSequenceCleaned.py" [29]
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/BestCoordinat
+edSequenceCleaned.py [29]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]
@@ -1249,20 +1227,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34]))
-[35]
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\Ap
-pendix_1_Paper/paper.tex" [36
+[35] (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_1_Paper/paper.tex
+[36
 
 
 
 ]) [37]
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\Ap
-pendix_2_Poster/poster.tex" [38
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_2_Poster/poster.tex
+[38
 
 
 
 ]
-<Appendix_2_Poster/Poster_EliasMoons.pdf, id=792, 1690.27481pt x 2393.22108pt>
+<Appendix_2_Poster/Poster_EliasMoons.pdf, id=798, 1690.27481pt x 2393.22108pt>
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 
 <use Appendix_2_Poster/Poster_EliasMoons.pdf>
@@ -1276,7 +1253,7 @@ Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf used on input
 line 4.
 (pdftex.def)             Requested size: 1690.27069pt x 2393.21527pt.
 
-<Appendix_2_Poster/Poster_EliasMoons.pdf, id=795, page=1, 1690.27481pt x 2393.2
+<Appendix_2_Poster/Poster_EliasMoons.pdf, id=801, page=1, 1690.27481pt x 2393.2
 2108pt>
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
  <use Appendix_2_Poster/Poster_EliasMoons.pdf, page 1>
@@ -1308,10 +1285,9 @@ File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf, page1 used on
  input line 4.
 (pdftex.def)             Requested size: 596.86652pt x 845.08952pt.
- [40 <C:/Users/Elias/Dropbox/KULeuven/Burgerlijk Ingenieur/Master 2/Thesis/Teks
-t/Appendix_2_Poster/Poster_EliasMoons.pdf>])
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\ma
-sterproef.bbl"
+ [40 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_2_Poster/Poster_Eli
+asMoons.pdf>])
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.bbl
 bibitemlist
 ) [41
 
@@ -1325,33 +1301,26 @@ bibitemlist
 \tf@lot=\write7
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 143.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 143.
-
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\ma
-sterproef.aux"
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\0_
-Inleiding/inleiding.aux")
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\1_
-Muzikale_Achtergrond/muzikale_achtergrond.aux")
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\2_
-Objectieve_Beoordeling/objectieve_beoordeling.aux")
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\3_
-Melodische_Transformatie/melodische_transformatie.aux")
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\4_
-Efficient_Toepassen_Transformatie/efficient_toepassen_transformatie.aux")
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\5_
-Experimenten_Resultaten/experimenten_resultaten.aux")
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\6_
-Besluit/besluit.aux")
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\Ap
-pendix_0_Broncode/broncode.aux")
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\Ap
-pendix_1_Paper/paper.aux")
-("C:\Users\Elias\Dropbox\KULeuven\Burgerlijk Ingenieur\Master 2\Thesis\Tekst\Ap
-pendix_2_Poster/poster.aux"))
+ (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.aux
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\0_Inleiding/inleiding.aux)
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\1_Muzikale_Achtergrond/muzikale_a
+chtergrond.aux)
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\2_Objectieve_Beoordeling/objectie
+ve_beoordeling.aux)
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\3_Melodische_Transformatie/melodi
+sche_transformatie.aux)
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\4_Efficient_Toepassen_Transformat
+ie/efficient_toepassen_transformatie.aux)
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\5_Experimenten_Resultaten/experim
+enten_resultaten.aux)
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\6_Besluit/besluit.aux)
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/broncode.aux)
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_1_Paper/paper.aux)
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_2_Poster/poster.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: A8E548AB62FDED134E0362E038CD3A57;2561.
+(rerunfilecheck)             Checksum: 54B668AC0819C943049B0334A8D4BD77;2561.
 
 
 LaTeX Warning: There were undefined references.
@@ -1362,9 +1331,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 15143 strings out of 493921
- 231846 string characters out of 3144877
- 649356 words of memory out of 3000000
+ 15147 strings out of 493921
+ 229105 string characters out of 3144877
+ 650356 words of memory out of 3000000
  17598 multiletter control sequences out of 15000+200000
  75126 words of font info for 110 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1384,9 +1353,9 @@ lic/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (50 pages, 771876 bytes).
+Output written on masterproef.pdf (50 pages, 773659 bytes).
 PDF statistics:
- 986 PDF objects out of 1000 (max. 8388607)
- 400 named destinations out of 1000 (max. 500000)
+ 993 PDF objects out of 1000 (max. 8388607)
+ 404 named destinations out of 1000 (max. 500000)
  19325 words of extra memory for PDF output out of 20736 (max. 10000000)
 
