@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  16 MAY 2016 11:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  16 MAY 2016 12:09
 entering extended mode
 **masterproef.tex
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.tex
@@ -1170,32 +1170,32 @@ ie/efficient_toepassen_transformatie.tex [14
 
 
 ] [15] [16] [17] [18] [19])
-[20]
+[20] [21]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\5_Experimenten_Resultaten/experim
-enten_resultaten.tex
+enten_resultaten.tex [22
+
+
+
+]
 File: logokul.pdf Graphic file (type pdf)
  <use logokul.pdf>
 Package pdftex.def Info: logokul.pdf used on input line 22.
 (pdftex.def)             Requested size: 159.33487pt x 56.90283pt.
- [21
-
-
-
-]) [22]
+ [23]) [24]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\6_Besluit/besluit.tex
 File: logokul.pdf Graphic file (type pdf)
 
 <use logokul.pdf>
 Package pdftex.def Info: logokul.pdf used on input line 22.
 (pdftex.def)             Requested size: 159.33487pt x 56.90283pt.
- [23
+ [25
 
 
 
-]) [24] [25
+]) [26] [27
 
 
-] [26]
+] [28]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/broncode.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/03/04 1.5c listings language file
@@ -1204,21 +1204,15 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 6.
 
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/BestSequenceC
-leaned.py [27
+leaned.py [29
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28])
+ [30])
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/BestCoordinat
-edSequenceCleaned.py [29]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31]
+edSequenceCleaned.py [31]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [32]
@@ -1227,20 +1221,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [33]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]))
-[35] (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_1_Paper/paper.tex
-[36
+ [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-]) [37]
-(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_2_Poster/poster.tex
+ [36]))
+[37] (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_1_Paper/paper.tex
 [38
 
 
 
+]) [39]
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_2_Poster/poster.tex
+[40
+
+
+
 ]
-<Appendix_2_Poster/Poster_EliasMoons.pdf, id=800, 1690.27481pt x 2393.22108pt>
+<Appendix_2_Poster/Poster_EliasMoons.pdf, id=809, 1690.27481pt x 2393.22108pt>
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 
 <use Appendix_2_Poster/Poster_EliasMoons.pdf>
@@ -1254,7 +1254,7 @@ Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf used on input
 line 4.
 (pdftex.def)             Requested size: 1690.27069pt x 2393.21527pt.
 
-<Appendix_2_Poster/Poster_EliasMoons.pdf, id=803, page=1, 1690.27481pt x 2393.2
+<Appendix_2_Poster/Poster_EliasMoons.pdf, id=812, page=1, 1690.27481pt x 2393.2
 2108pt>
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
  <use Appendix_2_Poster/Poster_EliasMoons.pdf, page 1>
@@ -1267,7 +1267,7 @@ File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf, page1 used on
  input line 4.
 (pdftex.def)             Requested size: 596.86652pt x 845.08952pt.
- [39]
+ [41]
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 
 <use Appendix_2_Poster/Poster_EliasMoons.pdf, page 1>
@@ -1286,15 +1286,15 @@ File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf, page1 used on
  input line 4.
 (pdftex.def)             Requested size: 596.86652pt x 845.08952pt.
- [40 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_2_Poster/Poster_Eli
+ [42 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_2_Poster/Poster_Eli
 asMoons.pdf>])
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.bbl
 bibitemlist
-) [41
+) [43
 
 
 
-] [42
+] [44
 
 ]
 \tf@toc=\write5
@@ -1332,10 +1332,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 15151 strings out of 493921
- 229146 string characters out of 3144877
+ 15154 strings out of 493921
+ 229173 string characters out of 3144877
  649384 words of memory out of 3000000
- 17599 multiletter control sequences out of 15000+200000
+ 17600 multiletter control sequences out of 15000+200000
  75256 words of font info for 111 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  44i,18n,45p,1872b,2022s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1354,9 +1354,9 @@ lic/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (50 pages, 776916 bytes).
+Output written on masterproef.pdf (52 pages, 780208 bytes).
 PDF statistics:
- 996 PDF objects out of 1000 (max. 8388607)
- 405 named destinations out of 1000 (max. 500000)
+ 1005 PDF objects out of 1200 (max. 8388607)
+ 407 named destinations out of 1000 (max. 500000)
  19325 words of extra memory for PDF output out of 20736 (max. 10000000)
 
