@@ -11,9 +11,14 @@ A level-1 auxiliary file: Appendix_1_Paper/paper.aux
 A level-1 auxiliary file: Appendix_2_Poster/poster.aux
 The style file: abbrv.bst
 Database file #1: referenties.bib
-Illegal end of database file---line 36 of file referenties.bib
+I was expecting a `,' or a `}'---line 36 of file referenties.bib
+ : 
+ : @Misc{url:DP,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Illegal end of database file---line 42 of file referenties.bib
  : 
  : 
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-(There was 1 error message)
+(There were 2 error messages)

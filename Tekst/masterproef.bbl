@@ -9,6 +9,7 @@ D.~Adams.
 \bibitem{url:essen}
 U.~of~Oxford Text~Archive.
 \newblock Essen corpus of german folksong melodies.
+\newblock URL: \url{http://ota.ox.ac.uk/desc/1038}.
 
 \bibitem{pratchett06:_good_omens}
 T.~Pratchett and N.~Gaiman.
@@ -21,6 +22,10 @@ T.~Pratchett and N.~Gaiman.
 D.~Temperley.
 \newblock {\em Music and Probability}.
 \newblock The MIT Press, Cambridge, Massachusetts, 2007.
+
+\bibitem{url:DP}
+Wikipedia.
+\newblock Dynamic programming.
 
 \bibitem{wiki}
 Wikipedia.

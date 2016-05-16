@@ -48,11 +48,11 @@
 \contentsline {section}{\numberline {5.2}Beste sequentie met minimum transformatie lengte}{19}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Doelstelling}{19}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Idee van het algoritme}{19}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Werking van het algoritme}{19}{subsection.5.2.3}
-\contentsline {subsubsection}{Initialisatie}{19}{section*.12}
-\contentsline {subsubsection}{Een stap in het algoritme}{19}{section*.13}
-\contentsline {subsubsection}{Extractie van het beste pad}{19}{section*.14}
-\contentsline {subsection}{\numberline {5.2.4}Performantie en geheugencomplexiteit}{19}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.3}Werking van het algoritme}{20}{subsection.5.2.3}
+\contentsline {subsubsection}{Initialisatie}{20}{section*.12}
+\contentsline {subsubsection}{Een stap in het algoritme}{20}{section*.13}
+\contentsline {subsubsection}{Extractie van het beste pad}{20}{section*.14}
+\contentsline {subsection}{\numberline {5.2.4}Performantie en geheugencomplexiteit}{20}{subsection.5.2.4}
 \contentsline {chapter}{\chapternumberline {6}Experimenten en Resultaten}{21}{chapter.6}
 \contentsline {section}{\numberline {6.1}Eerste onderwerp in dit hoofdstuk}{21}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Een item}{21}{subsection.6.1.1}

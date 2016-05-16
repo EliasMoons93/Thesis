@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  16 MAY 2016 11:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  16 MAY 2016 11:40
 entering extended mode
 **masterproef.tex
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.tex
@@ -1169,18 +1169,19 @@ ie/efficient_toepassen_transformatie.tex [14
 
 
 
-] [15] [16] [17] [18]) [19]
+] [15] [16] [17] [18] [19])
+[20]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\5_Experimenten_Resultaten/experim
-enten_resultaten.tex [20
-
-
-
-]
+enten_resultaten.tex
 File: logokul.pdf Graphic file (type pdf)
  <use logokul.pdf>
 Package pdftex.def Info: logokul.pdf used on input line 22.
 (pdftex.def)             Requested size: 159.33487pt x 56.90283pt.
- [21]) [22]
+ [21
+
+
+
+]) [22]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\6_Besluit/besluit.tex
 File: logokul.pdf Graphic file (type pdf)
 
@@ -1239,7 +1240,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<Appendix_2_Poster/Poster_EliasMoons.pdf, id=798, 1690.27481pt x 2393.22108pt>
+<Appendix_2_Poster/Poster_EliasMoons.pdf, id=800, 1690.27481pt x 2393.22108pt>
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 
 <use Appendix_2_Poster/Poster_EliasMoons.pdf>
@@ -1253,7 +1254,7 @@ Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf used on input
 line 4.
 (pdftex.def)             Requested size: 1690.27069pt x 2393.21527pt.
 
-<Appendix_2_Poster/Poster_EliasMoons.pdf, id=801, page=1, 1690.27481pt x 2393.2
+<Appendix_2_Poster/Poster_EliasMoons.pdf, id=803, page=1, 1690.27481pt x 2393.2
 2108pt>
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
  <use Appendix_2_Poster/Poster_EliasMoons.pdf, page 1>
@@ -1331,11 +1332,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 15147 strings out of 493921
- 229105 string characters out of 3144877
- 650356 words of memory out of 3000000
- 17598 multiletter control sequences out of 15000+200000
- 75126 words of font info for 110 fonts, out of 3000000 for 9000
+ 15151 strings out of 493921
+ 229146 string characters out of 3144877
+ 649384 words of memory out of 3000000
+ 17599 multiletter control sequences out of 15000+200000
+ 75256 words of font info for 111 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  44i,18n,45p,1872b,2022s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
@@ -1353,9 +1354,9 @@ lic/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (50 pages, 773659 bytes).
+Output written on masterproef.pdf (50 pages, 776916 bytes).
 PDF statistics:
- 993 PDF objects out of 1000 (max. 8388607)
- 404 named destinations out of 1000 (max. 500000)
+ 996 PDF objects out of 1000 (max. 8388607)
+ 405 named destinations out of 1000 (max. 500000)
  19325 words of extra memory for PDF output out of 20736 (max. 10000000)
 
