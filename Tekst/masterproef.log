@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  16 MAY 2016 16:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  17 MAY 2016 11:14
 entering extended mode
 **masterproef.tex
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.tex
@@ -1170,32 +1170,32 @@ ie/efficient_toepassen_transformatie.tex [14
 
 
 ] [15] [16] [17] [18] [19] [20]
-[21]) [22]
+[21] [22]) [23]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\5_Experimenten_Resultaten/experim
-enten_resultaten.tex
+enten_resultaten.tex [24
+
+
+
+]
 File: logokul.pdf Graphic file (type pdf)
  <use logokul.pdf>
 Package pdftex.def Info: logokul.pdf used on input line 22.
 (pdftex.def)             Requested size: 159.33487pt x 56.90283pt.
- [23
-
-
-
-]) [24]
+ [25]) [26]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\6_Besluit/besluit.tex
 File: logokul.pdf Graphic file (type pdf)
 
 <use logokul.pdf>
 Package pdftex.def Info: logokul.pdf used on input line 22.
 (pdftex.def)             Requested size: 159.33487pt x 56.90283pt.
- [25
+ [27
 
 
 
-]) [26] [27
+]) [28] [29
 
 
-] [28]
+] [30]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/broncode.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/03/04 1.5c listings language file
@@ -1204,21 +1204,15 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 6.
 
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/BestSequenceC
-leaned.py [29
+leaned.py [31
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30])
+ [32])
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/BestCoordinat
-edSequenceCleaned.py [31]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33]
+edSequenceCleaned.py [33]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [34]
@@ -1227,20 +1221,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36]))
-[37] (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_1_Paper/paper.tex
-[38
+ [36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-]) [39]
-(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_2_Poster/poster.tex
+ [38]))
+[39] (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_1_Paper/paper.tex
 [40
 
 
 
+]) [41]
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_2_Poster/poster.tex
+[42
+
+
+
 ]
-<Appendix_2_Poster/Poster_EliasMoons.pdf, id=809, 1690.27481pt x 2393.22108pt>
+<Appendix_2_Poster/Poster_EliasMoons.pdf, id=823, 1690.27481pt x 2393.22108pt>
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 
 <use Appendix_2_Poster/Poster_EliasMoons.pdf>
@@ -1254,7 +1254,7 @@ Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf used on input
 line 4.
 (pdftex.def)             Requested size: 1690.27069pt x 2393.21527pt.
 
-<Appendix_2_Poster/Poster_EliasMoons.pdf, id=812, page=1, 1690.27481pt x 2393.2
+<Appendix_2_Poster/Poster_EliasMoons.pdf, id=826, page=1, 1690.27481pt x 2393.2
 2108pt>
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
  <use Appendix_2_Poster/Poster_EliasMoons.pdf, page 1>
@@ -1267,7 +1267,7 @@ File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf, page1 used on
  input line 4.
 (pdftex.def)             Requested size: 596.86652pt x 845.08952pt.
- [41]
+ [43]
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 
 <use Appendix_2_Poster/Poster_EliasMoons.pdf, page 1>
@@ -1286,15 +1286,15 @@ File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf, page1 used on
  input line 4.
 (pdftex.def)             Requested size: 596.86652pt x 845.08952pt.
- [42 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_2_Poster/Poster_Eli
+ [44 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_2_Poster/Poster_Eli
 asMoons.pdf>])
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.bbl
 bibitemlist
-) [43
+) [45
 
 
 
-] [44
+] [46
 
 ]
 \tf@toc=\write5
@@ -1321,7 +1321,7 @@ enten_resultaten.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 143.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 143.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: 54B668AC0819C943049B0334A8D4BD77;2561.
+(rerunfilecheck)             Checksum: 13CC449CD5A1A1B50130ACC0F6FE232E;2561.
 
 
 LaTeX Warning: There were undefined references.
@@ -1332,8 +1332,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 15156 strings out of 493921
- 229197 string characters out of 3144877
+ 15162 strings out of 493921
+ 229255 string characters out of 3144877
  650384 words of memory out of 3000000
  17600 multiletter control sequences out of 15000+200000
  75386 words of font info for 112 fonts, out of 3000000 for 9000
@@ -1354,9 +1354,9 @@ lic/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (52 pages, 784049 bytes).
+Output written on masterproef.pdf (54 pages, 792619 bytes).
 PDF statistics:
- 1005 PDF objects out of 1200 (max. 8388607)
- 407 named destinations out of 1000 (max. 500000)
+ 1020 PDF objects out of 1200 (max. 8388607)
+ 413 named destinations out of 1000 (max. 500000)
  19325 words of extra memory for PDF output out of 20736 (max. 10000000)
 
