@@ -94,13 +94,43 @@ Tijdens de uitvoering van het algoritme worden er 8 hulpvariabelen (allemaal arr
     \item \textbf{prob\textunderscore keep\textunderscore current:} Houdt de probabiliteit bij voor het optimaal en geldig pad dat eindigt op de huidig beschouwde noot. En dit enkel voor de paden die eindigen zonder transformatie van hun laatste noot.
     \item \textbf{prob\textunderscore transform\textunderscore past:} Houdt voor elke toegelaten transformatie afzonderlijk de probabiliteiten bij voor de optimale en geldige paden die eindigen met deze transformatie. En dit voor al zo een paden die eindigen op een mogelijke transformatie van een van de laatste ML beschouwde noten.
     \item \textbf{prob\textunderscore transform\textunderscore current:} Houdt voor elke toegelaten transformatie afzonderlijk de probabiliteiten bij voor de optimale en geldige paden die eindigen met deze transformatie. En dit voor al zo een paden die eindigen op de huidig beschouwde noot.
-    \item \textbf{path\textunderscore end\textunderscore on\textunderscore keep \textunderscore past:} Houdt de optimale en geldige paden bij die horen bij de probabiliteiten weergegeven in \textit{prob\textunderscore keep\textunderscore past}.
-    \item \textbf{path\textunderscore end\textunderscore on\textunderscore keep \textunderscore current:} Houdt het optimale pad bij dat hoort bij de probabiliteit weergegeven in \textit{prob\textunderscore keep\textunderscore current}.
+    \item \textbf{path\textunderscore end\textunderscore on\textunderscore keep\textunderscore past:} Houdt de optimale en geldige paden bij die horen bij de probabiliteiten weergegeven in \textit{prob\textunderscore keep\textunderscore past}.
+    \item \textbf{path\textunderscore end\textunderscore on\textunderscore keep\textunderscore current:} Houdt het optimale pad bij dat hoort bij de probabiliteit weergegeven in \textit{prob\textunderscore keep\textunderscore current}.
     \item \textbf{prob\textunderscore end\textunderscore on\textunderscore transform\textunderscore past:} Houdt de optimale en geldige paden bij, horende bij de probabiliteiten van \textit{prob\textunderscore transform\textunderscore past}.
     \item \textbf{prob\textunderscore end\textunderscore on\textunderscore transform\textunderscore current:} Houdt de optimale en geldige paden bij, horende bij de probabiliteiten van \textit{prob\textunderscore transform\textunderscore current}.
 \end{itemize}
 
+Ter verduidelijking worden de vormen en groottes van deze variabelen visueel voorgesteld met een aantal illustraties. In figuur \ref{figuur:prob_keep_algo_2} worden de datastructuren weergegeven die betrekking hebben tot het `niet-transformeren' van de laatst beschouwde noot. In figuur \ref{figuur:prob_transform_algo_2} worden de datastructuren weergegeven die betrekking hebben tot het transformeren van de laatst beschouwde noot. Voor elke toegestande transformatie (in het totaal `AT' aantal transformaties) apart wordt er dezelfde soort info bijgehouden als voor het geval van `niet-transformatie'. In figuren \ref{figuur:path_keep_algo_2} en \ref{figuur:path_transform_algo_2} wordt weergegeven hoe de optimale (en geldige) paden bijgehouden worden die horen bij de probabiliteiten uit de vorige twee figuren. In de twee `past' tabellen uit deze twee figuren valt nog op te merken dat een pad dat rechts van een ander pad in zo een tabel staat, telkens exact een element langer is dan het andere. Dit komt omdat er voor dat optimale pad dat rechts staat al een element extra beschouwd is, dat dan al dan niet getransformeerd kan zijn.\\
+
 Het valt op dat in dit algoritme optimale paden bijgehouden worden afhankelijk van met welke specifieke transformtie hun laatste noot bekomen is. Dit in tegenstelling tot het vorige algoritme waar er een gemeenschappelijke \textit{matrix} werd opgesteld waaruit het optimale pad later geconstrueerd kon worden. De reden dat zo een matrix wel werke in het vorige algoritme was precies omdat er geen eis van minimum lengte was voor een transformatie. Dit betekent dat voor eender welke noot, er kan besloten worden enkel afgaande op de probabiliteiten van de mogelijke toonhoogtes die de vorige noot kan aannemen, wat de probabiliteiten zijn van de toonhoogtes waarnaar de huidige noot getransformeerd kan worden. Stel nu dat we voor het algoritme besproken in dit onderdeel, dezelfde voorstelling zouden willen gebruiken. Dan zijn er twee problemen waar we op botsen. Ten eerste, als we willen transformeren moet dat voor minsten ML opeenvolgende noten zijn, het volstaat dus niet meer om gewoon naar de vorige laag te kijken in de matrix om de nieuwe te bepalen, we gaan ook ML eenheden verder moeten teruggaan om op suboplossingen die voldoende korter zijn ineens ML keer de transformatie toe te passen. Het volgende probleem is dat we zelfs als we dan een nieuw pad vinden, we dit (voorlopig) optimale pad niet zomaar kunnen inschrijven in de \textit{matrix}, aangezien we dan ook andere paden zouden kunnen aanpassen die daardoor mogelijks een deel van hun pad getransformeerd zouden zien over een lengte korter dan ML. 
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{4_Efficient_Toepassen_Transformatie/prob_keep_algo_2}
+  \caption{Illustratie van de variabelen die probabiliteiten opslaan met betrekking tot het `niet-transformeren' van de laatste noot. Elk element in deze tabel stelt een (logaritme van een) probabiliteit voor.}
+  \label{figuur:prob_keep_algo_2}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{4_Efficient_Toepassen_Transformatie/prob_transform_algo_2}
+  \caption{Illustratie van de variabelen die probabiliteiten opslaan met betrekking tot het transformeren van de laatste noot. Elk element in deze tabel stelt een (logaritme van een) probabiliteit voor.}
+  \label{figuur:prob_transform_algo_2}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{4_Efficient_Toepassen_Transformatie/path_keep_algo_2}
+  \caption{Illustratie van de variabelen die optimale (geldige) paden opslaan met betrekking tot het `niet-transformeren' van de laatste noot. Elk element in deze tabel stelt een optimaal en geldig pad voor.}
+  \label{figuur:path_keep_algo_2}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{4_Efficient_Toepassen_Transformatie/path_transform_algo_2}
+  \caption{Illustratie van de variabelen die optimale (geldige) paden opslaan met betrekking tot het transformeren van de laatste noot. Elk element in deze tabel stelt een optimaal en geldig pad voor.}
+  \label{figuur:path_transform_algo_2}
+\end{figure}
 
 \subsubsection{Initialisatie}
 De initialisatie verloopt vrij eenvoudig. Alle variabelen die optimale paden bijhouden worden ge\"initialiseerd op een lege array. Aangezien er voor de uitvoer van het algoritme uiteraard nog geen deel van een pad berekend is. De variabelen die betrekking hebben op de probabiliteiten van de optimale paden worden allemaal op een zeer lage waarde ge\"initialiseerd. Dit behalve voor variabele \textit{prob\textunderscore keep\textunderscore past}, waarvan de waarde horende bij de probabiliteit op het behouden van de eerste noot op 0 wordt gezet (wat overeenkomt met een kans van 1 aangezien de waarden waarmee gerekend wordt, de logaritmen zijn van de eigenlijke waarden). Dit omdat de eerste noot van een melodielijn altijd behouden wordt, want om een transformatie in rekening te brengen moet er een vorige noot zijn die niet bestaat voor de eerste noot.

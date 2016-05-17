@@ -8,7 +8,7 @@
 \contentsline {chapter}{Voorwoord}{i}{chapter*.1}
 \contentsline {chapter}{Samenvatting}{iv}{chapter*.2}
 \contentsline {chapter}{L"yst van figuren en tabellen}{v}{chapter*.3}
-\contentsline {chapter}{Lijst van afkortingen en symbolen}{vi}{chapter*.6}
+\contentsline {chapter}{Lijst van afkortingen en symbolen}{vii}{chapter*.6}
 \contentsline {chapter}{\chapternumberline {1}Inleiding}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Probleemstelling}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Vergelijking met voorgaand onderzoek}{1}{section.1.2}
@@ -49,29 +49,29 @@
 \contentsline {subsection}{\numberline {5.2.2}Idee van het algoritme}{21}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Werking van het algoritme}{21}{subsection.5.2.3}
 \contentsline {subsubsection}{Initialisatie}{23}{section*.14}
-\contentsline {subsubsection}{Een stap in het algoritme}{23}{section*.15}
-\contentsline {subsubsection}{Extractie van het beste pad}{24}{section*.16}
-\contentsline {subsection}{\numberline {5.2.4}Performantie en geheugencomplexiteit}{24}{subsection.5.2.4}
-\contentsline {subsubsection}{Tijd}{24}{section*.17}
-\contentsline {subsubsection}{Geheugen}{25}{section*.18}
-\contentsline {chapter}{\chapternumberline {6}Experimenten en Resultaten}{27}{chapter.6}
-\contentsline {section}{\numberline {6.1}Eerste onderwerp in dit hoofdstuk}{27}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Een item}{27}{subsection.6.1.1}
-\contentsline {section}{\numberline {6.2}Figuren}{27}{section.6.2}
-\contentsline {section}{\numberline {6.3}Tabellen}{27}{section.6.3}
-\contentsline {section}{\numberline {6.4}Besluit van dit hoofdstuk}{28}{section.6.4}
-\contentsline {chapter}{\chapternumberline {7}Besluit}{29}{chapter.7}
-\contentsline {section}{\numberline {7.1}Eerste onderwerp in dit hoofdstuk}{29}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Een item}{29}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Figuren}{29}{section.7.2}
-\contentsline {section}{\numberline {7.3}Tabellen}{29}{section.7.3}
-\contentsline {section}{\numberline {7.4}Besluit van dit hoofdstuk}{30}{section.7.4}
-\contentsline {appendix}{\chapternumberline {A}Broncode}{33}{appendix.A}
-\contentsline {section}{\numberline {A.1}Beste sequentie}{33}{section.A.1}
-\contentsline {section}{\numberline {A.2}Beste sequentie met minimum transformatie lengte}{35}{section.A.2}
-\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{43}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Poster}{45}{appendix.C}
-\contentsline {chapter}{Bibliografie}{47}{section*.20}
+\contentsline {subsubsection}{Een stap in het algoritme}{25}{section*.15}
+\contentsline {subsubsection}{Extractie van het beste pad}{26}{section*.16}
+\contentsline {subsection}{\numberline {5.2.4}Performantie en geheugencomplexiteit}{26}{subsection.5.2.4}
+\contentsline {subsubsection}{Tijd}{26}{section*.17}
+\contentsline {subsubsection}{Geheugen}{27}{section*.18}
+\contentsline {chapter}{\chapternumberline {6}Experimenten en Resultaten}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Eerste onderwerp in dit hoofdstuk}{29}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Een item}{29}{subsection.6.1.1}
+\contentsline {section}{\numberline {6.2}Figuren}{29}{section.6.2}
+\contentsline {section}{\numberline {6.3}Tabellen}{29}{section.6.3}
+\contentsline {section}{\numberline {6.4}Besluit van dit hoofdstuk}{30}{section.6.4}
+\contentsline {chapter}{\chapternumberline {7}Besluit}{31}{chapter.7}
+\contentsline {section}{\numberline {7.1}Eerste onderwerp in dit hoofdstuk}{31}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Een item}{31}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Figuren}{31}{section.7.2}
+\contentsline {section}{\numberline {7.3}Tabellen}{31}{section.7.3}
+\contentsline {section}{\numberline {7.4}Besluit van dit hoofdstuk}{32}{section.7.4}
+\contentsline {appendix}{\chapternumberline {A}Broncode}{35}{appendix.A}
+\contentsline {section}{\numberline {A.1}Beste sequentie}{35}{section.A.1}
+\contentsline {section}{\numberline {A.2}Beste sequentie met minimum transformatie lengte}{37}{section.A.2}
+\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{45}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Poster}{47}{appendix.C}
+\contentsline {chapter}{Bibliografie}{49}{section*.20}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
