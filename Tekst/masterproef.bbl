@@ -1,10 +1,26 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{url:backpropagation}
+Backpropagation.
+
+\bibitem{url:temperley}
+David temperley.
 
 \bibitem{h2g2}
 D.~Adams.
 \newblock {\em The Hitchhiker's Guide to the Galaxy}.
 \newblock Del Rey (reprint), 1995.
 \newblock ISBN-13: 978-0345391803.
+
+\bibitem{book:musimathics}
+G.~Loy.
+\newblock {\em Musimathics}.
+\newblock The MIT Press, Cambridge, Massachusetts, 2006.
+
+\bibitem{book:ANN}
+M.~Nielsen.
+\newblock {\em Neural Networks and Deep Learning}.
+\newblock 2016.
 
 \bibitem{url:essen}
 U.~of~Oxford Text~Archive.
@@ -26,11 +42,21 @@ D.~Temperley.
 \bibitem{url:DP}
 Wikipedia.
 \newblock Dynamic programming.
+\newblock URL: \url{https://en.wikipedia.org/wiki/Dynamic_programming}.
+
+\bibitem{url:bach}
+Wikipedia.
+\newblock Johann sebastian bach.
+\newblock URL: \url{https://en.wikipedia.org/wiki/Johann_Sebastian_Bach}.
 
 \bibitem{wiki}
 Wikipedia.
 \newblock Scriptie.
 \newblock URL: \url{http://nl.wikipedia.org/wiki/Masterproef}, laatst nagekeken
   op 2010-01-07.
+
+\bibitem{url:mozart}
+Wikipedia.
+\newblock Wolfgang amadeus mozart.
 
 \end{thebibliography}
