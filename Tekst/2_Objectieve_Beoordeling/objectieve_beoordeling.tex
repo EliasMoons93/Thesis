@@ -15,7 +15,8 @@ In deze thesis wordt gewerkt met transformaties op een muziektheoretische manier
 
 \section{RPK-Model}
 \label{OBM:RPK}
-Aangezien er nood was aan een framework voor het beoordelen van muziekstukken van slechts een enkele melodielijn werd er uiteindelijk uitgekomen bij het zogenaamde RPK-model. Dit model wordt beschreven in het boek `Music and Probability'\cite{book:musicAndProbability}. Het model dat besproken gaat worden in dit onderdeel en dus ook gebruikt werd in de rest van het onderzoek is gebaseerd op het model uit dit boek. Er werden een aantal vereenvoudigingen gedaan gebaseerd op extra data die beschikbaar is in het MusicXML formaat. Dit RKP-model gaat dus uit van een enkele lijn melodie (er wordt slechts een noot tegelijkertijd gespeeld). De waarschijnlijkheid van een bepaalde noot in een muziekstuk wordt gekenmerkt door de combinatie van 3 kenmerken waar het model naar genoemd is. Allereerst is er de zogenaamde \textit{range}, dit is de afwijking tot een centrale toonhoogte. Deze centrale toonhoogte is de noot die in het midden ligt van de distributie van alle noten uit alle muziekstukken van het beschikbare corpus van folkmuziek. Globaal gezien hebben noten die dicht bij die centrum liggen een grotere waarschijnlijkheid tot voorkomen als noten die verder van dit centrum gelegen zijn. Dit wordt ge\"illustreerd in figuur \ref{figuur:range}, waarbij elke noot voorgesteld wordt door een geheel getal. De centrale C (do) heeft als waarde 60 gekregen. Een eenheid in deze schaal komt overeen met een halve toon, de volgende C krijgt dus als waarde 72 omdat het verschil tussen de deze twee noten 12 halve tonen is. Verder hebben we ook nog de \textit{proximity}, dit heeft te maken met de relatieve afstand tot de voorgaande noot. Bepaalde groottes van sprongen zijn veel waarschijnlijker dan andere. Een sprong met een terts of een kwint komt bijvoorbeeld veel vaker voor dan een sprong van een sext. In het algemeen zijn kleine sprongen veel waarschijnlijker dan grotere. Figuur \ref{figuur:proximity} geeft de frequenties weer waarmee bepaalde intervallen tussen opeenvolgende noten voorkomen in het Essencorpus. Ten slotte wordt er ook nog rekening gehouden met de \textit{key}, oftewel de toonaard van het muziekstuk. Afhankelijk van de toonaard zijn bepaalde noten waarschijnlijker om voor te komen dan andere. Zo is de grondtoon van een toonladder bijvoorbeeld altijd sterk aanwezig terwijl de noot die een halve toon hoger ligt quasi nooit zal voorkomen in het muziekstuk. Ook is er een verschil in profiel tussen majeur en mineur toonaarden, hier wordt ook rekening mee gehouden. Dit wordt ook ge\"illustreed in figuren \ref{figuur:key_major} en \ref{figuur:key_minor} die resprectievelijk voor stukken die in grote en kleine toonaarden staan de distributies van noten uit het Essencorpus weergeeft. De \textit{range}- en \textit{proximity}-waarden worden gemodelleerd door een normaalverdeling rond respectievelijk de centrale en de vorige noot uit het muziekstuk. De \textit{key}-waarde van een noot wordt bepaald aan de hand van de frequentie van voorkomen van deze zijn nootfunctie in alle muziekstukken van het corpus.
+Aangezien er nood was aan een framework voor het beoordelen van muziekstukken van slechts een enkele melodielijn werd er uiteindelijk uitgekomen bij het zogenaamde RPK-model. Dit model wordt beschreven in het boek `Music and Probability'\cite{book:musicAndProbability}. Het model dat besproken gaat worden in dit onderdeel en dus ook gebruikt werd in de rest van het onderzoek is gebaseerd op het model uit dit boek. Er werden een aantal vereenvoudigingen gedaan gebaseerd op extra data die beschikbaar is in het MusicXML formaat. Dit RKP-model gaat dus uit van een enkele lijn melodie (er wordt slechts een noot tegelijkertijd gespeeld). De waarschijnlijkheid van een bepaalde noot in een muziekstuk wordt gekenmerkt door de combinatie van 3 kenmerken waar het model naar genoemd is.\\
+Allereerst is er de zogenaamde \textit{range}, dit is de afwijking tot een centrale toonhoogte. Deze centrale toonhoogte is de noot die in het midden ligt van de distributie van alle noten uit alle muziekstukken van het beschikbare corpus van folkmuziek. Globaal gezien hebben noten die dicht bij die centrum liggen een grotere waarschijnlijkheid tot voorkomen als noten die verder van dit centrum gelegen zijn. Dit wordt ge\"illustreerd in figuur \ref{figuur:range}, waarbij elke noot voorgesteld wordt door een geheel getal. De centrale C (do) heeft als waarde 60 gekregen. Een eenheid in deze schaal komt overeen met een halve toon, de volgende C krijgt dus als waarde 72 omdat het verschil tussen de deze twee noten 12 halve tonen is.\\ 
 
 \begin{figure}[!ht]
   \centering
@@ -24,24 +25,28 @@ Aangezien er nood was aan een framework voor het beoordelen van muziekstukken va
   \label{figuur:range}
 \end{figure}
 
+Verder is er ook nog de \textit{proximity}, dit heeft te maken met de relatieve afstand tot de voorgaande noot. Bepaalde groottes van sprongen zijn veel waarschijnlijker dan andere. Een sprong met een terts of een kwint komt bijvoorbeeld veel vaker voor dan een sprong van een sext. In het algemeen zijn kleine sprongen veel waarschijnlijker dan grotere. Figuur \ref{figuur:proximity} geeft de frequenties weer waarmee bepaalde intervallen tussen opeenvolgende noten voorkomen in het Essencorpus. \\
+
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.75\textwidth]{2_Objectieve_Beoordeling/proximity}
-  \caption{proporties van voorkomen van alle intervallen van opeenvolgende noten in het Essencorpus.}
+  \caption{Proporties van voorkomen van alle intervallen van opeenvolgende noten in het Essencorpus.}
   \label{figuur:proximity}
 \end{figure}
+
+Ten slotte wordt er ook nog rekening gehouden met de \textit{key}, oftewel de toonaard van het muziekstuk. Afhankelijk van de toonaard zijn bepaalde noten waarschijnlijker om voor te komen dan andere. Zo is de grondtoon van een toonladder bijvoorbeeld altijd sterk aanwezig terwijl de noot die een halve toon hoger ligt quasi nooit zal voorkomen in het muziekstuk. Ook is er een verschil in profiel tussen majeur en mineur toonaarden, hier wordt ook rekening mee gehouden. Dit wordt ook ge\"illustreed in figuren \ref{figuur:key_major} en \ref{figuur:key_minor} die resprectievelijk voor stukken die in grote en kleine toonaarden staan de distributies van noten uit het Essencorpus weergeeft. De \textit{range}- en \textit{proximity}-waarden worden gemodelleerd door een normaalverdeling rond respectievelijk de centrale en de vorige noot uit het muziekstuk. De \textit{key}-waarde van een noot wordt bepaald aan de hand van de frequentie van voorkomen van deze zijn nootfunctie in alle muziekstukken van het corpus.
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.75\textwidth]{2_Objectieve_Beoordeling/key_major}
-  \caption{proporties van voorkomen in het Essencorpus van nootfuncties in grote toonladder.}
+  \caption{Proporties van voorkomen in het Essencorpus van nootfuncties in grote toonladder.}
   \label{figuur:key_major}
 \end{figure}
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.75\textwidth]{2_Objectieve_Beoordeling/key_minor}
-  \caption{proporties van voorkomen in het Essencorpus van nootfuncties in kleine toonladder.}
+  \caption{Proporties van voorkomen in het Essencorpus van nootfuncties in kleine toonladder.}
   \label{figuur:key_minor}
 \end{figure}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  19 MAY 2016 22:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  19 MAY 2016 22:37
 entering extended mode
 **masterproef.tex
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.tex
@@ -1180,42 +1180,50 @@ ve_beoordeling.tex [10
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-[13] <2_Objectieve_Beoordeling/range.png, id=447, 711.8595pt x 311.36325pt>
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
+
+ []
+
+<2_Objectieve_Beoordeling/range.png, id=438, 711.8595pt x 311.36325pt>
 File: 2_Objectieve_Beoordeling/range.png Graphic file (type png)
 
 <use 2_Objectieve_Beoordeling/range.png>
 Package pdftex.def Info: 2_Objectieve_Beoordeling/range.png used on input line 
-22.
+23.
 (pdftex.def)             Requested size: 298.5pt x 130.56262pt.
+ [13]
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
-<2_Objectieve_Beoordeling/proximity.png, id=448, 694.39426pt x 315.579pt>
+ []
+
+<2_Objectieve_Beoordeling/proximity.png, id=446, 694.39426pt x 315.579pt>
 File: 2_Objectieve_Beoordeling/proximity.png Graphic file (type png)
 
 <use 2_Objectieve_Beoordeling/proximity.png>
 Package pdftex.def Info: 2_Objectieve_Beoordeling/proximity.png used on input l
-ine 29.
+ine 32.
 (pdftex.def)             Requested size: 298.5pt x 135.65779pt.
-
-<2_Objectieve_Beoordeling/key_major.png, id=449, 687.16725pt x 290.88675pt>
+ [14 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve_Beoordeling/ran
+ge.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve_Beoordeling/
+proximity.png>]
+<2_Objectieve_Beoordeling/key_major.png, id=453, 687.16725pt x 290.88675pt>
 File: 2_Objectieve_Beoordeling/key_major.png Graphic file (type png)
 
 <use 2_Objectieve_Beoordeling/key_major.png>
 Package pdftex.def Info: 2_Objectieve_Beoordeling/key_major.png used on input l
-ine 36.
+ine 41.
 (pdftex.def)             Requested size: 298.5pt x 126.35716pt.
 
-<2_Objectieve_Beoordeling/key_minor.png, id=450, 691.383pt x 295.1025pt>
+<2_Objectieve_Beoordeling/key_minor.png, id=454, 691.383pt x 295.1025pt>
 File: 2_Objectieve_Beoordeling/key_minor.png Graphic file (type png)
 
 <use 2_Objectieve_Beoordeling/key_minor.png>
 Package pdftex.def Info: 2_Objectieve_Beoordeling/key_minor.png used on input l
-ine 43.
+ine 48.
 (pdftex.def)             Requested size: 298.5pt x 127.40942pt.
-) [14 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve_Beoordeling/ra
-nge.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve_Beoordeling
-/proximity.png>] [15 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve
-_Beoordeling/key_major.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Obj
-ectieve_Beoordeling/key_minor.png>]
+) [15 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve_Beoordeling/ke
+y_major.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve_Beoorde
+ling/key_minor.png>]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\3_Melodische_Transformatie/melodi
 sche_transformatie.tex [16
 
@@ -1497,13 +1505,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 143.
  ) 
 Here is how much of TeX's memory you used:
- 15603 strings out of 493921
- 237344 string characters out of 3144877
+ 15607 strings out of 493921
+ 237390 string characters out of 3144877
  655237 words of memory out of 3000000
  17771 multiletter control sequences out of 15000+200000
- 76137 words of font info for 118 fonts, out of 3000000 for 9000
+ 76397 words of font info for 120 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 45i,18n,45p,3144b,1999s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,18n,45p,1872b,1999s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKT
 eX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/font
@@ -1519,7 +1527,7 @@ lic/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (70 pages, 1061336 bytes).
+Output written on masterproef.pdf (70 pages, 1061473 bytes).
 PDF statistics:
  1434 PDF objects out of 1440 (max. 8388607)
  656 named destinations out of 1000 (max. 500000)
