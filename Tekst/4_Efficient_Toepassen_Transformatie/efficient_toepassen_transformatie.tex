@@ -1,4 +1,4 @@
-\chapter{Effici\"ent Toepassen Transformatie}
+\chapter{Transformaties Combineren}
 \label{hoofdstuk:ETT}
 
 In dit hoofdstuk worden twee algoritmes behandeld die varianten zijn van elkaar. In beide algoritmes is het de bedoeling om een gegeven muziekstuk te transformeren tot een nieuw muziekstuk op zo een manier dat de totale consonantiescore zo hoog mogelijk is. Dit kan gebeuren door een aantal toegelaten operaties op het oorspronkelijke muziekstuk. Buiten de originele melodielijn zullen namelijk ook een aantal verschillende transformaties (zoals die beschreven zijn in onderdeel \ref{MT:afstand_vorige}) meegegeven worden aan het algoritme. Deze transformaties zullen door het algoritme gebruikt worden om het originele stuk te transformeren naar een nieuw stuk met een hogere consonantiescore (De score die gebruikt wordt is deze beschreven in onderdeel \ref{OBM:RPK}, volgens het `RPK-Model'). Voor elke noot van de melodielijn heeft het algoritme namelijk de keuze om ofwel de noot te behouden, ofwel deze te transformeren conform een van de transformaties die meegegeven werden aan het algoritme. Het algoritme dat hier voor zorgt wordt beschreven in onderdeel \ref{ETT:algo1}. In gedeelte \ref{ETT:algo2} wordt een algoritme beschreven dat eenzelfde doel heeft maar een extra voorwaarde opgelegd krijgt. Deze voorwaarde stelt dat als met een transformatie wilt toepassen, men telkens een minimum aantal opeenvolgende noten moet transformeren met dezelfde transformatie. 
@@ -22,7 +22,7 @@ In figuur \ref{figuur:matrix} wordt een voorbeeld van de inhoud van de \textit{m
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.5\textwidth]{4_Efficient_Toepassen_Transformatie/matrix}
+  \includegraphics[width=0.75\textwidth]{4_Efficient_Toepassen_Transformatie/matrix}
   \caption{Illustratie van de \textit{matrix}-variabele. Illustratie van beste pad voor 2 verschillende toonhoogtes.}
   \label{figuur:matrix}
 \end{figure}
@@ -40,7 +40,7 @@ Het enige wat nu nog rest is om de waarden van \textit{current} over te zetten n
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.5\textwidth]{4_Efficient_Toepassen_Transformatie/stap_algo_1}
+  \includegraphics[width=0.75\textwidth]{4_Efficient_Toepassen_Transformatie/stap_algo_1}
   \caption{Illustratie van de \textit{past}- en \textit{current} variabelen tijdens een stap in het algoritme. De weergave is enkel voor de transformatie weergegeven in tabel \ref{tabel:transformatie}. Dit is een voorbeeld voor het specifieke geval waarin de huidige noot in het originele stuk 3 halve tonen hoger ligt dan de vorige noot.}
   \label{figuur:stap_algo_1}
 \end{figure}
@@ -106,28 +106,28 @@ Het valt op dat in dit algoritme optimale paden bijgehouden worden afhankelijk v
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.5\textwidth]{4_Efficient_Toepassen_Transformatie/prob_keep_algo_2}
+  \includegraphics[width=0.75\textwidth]{4_Efficient_Toepassen_Transformatie/prob_keep_algo_2}
   \caption{Illustratie van de variabelen die probabiliteiten opslaan met betrekking tot het `niet-transformeren' van de laatste noot. Elk element in deze tabel stelt een (logaritme van een) probabiliteit voor.}
   \label{figuur:prob_keep_algo_2}
 \end{figure}
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.5\textwidth]{4_Efficient_Toepassen_Transformatie/prob_transform_algo_2}
+  \includegraphics[width=0.75\textwidth]{4_Efficient_Toepassen_Transformatie/prob_transform_algo_2}
   \caption{Illustratie van de variabelen die probabiliteiten opslaan met betrekking tot het transformeren van de laatste noot. Elk element in deze tabel stelt een (logaritme van een) probabiliteit voor.}
   \label{figuur:prob_transform_algo_2}
 \end{figure}
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.5\textwidth]{4_Efficient_Toepassen_Transformatie/path_keep_algo_2}
+  \includegraphics[width=0.75\textwidth]{4_Efficient_Toepassen_Transformatie/path_keep_algo_2}
   \caption{Illustratie van de variabelen die optimale (geldige) paden opslaan met betrekking tot het `niet-transformeren' van de laatste noot. Elk element in deze tabel stelt een optimaal en geldig pad voor.}
   \label{figuur:path_keep_algo_2}
 \end{figure}
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.5\textwidth]{4_Efficient_Toepassen_Transformatie/path_transform_algo_2}
+  \includegraphics[width=0.75\textwidth]{4_Efficient_Toepassen_Transformatie/path_transform_algo_2}
   \caption{Illustratie van de variabelen die optimale (geldige) paden opslaan met betrekking tot het transformeren van de laatste noot. Elk element in deze tabel stelt een optimaal en geldig pad voor.}
   \label{figuur:path_transform_algo_2}
 \end{figure}

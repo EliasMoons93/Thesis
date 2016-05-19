@@ -26,53 +26,54 @@
 \contentsline {subsection}{\numberline {2.2.3}Toonladders en toonaarden}{8}{subsection.2.2.3}
 \contentsline {chapter}{\chapternumberline {3}Objectieve Beoordeling Muziekstuk}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Neuraal Netwerk}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}RPK-Model}{13}{section.3.2}
-\contentsline {chapter}{\chapternumberline {4}Melodische Transformatie}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Verschillende transformaties}{15}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Permutatie van noten}{15}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Afbeelding afhankelijk van positie}{15}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Afbeelding afhankelijk van afstand ten opzichte van vorige noot}{15}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Vergelijking van transformaties}{15}{section.4.2}
-\contentsline {chapter}{\chapternumberline {5}Effici\"ent Toepassen Transformatie}{17}{chapter.5}
-\contentsline {section}{\numberline {5.1}Beste sequentie}{17}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Doelstelling}{17}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Idee van het algoritme}{18}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Werking van het algoritme}{18}{subsection.5.1.3}
-\contentsline {subsubsection}{Initialisatie}{19}{section*.9}
-\contentsline {subsubsection}{Een stap in het algoritme}{20}{section*.10}
-\contentsline {subsubsection}{Extractie van het beste pad}{21}{section*.11}
-\contentsline {subsection}{\numberline {5.1.4}Performantie en geheugencomplexiteit}{22}{subsection.5.1.4}
-\contentsline {subsubsection}{Tijd}{22}{section*.12}
-\contentsline {subsubsection}{Geheugen}{22}{section*.13}
-\contentsline {section}{\numberline {5.2}Beste sequentie met minimum transformatie lengte}{23}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Doelstelling}{23}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Idee van het algoritme}{23}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Werking van het algoritme}{23}{subsection.5.2.3}
-\contentsline {subsubsection}{Initialisatie}{25}{section*.14}
-\contentsline {subsubsection}{Een stap in het algoritme}{27}{section*.15}
-\contentsline {subsubsection}{Extractie van het beste pad}{28}{section*.16}
-\contentsline {subsection}{\numberline {5.2.4}Performantie en geheugencomplexiteit}{28}{subsection.5.2.4}
-\contentsline {subsubsection}{Tijd}{28}{section*.17}
-\contentsline {subsubsection}{Geheugen}{29}{section*.18}
-\contentsline {chapter}{\chapternumberline {6}Experimenten en Resultaten}{31}{chapter.6}
-\contentsline {section}{\numberline {6.1}Eerste onderwerp in dit hoofdstuk}{31}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Een item}{31}{subsection.6.1.1}
-\contentsline {section}{\numberline {6.2}Figuren}{31}{section.6.2}
-\contentsline {section}{\numberline {6.3}Tabellen}{31}{section.6.3}
-\contentsline {section}{\numberline {6.4}Besluit van dit hoofdstuk}{32}{section.6.4}
-\contentsline {chapter}{\chapternumberline {7}Besluit}{33}{chapter.7}
-\contentsline {section}{\numberline {7.1}Eerste onderwerp in dit hoofdstuk}{33}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Een item}{33}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Figuren}{33}{section.7.2}
-\contentsline {section}{\numberline {7.3}Tabellen}{33}{section.7.3}
-\contentsline {section}{\numberline {7.4}Besluit van dit hoofdstuk}{34}{section.7.4}
-\contentsline {appendix}{\chapternumberline {A}Broncode}{37}{appendix.A}
-\contentsline {section}{\numberline {A.1}Neuraal Netwerk Trainer}{37}{section.A.1}
-\contentsline {section}{\numberline {A.2}Beste sequentie}{43}{section.A.2}
-\contentsline {section}{\numberline {A.3}Beste sequentie met minimum transformatie lengte}{45}{section.A.3}
-\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{53}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Poster}{55}{appendix.C}
-\contentsline {chapter}{Bibliografie}{57}{section*.20}
+\contentsline {section}{\numberline {3.2}Keuze tussen Polyfone en Monofone Muziek}{13}{section.3.2}
+\contentsline {section}{\numberline {3.3}RPK-Model}{13}{section.3.3}
+\contentsline {chapter}{\chapternumberline {4}Melodische Transformatie}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Verschillende transformaties}{17}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Permutatie van noten}{17}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Afbeelding afhankelijk van positie}{17}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Afbeelding afhankelijk van afstand ten opzichte van vorige noot}{17}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Vergelijking van transformaties}{17}{section.4.2}
+\contentsline {chapter}{\chapternumberline {5}Transformaties Combineren}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Beste sequentie}{19}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Doelstelling}{19}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Idee van het algoritme}{20}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Werking van het algoritme}{20}{subsection.5.1.3}
+\contentsline {subsubsection}{Initialisatie}{21}{section*.9}
+\contentsline {subsubsection}{Een stap in het algoritme}{22}{section*.10}
+\contentsline {subsubsection}{Extractie van het beste pad}{23}{section*.11}
+\contentsline {subsection}{\numberline {5.1.4}Performantie en geheugencomplexiteit}{24}{subsection.5.1.4}
+\contentsline {subsubsection}{Tijd}{24}{section*.12}
+\contentsline {subsubsection}{Geheugen}{25}{section*.13}
+\contentsline {section}{\numberline {5.2}Beste sequentie met minimum transformatie lengte}{25}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Doelstelling}{25}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Idee van het algoritme}{25}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Werking van het algoritme}{26}{subsection.5.2.3}
+\contentsline {subsubsection}{Initialisatie}{27}{section*.14}
+\contentsline {subsubsection}{Een stap in het algoritme}{28}{section*.15}
+\contentsline {subsubsection}{Extractie van het beste pad}{29}{section*.16}
+\contentsline {subsection}{\numberline {5.2.4}Performantie en geheugencomplexiteit}{30}{subsection.5.2.4}
+\contentsline {subsubsection}{Tijd}{31}{section*.17}
+\contentsline {subsubsection}{Geheugen}{31}{section*.18}
+\contentsline {chapter}{\chapternumberline {6}Experimenten en Resultaten}{33}{chapter.6}
+\contentsline {section}{\numberline {6.1}Eerste onderwerp in dit hoofdstuk}{33}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Een item}{33}{subsection.6.1.1}
+\contentsline {section}{\numberline {6.2}Figuren}{33}{section.6.2}
+\contentsline {section}{\numberline {6.3}Tabellen}{33}{section.6.3}
+\contentsline {section}{\numberline {6.4}Besluit van dit hoofdstuk}{34}{section.6.4}
+\contentsline {chapter}{\chapternumberline {7}Besluit}{35}{chapter.7}
+\contentsline {section}{\numberline {7.1}Eerste onderwerp in dit hoofdstuk}{35}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Een item}{35}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Figuren}{35}{section.7.2}
+\contentsline {section}{\numberline {7.3}Tabellen}{35}{section.7.3}
+\contentsline {section}{\numberline {7.4}Besluit van dit hoofdstuk}{36}{section.7.4}
+\contentsline {appendix}{\chapternumberline {A}Broncode}{39}{appendix.A}
+\contentsline {section}{\numberline {A.1}Neuraal Netwerk Trainer}{39}{section.A.1}
+\contentsline {section}{\numberline {A.2}Beste sequentie}{45}{section.A.2}
+\contentsline {section}{\numberline {A.3}Beste sequentie met minimum transformatie lengte}{47}{section.A.3}
+\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{55}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Poster}{57}{appendix.C}
+\contentsline {chapter}{Bibliografie}{59}{section*.20}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

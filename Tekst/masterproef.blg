@@ -11,31 +11,8 @@ A level-1 auxiliary file: Appendix_1_Paper/paper.aux
 A level-1 auxiliary file: Appendix_2_Poster/poster.aux
 The style file: abbrv.bst
 Database file #1: referenties.bib
-I was expecting a `,' or a `}'---line 44 of file referenties.bib
- : 
- : @Misc{url:DP,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 50 of file referenties.bib
- : 
- : @book{book:ANN,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 57 of file referenties.bib
- : 
- : @Misc{url:backpropagation,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 72 of file referenties.bib
- : 
- : @Misc{url:mozart,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Illegal end of database file---line 75 of file referenties.bib
- :   howpublished = {URL: \url{https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart}}
- :                                                                                    
-I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in url:temperley
 Warning--to sort, need author or key in url:backpropagation
+Warning--to sort, need author or key in url:musicxml
 Warning--empty publisher in book:ANN
-(There were 5 error messages)
+(There were 4 warnings)

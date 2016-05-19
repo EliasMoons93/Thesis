@@ -2,9 +2,15 @@
 
 \bibitem{url:backpropagation}
 Backpropagation.
+\newblock URL: \url{https://en.wikipedia.org/wiki/Backpropagation}.
 
 \bibitem{url:temperley}
 David temperley.
+\newblock URL: \url{http://davidtemperley.com/}.
+
+\bibitem{url:musicxml}
+Musicxml.
+\newblock URL: \url{http://www.musicxml.com/}.
 
 \bibitem{h2g2}
 D.~Adams.
@@ -49,6 +55,12 @@ Wikipedia.
 \newblock Johann sebastian bach.
 \newblock URL: \url{https://en.wikipedia.org/wiki/Johann_Sebastian_Bach}.
 
+\bibitem{url:midi}
+Wikipedia.
+\newblock Musical instrument digital interface.
+\newblock URL:
+  \url{https://nl.wikipedia.org/wiki/Musical_Instrument_Digital_Interface}.
+
 \bibitem{wiki}
 Wikipedia.
 \newblock Scriptie.
@@ -58,5 +70,6 @@ Wikipedia.
 \bibitem{url:mozart}
 Wikipedia.
 \newblock Wolfgang amadeus mozart.
+\newblock URL: \url{https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart}.
 
 \end{thebibliography}
