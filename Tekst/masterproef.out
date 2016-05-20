@@ -11,7 +11,7 @@
 \BOOKMARK [0][-]{chapter.2}{Muzikale Achtergrond}{}% 11
 \BOOKMARK [1][-]{section.2.1}{Ritme}{chapter.2}% 12
 \BOOKMARK [1][-]{section.2.2}{Melodie}{chapter.2}% 13
-\BOOKMARK [0][-]{chapter.3}{Objectieve Beoordeling Muziekstuk}{}% 14
+\BOOKMARK [0][-]{chapter.3}{Objectieve Beoordeling van een Muziekstuk}{}% 14
 \BOOKMARK [1][-]{section.3.1}{Neuraal Netwerk}{chapter.3}% 15
 \BOOKMARK [1][-]{section.3.2}{Keuze tussen Polyfone en Monofone Muziek}{chapter.3}% 16
 \BOOKMARK [1][-]{section.3.3}{RPK-Model}{chapter.3}% 17
@@ -33,8 +33,9 @@
 \BOOKMARK [1][-]{section.7.4}{Besluit van dit hoofdstuk}{chapter.7}% 33
 \BOOKMARK [0][-]{appendix.A}{Broncode}{}% 34
 \BOOKMARK [1][-]{section.A.1}{Neuraal Netwerk Trainer}{appendix.A}% 35
-\BOOKMARK [1][-]{section.A.2}{Beste sequentie}{appendix.A}% 36
-\BOOKMARK [1][-]{section.A.3}{Beste sequentie met minimum transformatie lengte}{appendix.A}% 37
-\BOOKMARK [0][-]{appendix.B}{IEEE\137Paper}{}% 38
-\BOOKMARK [0][-]{appendix.C}{Poster}{}% 39
-\BOOKMARK [0][-]{section*.20}{Bibliografie}{}% 40
+\BOOKMARK [1][-]{section.A.2}{RPK-Model}{appendix.A}% 36
+\BOOKMARK [1][-]{section.A.3}{Beste sequentie}{appendix.A}% 37
+\BOOKMARK [1][-]{section.A.4}{Beste sequentie met minimum transformatie lengte}{appendix.A}% 38
+\BOOKMARK [0][-]{appendix.B}{IEEE\137Paper}{}% 39
+\BOOKMARK [0][-]{appendix.C}{Poster}{}% 40
+\BOOKMARK [0][-]{section*.21}{Bibliografie}{}% 41

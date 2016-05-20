@@ -18,10 +18,11 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Toonladder van ``Do Groot''}}{9}{figure.2.4}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Toonladder van ``La Klein''}}{9}{figure.2.5}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Distributie van alle noten in het Essencorpus.}}{14}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Proporties van voorkomen van alle intervallen van opeenvolgende noten in het Essencorpus.}}{14}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Proporties van voorkomen in het Essencorpus van nootfuncties in grote toonladder.}}{15}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Proporties van voorkomen in het Essencorpus van nootfuncties in kleine toonladder.}}{15}{figure.3.4}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Neuraal netwerk met 12 input nodes (1 voor elke noot), 6 hidden nodes en 1 output.}}{12}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Distributie van alle noten in het Essencorpus.}}{15}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Proporties van voorkomen van alle intervallen van opeenvolgende noten in het Essencorpus.}}{15}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Proporties van voorkomen in het Essencorpus van nootfuncties in grote toonladder.}}{16}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Proporties van voorkomen in het Essencorpus van nootfuncties in kleine toonladder.}}{16}{figure.3.5}
 \addvspace {10pt}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Illustratie van de \textit {matrix}-variabele. Illustratie van beste pad voor 2 verschillende toonhoogtes.}}{22}{figure.5.1}

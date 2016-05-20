@@ -45,6 +45,12 @@ D.~Temperley.
 \newblock {\em Music and Probability}.
 \newblock The MIT Press, Cambridge, Massachusetts, 2007.
 
+\bibitem{url:FFNN}
+S.~University.
+\newblock Feed-forward networks.
+\newblock URL:
+  \url{http://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/Architecture/feedforward.html}.
+
 \bibitem{url:DP}
 Wikipedia.
 \newblock Dynamic programming.
