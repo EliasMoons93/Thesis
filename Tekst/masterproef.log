@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  20 MAY 2016 12:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  21 MAY 2016 00:01
 entering extended mode
 **masterproef.tex
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.tex
@@ -1127,6 +1127,12 @@ sche_transformatie.aux
 LaTeX Warning: Label `hoofdstuk:MT' multiply defined.
 
 
+LaTeX Warning: Label `tabel:transformatie1' multiply defined.
+
+
+LaTeX Warning: Label `tabel:transformatie2' multiply defined.
+
+
 LaTeX Warning: Label `MT:afstand_vorige' multiply defined.
 
 )
@@ -1142,10 +1148,10 @@ LaTeX Warning: Label `ETT:algo1' multiply defined.
 LaTeX Warning: Label `figuur:matrix' multiply defined.
 
 
-LaTeX Warning: Label `tabel:transformatie' multiply defined.
-
-
 LaTeX Warning: Label `figuur:stap_algo_1' multiply defined.
+
+
+LaTeX Warning: Label `tabel:transformatie' multiply defined.
 
 
 LaTeX Warning: Label `ETT:algo2' multiply defined.
@@ -1313,7 +1319,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<logokuleng.pdf, id=170, 159.33528pt x 85.358pt>
+<logokuleng.pdf, id=174, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
 Package pdftex.def Info: logokuleng.pdf used on input line 77.
@@ -1414,7 +1420,7 @@ Underfull \vbox (badness 1112) has occurred while \output is active []
 
 
 ]
-<0_Inleiding/fibo.png, id=351, 261.97874pt x 147.55125pt>
+<0_Inleiding/fibo.png, id=361, 261.97874pt x 147.55125pt>
 File: 0_Inleiding/fibo.png Graphic file (type png)
 
 <use 0_Inleiding/fibo.png>
@@ -1427,7 +1433,7 @@ chtergrond.tex [4
 
 
 ]
-<1_Muzikale_Achtergrond/tijdssignatuur.png, id=375, 471.56175pt x 174.6525pt>
+<1_Muzikale_Achtergrond/tijdssignatuur.png, id=385, 471.56175pt x 174.6525pt>
 File: 1_Muzikale_Achtergrond/tijdssignatuur.png Graphic file (type png)
 
 <use 1_Muzikale_Achtergrond/tijdssignatuur.png>
@@ -1439,7 +1445,7 @@ t line 23.
 LaTeX Warning: Reference `figuur:toonlengtes' on page 6 undefined on input line
  33.
 
-<1_Muzikale_Achtergrond/nootlengtes.png, id=384, 426.59375pt x 77.28876pt>
+<1_Muzikale_Achtergrond/nootlengtes.png, id=394, 426.59375pt x 77.28876pt>
 File: 1_Muzikale_Achtergrond/nootlengtes.png Graphic file (type png)
 
 <use 1_Muzikale_Achtergrond/nootlengtes.png>
@@ -1449,7 +1455,7 @@ ine 37.
  [6 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergrond/tijdss
 ignatuur.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergr
 ond/nootlengtes.png>]
-<1_Muzikale_Achtergrond/toonladder.jpeg, id=393, 501.875pt x 130.4875pt>
+<1_Muzikale_Achtergrond/toonladder.jpeg, id=403, 501.875pt x 130.4875pt>
 File: 1_Muzikale_Achtergrond/toonladder.jpeg Graphic file (type jpg)
 
 <use 1_Muzikale_Achtergrond/toonladder.jpeg>
@@ -1458,7 +1464,7 @@ ine 62.
 (pdftex.def)             Requested size: 199.0pt x 51.7401pt.
  [7 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergrond/toonla
 dder.jpeg>]
-<1_Muzikale_Achtergrond/do_groot.png, id=403, 322.3242pt x 113.7048pt>
+<1_Muzikale_Achtergrond/do_groot.png, id=413, 322.3242pt x 113.7048pt>
 File: 1_Muzikale_Achtergrond/do_groot.png Graphic file (type png)
 
 <use 1_Muzikale_Achtergrond/do_groot.png>
@@ -1466,7 +1472,7 @@ Package pdftex.def Info: 1_Muzikale_Achtergrond/do_groot.png used on input line
  77.
 (pdftex.def)             Requested size: 199.0pt x 70.2013pt.
 
-<1_Muzikale_Achtergrond/la_klein.png, id=404, 326.4195pt x 95.6373pt>
+<1_Muzikale_Achtergrond/la_klein.png, id=414, 326.4195pt x 95.6373pt>
 File: 1_Muzikale_Achtergrond/la_klein.png Graphic file (type png)
 
 <use 1_Muzikale_Achtergrond/la_klein.png>
@@ -1499,7 +1505,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
-<2_Objectieve_Beoordeling/range.png, id=458, 711.8595pt x 311.36325pt>
+<2_Objectieve_Beoordeling/range.png, id=468, 711.8595pt x 311.36325pt>
 File: 2_Objectieve_Beoordeling/range.png Graphic file (type png)
 
 <use 2_Objectieve_Beoordeling/range.png>
@@ -1511,7 +1517,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
-<2_Objectieve_Beoordeling/proximity.png, id=460, 694.39426pt x 315.579pt>
+<2_Objectieve_Beoordeling/proximity.png, id=470, 694.39426pt x 315.579pt>
 File: 2_Objectieve_Beoordeling/proximity.png Graphic file (type png)
 
 <use 2_Objectieve_Beoordeling/proximity.png>
@@ -1524,7 +1530,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
  []
 
 [14]
-<2_Objectieve_Beoordeling/key_major.png, id=467, 687.16725pt x 290.88675pt>
+<2_Objectieve_Beoordeling/key_major.png, id=477, 687.16725pt x 290.88675pt>
 File: 2_Objectieve_Beoordeling/key_major.png Graphic file (type png)
 
 <use 2_Objectieve_Beoordeling/key_major.png>
@@ -1532,7 +1538,7 @@ Package pdftex.def Info: 2_Objectieve_Beoordeling/key_major.png used on input l
 ine 99.
 (pdftex.def)             Requested size: 298.5pt x 126.35716pt.
 
-<2_Objectieve_Beoordeling/key_minor.png, id=468, 691.383pt x 295.1025pt>
+<2_Objectieve_Beoordeling/key_minor.png, id=478, 691.383pt x 295.1025pt>
 File: 2_Objectieve_Beoordeling/key_minor.png Graphic file (type png)
 
 <use 2_Objectieve_Beoordeling/key_minor.png>
@@ -1545,33 +1551,31 @@ proximity.png>]) [16 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve
 _Beoordeling/key_major.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Obj
 ectieve_Beoordeling/key_minor.png>]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\3_Melodische_Transformatie/melodi
-sche_transformatie.tex) [17
+sche_transformatie.tex [17
 
 
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18])
+[19]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\4_Efficient_Toepassen_Transformat
-ie/efficient_toepassen_transformatie.tex [18
+ie/efficient_toepassen_transformatie.tex [20
 
 
 
-] [19] [20]
-<4_Efficient_Toepassen_Transformatie/matrix.png, id=511, 329.43076pt x 348.7027
+] [21] [22]
+<4_Efficient_Toepassen_Transformatie/matrix.png, id=540, 329.43076pt x 348.7027
 4pt>
 File: 4_Efficient_Toepassen_Transformatie/matrix.png Graphic file (type png)
  <use 4_Efficient_Toepassen_Transformatie/matrix.png>
 Package pdftex.def Info: 4_Efficient_Toepassen_Transformatie/matrix.png used on
  input line 25.
 (pdftex.def)             Requested size: 298.5pt x 315.98447pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21]
-Underfull \vbox (badness 2334) has occurred while \output is active []
-
- [22 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Transf
-ormatie/matrix.png>]
-<4_Efficient_Toepassen_Transformatie/stap_algo_1.png, id=526, 392.667pt x 352.9
+ [23] [24 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_T
+ransformatie/matrix.png>]
+<4_Efficient_Toepassen_Transformatie/stap_algo_1.png, id=554, 392.667pt x 352.9
 185pt>
 File: 4_Efficient_Toepassen_Transformatie/stap_algo_1.png Graphic file (type pn
 g)
@@ -1579,14 +1583,14 @@ g)
 Package pdftex.def Info: 4_Efficient_Toepassen_Transformatie/stap_algo_1.png us
 ed on input line 43.
 (pdftex.def)             Requested size: 298.5pt x 268.28546pt.
- [23] [24 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_T
-ransformatie/stap_algo_1.png>] [25]
+ [25 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Transf
+ormatie/stap_algo_1.png>] [26] [27]
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-[26]
-<4_Efficient_Toepassen_Transformatie/prob_keep_algo_2.png, id=564, 412.54124pt 
+[28]
+<4_Efficient_Toepassen_Transformatie/prob_keep_algo_2.png, id=593, 412.54124pt 
 x 371.58826pt>
 File: 4_Efficient_Toepassen_Transformatie/prob_keep_algo_2.png Graphic file (ty
 pe png)
@@ -1595,7 +1599,7 @@ Package pdftex.def Info: 4_Efficient_Toepassen_Transformatie/prob_keep_algo_2.p
 ng used on input line 109.
 (pdftex.def)             Requested size: 298.5pt x 268.8701pt.
 
-<4_Efficient_Toepassen_Transformatie/prob_transform_algo_2.png, id=565, 519.741
+<4_Efficient_Toepassen_Transformatie/prob_transform_algo_2.png, id=594, 519.741
 74pt x 348.70274pt>
 File: 4_Efficient_Toepassen_Transformatie/prob_transform_algo_2.png Graphic fil
 e (type png)
@@ -1605,7 +1609,7 @@ Package pdftex.def Info: 4_Efficient_Toepassen_Transformatie/prob_transform_alg
 o_2.png used on input line 116.
 (pdftex.def)             Requested size: 298.5pt x 200.27371pt.
 
-<4_Efficient_Toepassen_Transformatie/path_keep_algo_2.png, id=566, 390.258pt x 
+<4_Efficient_Toepassen_Transformatie/path_keep_algo_2.png, id=595, 390.258pt x 
 370.38374pt>
 File: 4_Efficient_Toepassen_Transformatie/path_keep_algo_2.png Graphic file (ty
 pe png)
@@ -1614,7 +1618,7 @@ Package pdftex.def Info: 4_Efficient_Toepassen_Transformatie/path_keep_algo_2.p
 ng used on input line 123.
 (pdftex.def)             Requested size: 298.5pt x 283.30307pt.
 
-<4_Efficient_Toepassen_Transformatie/path_transform_algo_2.png, id=567, 529.98p
+<4_Efficient_Toepassen_Transformatie/path_transform_algo_2.png, id=596, 529.98p
 t x 353.52075pt>
 File: 4_Efficient_Toepassen_Transformatie/path_transform_algo_2.png Graphic fil
 e (type png)
@@ -1623,28 +1627,20 @@ e (type png)
 Package pdftex.def Info: 4_Efficient_Toepassen_Transformatie/path_transform_alg
 o_2.png used on input line 130.
 (pdftex.def)             Requested size: 298.5pt x 199.11385pt.
- [27]
-[28 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Transfo
-rmatie/prob_keep_algo_2.png>] [29 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+[30 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Transfo
+rmatie/prob_keep_algo_2.png>] [31 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst
 /4_Efficient_Toepassen_Transformatie/prob_transform_algo_2.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Transf
-ormatie/path_keep_algo_2.png>] [31 <C:/Users/Elias/Documents/GitHub/Thesis/Teks
-t/4_Efficient_Toepassen_Transformatie/path_transform_algo_2.png>]) [32]
+ [32 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Transf
+ormatie/path_keep_algo_2.png>] [33 <C:/Users/Elias/Documents/GitHub/Thesis/Teks
+t/4_Efficient_Toepassen_Transformatie/path_transform_algo_2.png>]) [34]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\5_Experimenten_Resultaten/experim
-enten_resultaten.tex <logokul.pdf, id=602, 159.33528pt x 56.90298pt>
-File: logokul.pdf Graphic file (type pdf)
-
-<use logokul.pdf>
-Package pdftex.def Info: logokul.pdf used on input line 22.
-(pdftex.def)             Requested size: 159.33487pt x 56.90283pt.
- [33
-
-
-
- <C:/Program Files/KUL_Tex/tex/latex/kulemt/logokul.pdf>]) [34] (C:\Users\Elias
-\Documents\GitHub\Thesis\Tekst\6_Besluit/besluit.tex
+enten_resultaten.tex <logokul.pdf, id=631, 159.33528pt x 56.90298pt>
 File: logokul.pdf Graphic file (type pdf)
 
 <use logokul.pdf>
@@ -1654,10 +1650,21 @@ Package pdftex.def Info: logokul.pdf used on input line 22.
 
 
 
-]) [36] [37
+ <C:/Program Files/KUL_Tex/tex/latex/kulemt/logokul.pdf>]) [36] (C:\Users\Elias
+\Documents\GitHub\Thesis\Tekst\6_Besluit/besluit.tex
+File: logokul.pdf Graphic file (type pdf)
+
+<use logokul.pdf>
+Package pdftex.def Info: logokul.pdf used on input line 22.
+(pdftex.def)             Requested size: 159.33487pt x 56.90283pt.
+ [37
 
 
-] [38]
+
+]) [38] [39
+
+
+] [40]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/broncode.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/03/04 1.5c listings language file
@@ -1666,62 +1673,56 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 6.
 
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/NeuralNetwork
-Trainer.java [39
+Trainer.java [41
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [40]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [42]
-Overfull \hbox (3.06308pt too wide) in paragraph at lines 144--145
-[][] 
- []
-
-
-Overfull \hbox (3.06308pt too wide) in paragraph at lines 144--145
-[][] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44])
+ [44]
+Overfull \hbox (3.06308pt too wide) in paragraph at lines 144--145
+[][] 
+ []
+
+
+Overfull \hbox (3.06308pt too wide) in paragraph at lines 144--145
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46])
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/RPK.py
-[45]
+[47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46]
+ [48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48])
-(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/BestSequenceC
-leaned.py [49]
+ [49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [50])
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/BestSequenceC
+leaned.py [51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52])
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/BestCoordinat
-edSequenceCleaned.py [51]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [52]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [53]
+edSequenceCleaned.py [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [54]
@@ -1733,19 +1734,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57]))
-[58] (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_1_Paper/paper.tex)
-[59
+ [57]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59]))
+[60] (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_1_Paper/paper.tex)
+[61
 
 
 
 ] (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_2_Poster/poster.tex [6
-0
+2
 
 
 
 ]
-<Appendix_2_Poster/Poster_EliasMoons.pdf, id=1364, 1690.27481pt x 2393.22108pt>
+<Appendix_2_Poster/Poster_EliasMoons.pdf, id=1392, 1690.27481pt x 2393.22108pt>
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 <use Appendix_2_Poster/Poster_EliasMoons.pdf>
 Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf used on input 
@@ -1758,7 +1765,7 @@ Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf used on input
 line 4.
 (pdftex.def)             Requested size: 1690.27069pt x 2393.21527pt.
 
-<Appendix_2_Poster/Poster_EliasMoons.pdf, id=1367, page=1, 1690.27481pt x 2393.
+<Appendix_2_Poster/Poster_EliasMoons.pdf, id=1395, page=1, 1690.27481pt x 2393.
 22108pt>
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
  <use Appendix_2_Poster/Poster_EliasMoons.pdf, page 1>
@@ -1771,7 +1778,7 @@ File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf, page1 used on
  input line 4.
 (pdftex.def)             Requested size: 596.86652pt x 845.08952pt.
- [61]
+ [63]
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 
 <use Appendix_2_Poster/Poster_EliasMoons.pdf, page 1>
@@ -1790,21 +1797,21 @@ File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf, page1 used on
  input line 4.
 (pdftex.def)             Requested size: 596.86652pt x 845.08952pt.
- [62 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_2_Poster/Poster_Eli
+ [64 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_2_Poster/Poster_Eli
 asMoons.pdf>])
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.bbl
 bibitemlist
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--53
+Underfull \hbox (badness 10000) in paragraph at lines 54--58
 $\T1/lmtt/m/n/10.95 eroberts / courses / soco / projects / neural-[]networks / 
 Architecture /$
  []
 
-) [63
+[65
 
 
 
-] [64
+]) [66] [67
 
 ]
 \tf@toc=\write6
@@ -1831,7 +1838,7 @@ enten_resultaten.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: AC0D68579F907E027F7ACE1DA2096E14;2631.
+(rerunfilecheck)             Checksum: 24909AE7589E5EF7C6FC69E5A06A75C2;2726.
 
 
 LaTeX Warning: There were undefined references.
@@ -1842,10 +1849,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 25893 strings out of 493921
- 455467 string characters out of 3144877
- 869388 words of memory out of 3000000
- 27680 multiletter control sequences out of 15000+200000
+ 25908 strings out of 493921
+ 455651 string characters out of 3144877
+ 869818 words of memory out of 3000000
+ 27684 multiletter control sequences out of 15000+200000
  76527 words of font info for 121 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  60i,18n,70p,1872b,2001s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1864,9 +1871,9 @@ lic/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (74 pages, 1110897 bytes).
+Output written on masterproef.pdf (77 pages, 1122761 bytes).
 PDF statistics:
- 1658 PDF objects out of 1728 (max. 8388607)
- 820 named destinations out of 1000 (max. 500000)
- 19395 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 1695 PDF objects out of 1728 (max. 8388607)
+ 831 named destinations out of 1000 (max. 500000)
+ 19403 words of extra memory for PDF output out of 20736 (max. 10000000)
 

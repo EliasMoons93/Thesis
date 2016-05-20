@@ -23,6 +23,11 @@ G.~Loy.
 \newblock {\em Musimathics}.
 \newblock The MIT Press, Cambridge, Massachusetts, 2006.
 
+\bibitem{url:Fibonacci}
+W.~MathWorld.
+\newblock Fibonacci number.
+\newblock URL: \url{http://mathworld.wolfram.com/FibonacciNumber.html}.
+
 \bibitem{book:ANN}
 M.~Nielsen.
 \newblock {\em Neural Networks and Deep Learning}.

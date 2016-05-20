@@ -1,16 +1,58 @@
 \chapter{Melodische Transformatie}
 \label{hoofdstuk:MT}
 
-\section{Verschillende transformaties}
+\section{Inleiding}
+In dit hoofdstuk zullen verschillende melodische transformaties besproken worden met hun voor- en nadelen. Deze transformaties zullen werken op melodielijnen die monofoon zijn. Deze melodielijnen zullen behandeld worden als een opeenvolging van noten (toonhoogtes) en het ritme zal na transformatie gewoon behouden blijven. Enkel de toonhoogte van een noot zal aangepast worden. Het ritme zal bij de transformaties die hier besproken staan ook geen invloed hebben op de transformatie van een noot. 
 
-\subsection{Permutatie van noten}
+\subsection{Fibonacci}
+De transformaties die hier als voorbeeld gegeven worden zullen vaak in een zekere vorm de rij van Fibonacci\cite{url:Fibonacci} bevatten. Dit komt omdat in een vroeg stadium van het onderzoek de vraag bestond of transformaties die voortgaan op de rij van Fibonacci een beter resultaat zouden bieden dan willekeurige transformaties. Dit omdat de rij van Fibonacci in de natuur zo nadrukkelijk aanwezig is dat ook redelijkerwijs de vraag gesteld zou kunnen worden of ook in de muziekwereld zo een invloed zou kunnen hebben. Dit bleek niet het geval te zijn. Maar aangezien het ook geen slechtere resultaten gaf en omdat het ook onderdeel van het onderzoek was, zijn deze transformaties gebaseerd op de rij van Fibonacci vaak gebruikt ter illustratie.
 
-\subsection{Afbeelding afhankelijk van positie}
+\subsection{Beschrijving van een Transformatie}
+De melodische transformaties die besproken worden in dit hoofdstuk gaan telkens beschreven worden aan de hand van een tabel. Deze tabel zal telkens een mapping van 8 waarden bevatten. de tweede rij zal altijd waarden tussen -5 en +6 bevatten die als betekenis hebben met welke waarde (namelijk de hoeveelheid halve tonen) een bepaalde noot verhoogd moet worden. Welke noot met welke hoeveelheid getransformeerd moet worden wordt dan telkens weergegeven via een waarde op de bovenste rij. Deze rij is ook telkens cyclisch modulo 8. Wanneer bijvoorbeeld zoals in tabel \ref{tabel:transformatie1} de index van de noot weergegeven wordt op de bovenste rij, dan zal de noot op positie 4 met 5 halve tonen verhoogd worden door de transformatie. Maar ook bijvoorbeeld de noot op positie 12 zal met 5 halve tonen verhoogd worden omdat 12 ook 4 geeft als rest na deling door 8.
 
-\subsection{Afbeelding afhankelijk van afstand ten opzichte van vorige noot}
+\subsubsection{Afronding naar de toonaard}
+In hoofdstuk \ref{OBM:RPK} werd reeds het RPK-model besproken. Dit model wordt gebruikt ter evaluatie van de transformaties. Bij de bespreking van dit model was een van de drie belangrijke kenmerken van een noot om de probabiliteit te bepalen de \textit{key}. Noten die in de toonaard voorkomen zijn zo veel waarschijnlijker om voor te komen dan noten die niet in de toonaard voorkomen dat ervoor gekozen is om na uitvoer van de transformaties nog een zogenaamde `afronding' door te voeren. Deze afronding bestaat erin om na de transformatie van een melodielijn elke noot uit de nieuwe melodielijn die niet tot de toonaard behoort, te verhogen of verlagen met een halve toon naar die noot van de twee die de hoogste probabiliteit heeft volgens het RPK-model. Deze twee noten zullen ook telkens beide wel tot de toonaard behoren. De transformaties zelf zullen dus theoretisch geen rekening houden met deze afronding, deze afronding zal dus ook niet merkbaar zijn in de beschrijvingen van de transformatie die hieronder weergegeven staan. Maar het is wel belangrijk te weten dat deze afronding uiteindelijk wel gebeurt.
+
+\section{Afbeelding afhankelijk van positie}
+\subsection{Beschrijving transformatie}
+Een eerste zeer voor de hand liggende melodische transformatie is er eentje die een noot in een muziekstuk gaat transformeren enkel naargelang zijn positie in de melodielijn. De transformatie die ter illustratie dient van dit concept wordt beschreven in tabel \ref{tabel:transformatie1}.
+
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c c c c c c c }
+    Index (mod 8) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+    \hline
+    \hline
+    Verhoging & 1 & 1 & 2 & 3 & 5 & -4 & 1 & -3 \\
+  \end{tabular}
+  \caption{Transformatie afhankelijk van de positie van de noot.}
+  \label{tabel:transformatie1}
+\end{table}
+
+De noot op positie 6 zal door deze transformatie met 1 halve toon verhoogd worden.  De noot op positie 13 zal met 4 halve tonen verlaagd worden.
+
+\subsubsection{Bespreking transformatie}
+
+\section{Afbeelding afhankelijk van afstand ten opzichte van vorige noot}
 \label{MT:afstand_vorige}
+\subsubsection{Beschrijving transformatie}
+Een andere melodische transformatie is er een die een noot in een muziekstuk gaat transformeren naargelang zijn afstand in ten opzichte van de vorige noot. Hierbij zal er gekeken worden naar de afstand van de noot op positie `x' in de originele melodielijn tot de noot op positie `x-1' in de nieuwe melodielijn (dit is dus de getransformeerde waarde van de vorige noot in het originele muziekstuk). De eerste noot van eender welk muziekstuk wordt in deze transformatie behouden omdat deze noot geen voorgaande noot heeft. Wat ook nog speciaal is aan deze transformatie is dat de verhoging die weergegeven wordt in de transformatietabel toegepast wordt in de tegengestelde richting van waar de huidige noot staat ten opzichte van de vorige. De transformatie die ter illustratie dient van dit concept wordt beschreven in tabel \ref{tabel:transformatie2}.
 
-\section{Vergelijking van transformaties}
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c c c c c c c }
+    Diff (mod 8) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+    \hline
+    \hline
+    Verhoging & 1 & 1 & 2 & 3 & 5 & -4 & 1 & -3 \\
+  \end{tabular}
+  \caption{Transformatie afhankelijk van de afstand van de huidige noot tot de vorige noot.}
+  \label{tabel:transformatie2}
+\end{table}
+
+Een noot die 2 halve tonen hoger ligt dan de getransformeerde waarde van de vorige noot zal dus met 2 halve tonen verlaagd worden. Een noot die 4 halve tonen lager ligt dan de getransformeerde waarde van de vorige noot zal met 5 tonen verhoogd worden. Tot slot zal een noot die 5 halve tonen lager ligt dan de getransformeerde toonhoogte van de vorige noot nog eens met 4 halve tonen verder verlaagd worden.
+
+\subsubsection{Bespreking transformatie}
 
 %%% Local Variables: 
 %%% mode: latex
