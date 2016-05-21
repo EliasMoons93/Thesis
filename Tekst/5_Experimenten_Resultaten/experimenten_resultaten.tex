@@ -1,68 +1,78 @@
 \chapter{Experimenten en Resultaten}
 \label{hoofdstuk:ER}
-Een hoofdstuk behandelt een samenhangend geheel dat min of meer op zichzelf
-staat. Het is dan ook logisch dat het begint met een inleiding, namelijk
-het gedeelte van de tekst dat je nu aan het lezen bent.
+In dit hoofdstuk worden de belangrijkste experimenten besproken die uitgevoerd in het verloop van deze masterproef. Deze hebben zowel betrekking op de besproken melodische transformaties, de algoritmes om deze transformaties te combineren en ook het RPK-model dat gebruikt werd om deze transformaties te evalueren.
 
-\section{Eerste onderwerp in dit hoofdstuk}
-De inleidende informatie van dit onderwerp.
-
-\subsection{Een item}
-Een tekst staat nooit alleen. Dit wil zeggen dat er zeker ook referenties
-nodig zijn. Dit kan zowel naar on-line documenten\cite{wiki} als naar
-boeken\cite{pratchett06:_good_omens}.
-
-\section{Figuren}
-Figuren worden gebruikt om illustraties toe te voegen. Dit is dan ook de
-manier om beeldmateriaal toe te voegen zoals getoond wordt in
-figuur~\ref{fig:logo}.
-
-\begin{figure}
-  \centering
-  \includegraphics{logokul}
-  \caption{Het KU~Leuven logo.}
-  \label{fig:logo}
-\end{figure}
-
-\section{Tabellen}
-Tabellen kunnen gebruikt worden om informatie op een overzichtelijke te
-groeperen. Een tabel is echter geen rekenblad! Vergelijk maar eens
-tabel~\ref{tab:verkeerd} en tabel~\ref{tab:juist}. Welke tabel vind jij het
-duidelijkst?
+\section{Transformaties combineren: 1 transformatie, meerdere iteraties}
+\label{experiment:1}
+\subsection{Beschrijving experiment}
+Dit experiment heeft betrekking tot het algoritme dat besproken werd in onderdeel \ref{ETT:algo1}. Dit experiment gaat nagaan wat de invloed is van het aantal iteraties van het aantal iteraties van dit algoritme op de consonantiescore van het totale muziekstuk. Er wordt in dit algoritme slechts gebruik gemaakt van een transformatie. Deze gebruikte transformatie wordt weergegeven in tabel \ref{tabel:exp1}.
 
 \begin{table}
   \centering
-  \begin{tabular}{||l|lr||} \hline
-    gnats     & gram      & \$13.65 \\ \cline{2-3}
-              & each      & .01 \\ \hline
-    gnu       & stuffed   & 92.50 \\ \cline{1-1} \cline{3-3}
-    emu       &           & 33.33 \\ \hline
-    armadillo & frozen    & 8.99 \\ \hline
+  \begin{tabular}{c | c c c c c c c c }
+    Diff (mod 8) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+    \hline
+    \hline
+    Verhoging & 5 & -4 & 1 & -3 & 1 & 1 & 2 & 3 \\
   \end{tabular}
-  \caption{Een tabel zoals het niet moet.}
-  \label{tab:verkeerd}
+  \caption{Transformatie gebruikt in het experiment van onderdeel \ref{experiment:1}.}
+  \label{tabel:exp1}
 \end{table}
+
+Deze test wordt uitgevoerd op 100 muziekstukken uit het Essencorpus. De gemiddelde consonantiescore van de originele stukken wordt berekend alsook de gemiddelde consonantiescore van het muziekstuk dat optimaal is volgens het RPK-model in de toonaard van de 100 stukken. Nu kan er gekeken worden naar hoe snel de consonantiescore zich gaat verplaatsten van die van het originele naar die van de theoretisch best mogelijke volgens het model afhankelijk van het aantal iteraties dat het algoritme wordt uitgevoerd.
+
+\subsection{Resultaten}
+
+\section{Transformaties combineren: meerdere transformaties, 1 iteratie}
+\label{experiment:2}
+\subsection{Beschrijving experiment}
+Dit experiment heeft betrekking tot het algoritme dat besproken werd in onderdeel \ref{ETT:algo1}. Dit experiment gaat nagaan wat de invloed is van het aantal verschillende toegelaten transformaties op de consonantiescore van het totale muziekstuk. Zo zijn de vijf transformaties die gebruikt zullen worden weergegeven in tabel \ref{tabel:exp2}. Er wordt nu telkens slechts een iteratie van het algoritme uitgevoerd.
 
 \begin{table}
   \centering
-  \begin{tabular}{@{}llr@{}} \toprule
-    \multicolumn{2}{c}{Item} \\ \cmidrule(r){1-2}
-    Animal    & Description & Price (\$)\\ \midrule
-    Gnat      & per gram    & 13.65 \\
-              & each        & 0.01 \\
-    Gnu       & stuffed     & 92.50 \\
-    Emu       & stuffed     & 33.33 \\
-    Armadillo & frozen      & 8.99 \\ \bottomrule
+  \begin{tabular}{c | c c c c c c c c }
+    Diff (mod 8) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+    \hline
+    \hline
+    Verhoging transformatie 1 & 5 & -4 & 1 & -3 & 1 & 1 & 2 & 3 \\
+    \hline
+    Verhoging transformatie 2 & 1 & 3 & 4 & -5 & -1 & 6 & 5 & -1 \\
+    \hline
+    Verhoging transformatie 3 & 1 & 4 & 5 & -3 & 2 & -1 & 1 & 0 \\
+    \hline
+    Verhoging transformatie 2 & 4 & 6 & -2 & 4 & 2 & 6 & -4 & 2 \\
+    \hline
+    Verhoging transformatie -2 & -3 & -2 & 3 & -1 & 4 & -3 & 2 & -4 \\
   \end{tabular}
-  \caption{Een tabel zoals het beter is.}
-  \label{tab:juist}
+  \caption{Transformaties gebruikt in het experiment van onderdeel \ref{experiment:2}.}
+  \label{tabel:exp2}
 \end{table}
 
-\section{Besluit van dit hoofdstuk}
-Als je in dit hoofdstuk tot belangrijke resultaten of besluiten gekomen
-bent, dan is het ook logisch om het hoofdstuk af te ronden met een
-overzicht ervan. Voor hoofdstukken zoals de inleiding en het
-literatuuroverzicht is dit niet strikt nodig.
+\subsection{Resultaten}
+
+\section{Transformaties combineren: minimum transformatie lengte}
+\label{experiment:3}
+\subsection{Beschrijving experiment}
+
+\subsection{Resultaten}
+
+\section{Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}
+\label{experiment:4}
+\subsection{Beschrijving experiment}
+
+\subsection{Resultaten}
+
+\section{Vergelijking transformatie scores}
+\label{experiment:5}
+\subsection{Beschrijving experiment}
+
+\subsection{Resultaten}
+
+\section{Invloed rij van Fibonacci op transformaties}
+\label{experiment:3}
+\subsection{Beschrijving experiment}
+
+\subsection{Resultaten}
 
 %%% Local Variables: 
 %%% mode: latex

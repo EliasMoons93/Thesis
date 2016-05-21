@@ -65,25 +65,38 @@
 \contentsline {subsubsection}{Tijd}{37}{section*.25}
 \contentsline {subsubsection}{Geheugen}{37}{section*.26}
 \contentsline {chapter}{\chapternumberline {6}Experimenten en Resultaten}{39}{chapter.6}
-\contentsline {section}{\numberline {6.1}Eerste onderwerp in dit hoofdstuk}{39}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Een item}{39}{subsection.6.1.1}
-\contentsline {section}{\numberline {6.2}Figuren}{39}{section.6.2}
-\contentsline {section}{\numberline {6.3}Tabellen}{39}{section.6.3}
-\contentsline {section}{\numberline {6.4}Besluit van dit hoofdstuk}{40}{section.6.4}
-\contentsline {chapter}{\chapternumberline {7}Besluit}{41}{chapter.7}
-\contentsline {section}{\numberline {7.1}Eerste onderwerp in dit hoofdstuk}{41}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Een item}{41}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Figuren}{41}{section.7.2}
-\contentsline {section}{\numberline {7.3}Tabellen}{41}{section.7.3}
-\contentsline {section}{\numberline {7.4}Besluit van dit hoofdstuk}{42}{section.7.4}
-\contentsline {appendix}{\chapternumberline {A}Broncode}{45}{appendix.A}
-\contentsline {section}{\numberline {A.1}Neuraal Netwerk Trainer}{45}{section.A.1}
-\contentsline {section}{\numberline {A.2}RPK-Model}{51}{section.A.2}
-\contentsline {section}{\numberline {A.3}Beste sequentie}{55}{section.A.3}
-\contentsline {section}{\numberline {A.4}Beste sequentie met minimum transformatie lengte}{57}{section.A.4}
-\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{65}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Poster}{67}{appendix.C}
-\contentsline {chapter}{Bibliografie}{69}{section*.28}
+\contentsline {section}{\numberline {6.1}Transformaties combineren: 1 transformatie, meerdere iteraties}{39}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Beschrijving experiment}{39}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Resultaten}{40}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Transformaties combineren: meerdere transformaties, 1 iteratie}{40}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Beschrijving experiment}{40}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Resultaten}{41}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Transformaties combineren: minimum transformatie lengte}{41}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Beschrijving experiment}{41}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Resultaten}{41}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}{41}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Beschrijving experiment}{41}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Resultaten}{41}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Vergelijking transformatie scores}{41}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Beschrijving experiment}{41}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Resultaten}{41}{subsection.6.5.2}
+\contentsline {section}{\numberline {6.6}Invloed rij van Fibonacci op transformaties}{41}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Beschrijving experiment}{41}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Resultaten}{41}{subsection.6.6.2}
+\contentsline {chapter}{\chapternumberline {7}Besluit}{43}{chapter.7}
+\contentsline {section}{\numberline {7.1}Eerste onderwerp in dit hoofdstuk}{43}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Een item}{43}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Figuren}{43}{section.7.2}
+\contentsline {section}{\numberline {7.3}Tabellen}{43}{section.7.3}
+\contentsline {section}{\numberline {7.4}Besluit van dit hoofdstuk}{44}{section.7.4}
+\contentsline {appendix}{\chapternumberline {A}Broncode}{47}{appendix.A}
+\contentsline {section}{\numberline {A.1}Neuraal Netwerk Trainer}{47}{section.A.1}
+\contentsline {section}{\numberline {A.2}RPK-Model}{53}{section.A.2}
+\contentsline {section}{\numberline {A.3}Beste sequentie}{57}{section.A.3}
+\contentsline {section}{\numberline {A.4}Beste sequentie met minimum transformatie lengte}{59}{section.A.4}
+\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{67}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Poster}{69}{appendix.C}
+\contentsline {chapter}{Bibliografie}{71}{section*.28}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

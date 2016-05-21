@@ -23,20 +23,22 @@
 \BOOKMARK [1][-]{section.5.1}{Beste sequentie}{chapter.5}% 23
 \BOOKMARK [1][-]{section.5.2}{Beste sequentie met minimum transformatie lengte}{chapter.5}% 24
 \BOOKMARK [0][-]{chapter.6}{Experimenten en Resultaten}{}% 25
-\BOOKMARK [1][-]{section.6.1}{Eerste onderwerp in dit hoofdstuk}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.2}{Figuren}{chapter.6}% 27
-\BOOKMARK [1][-]{section.6.3}{Tabellen}{chapter.6}% 28
-\BOOKMARK [1][-]{section.6.4}{Besluit van dit hoofdstuk}{chapter.6}% 29
-\BOOKMARK [0][-]{chapter.7}{Besluit}{}% 30
-\BOOKMARK [1][-]{section.7.1}{Eerste onderwerp in dit hoofdstuk}{chapter.7}% 31
-\BOOKMARK [1][-]{section.7.2}{Figuren}{chapter.7}% 32
-\BOOKMARK [1][-]{section.7.3}{Tabellen}{chapter.7}% 33
-\BOOKMARK [1][-]{section.7.4}{Besluit van dit hoofdstuk}{chapter.7}% 34
-\BOOKMARK [0][-]{appendix.A}{Broncode}{}% 35
-\BOOKMARK [1][-]{section.A.1}{Neuraal Netwerk Trainer}{appendix.A}% 36
-\BOOKMARK [1][-]{section.A.2}{RPK-Model}{appendix.A}% 37
-\BOOKMARK [1][-]{section.A.3}{Beste sequentie}{appendix.A}% 38
-\BOOKMARK [1][-]{section.A.4}{Beste sequentie met minimum transformatie lengte}{appendix.A}% 39
-\BOOKMARK [0][-]{appendix.B}{IEEE\137Paper}{}% 40
-\BOOKMARK [0][-]{appendix.C}{Poster}{}% 41
-\BOOKMARK [0][-]{section*.28}{Bibliografie}{}% 42
+\BOOKMARK [1][-]{section.6.1}{Transformaties combineren: 1 transformatie, meerdere iteraties}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.2}{Transformaties combineren: meerdere transformaties, 1 iteratie}{chapter.6}% 27
+\BOOKMARK [1][-]{section.6.3}{Transformaties combineren: minimum transformatie lengte}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.4}{Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.5}{Vergelijking transformatie scores}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.6}{Invloed rij van Fibonacci op transformaties}{chapter.6}% 31
+\BOOKMARK [0][-]{chapter.7}{Besluit}{}% 32
+\BOOKMARK [1][-]{section.7.1}{Eerste onderwerp in dit hoofdstuk}{chapter.7}% 33
+\BOOKMARK [1][-]{section.7.2}{Figuren}{chapter.7}% 34
+\BOOKMARK [1][-]{section.7.3}{Tabellen}{chapter.7}% 35
+\BOOKMARK [1][-]{section.7.4}{Besluit van dit hoofdstuk}{chapter.7}% 36
+\BOOKMARK [0][-]{appendix.A}{Broncode}{}% 37
+\BOOKMARK [1][-]{section.A.1}{Neuraal Netwerk Trainer}{appendix.A}% 38
+\BOOKMARK [1][-]{section.A.2}{RPK-Model}{appendix.A}% 39
+\BOOKMARK [1][-]{section.A.3}{Beste sequentie}{appendix.A}% 40
+\BOOKMARK [1][-]{section.A.4}{Beste sequentie met minimum transformatie lengte}{appendix.A}% 41
+\BOOKMARK [0][-]{appendix.B}{IEEE\137Paper}{}% 42
+\BOOKMARK [0][-]{appendix.C}{Poster}{}% 43
+\BOOKMARK [0][-]{section*.28}{Bibliografie}{}% 44
