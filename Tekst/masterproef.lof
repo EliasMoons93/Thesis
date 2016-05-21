@@ -24,17 +24,19 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Proporties van voorkomen in het Essencorpus van nootfuncties in grote toonladder.}}{16}{figure.3.4}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Proporties van voorkomen in het Essencorpus van nootfuncties in kleine toonladder.}}{16}{figure.3.5}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Voorbeeld van toepassing transformatie afhankelijk van positie.}}{21}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Voorbeeld van toepassing transformatie afhankelijk van interval ten opzichte van vorige noot.}}{23}{figure.4.2}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Illustratie van de \textit {matrix}-variabele. Illustratie van beste pad voor 2 verschillende toonhoogtes.}}{24}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Illustratie van de \textit {past}- en \textit {current} variabelen tijdens een stap in het algoritme. De weergave is enkel voor de transformatie weergegeven in tabel \ref {tabel:transformatie}. Dit is een voorbeeld voor het specifieke geval waarin de huidige noot in het originele stuk 3 halve tonen hoger ligt dan de vorige noot.}}{25}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Illustratie van de variabelen die probabiliteiten opslaan met betrekking tot het `niet-transformeren' van de laatste noot. Elk element in deze tabel stelt een (logaritme van een) probabiliteit voor.}}{30}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Illustratie van de variabelen die probabiliteiten opslaan met betrekking tot het transformeren van de laatste noot. Elk element in deze tabel stelt een (logaritme van een) probabiliteit voor.}}{31}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Illustratie van de variabelen die optimale (geldige) paden opslaan met betrekking tot het `niet-transformeren' van de laatste noot. Elk element in deze tabel stelt een optimaal en geldig pad voor.}}{32}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Illustratie van de variabelen die optimale (geldige) paden opslaan met betrekking tot het transformeren van de laatste noot. Elk element in deze tabel stelt een optimaal en geldig pad voor.}}{33}{figure.5.6}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Illustratie van de \textit {matrix}-variabele. Illustratie van beste pad voor 2 verschillende toonhoogtes.}}{28}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Illustratie van de \textit {past}- en \textit {current} variabelen tijdens een stap in het algoritme. De weergave is enkel voor de transformatie weergegeven in tabel \ref {tabel:transformatie}. Dit is een voorbeeld voor het specifieke geval waarin de huidige noot in het originele stuk 3 halve tonen hoger ligt dan de vorige noot.}}{29}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Illustratie van de variabelen die probabiliteiten opslaan met betrekking tot het `niet-transformeren' van de laatste noot. Elk element in deze tabel stelt een (logaritme van een) probabiliteit voor.}}{34}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Illustratie van de variabelen die probabiliteiten opslaan met betrekking tot het transformeren van de laatste noot. Elk element in deze tabel stelt een (logaritme van een) probabiliteit voor.}}{35}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Illustratie van de variabelen die optimale (geldige) paden opslaan met betrekking tot het `niet-transformeren' van de laatste noot. Elk element in deze tabel stelt een optimaal en geldig pad voor.}}{36}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Illustratie van de variabelen die optimale (geldige) paden opslaan met betrekking tot het transformeren van de laatste noot. Elk element in deze tabel stelt een optimaal en geldig pad voor.}}{37}{figure.5.6}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Het KU~Leuven logo.}}{35}{figure.6.1}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Het KU~Leuven logo.}}{39}{figure.6.1}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Het KU~Leuven logo.}}{37}{figure.7.1}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Het KU~Leuven logo.}}{41}{figure.7.1}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
