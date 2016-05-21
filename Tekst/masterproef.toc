@@ -68,24 +68,24 @@
 \contentsline {section}{\numberline {6.1}Transformaties combineren: 1 transformatie, meerdere iteraties}{39}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Beschrijving experiment}{39}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Resultaten}{40}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Transformaties combineren: meerdere transformaties, 1 iteratie}{40}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Beschrijving experiment}{40}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.2}Transformaties combineren: meerdere transformaties, 1 iteratie}{41}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Beschrijving experiment}{41}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Resultaten}{41}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}Transformaties combineren: minimum transformatie lengte}{41}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Beschrijving experiment}{41}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Resultaten}{41}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}{41}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Beschrijving experiment}{41}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Resultaten}{41}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}Vergelijking transformatie scores}{41}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Beschrijving experiment}{41}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Resultaten}{41}{subsection.6.5.2}
-\contentsline {section}{\numberline {6.6}Invloed rij van Fibonacci op transformaties}{41}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Beschrijving experiment}{41}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}Resultaten}{41}{subsection.6.6.2}
-\contentsline {section}{\numberline {6.7}Test Performantie algoritmes}{41}{section.6.7}
-\contentsline {subsection}{\numberline {6.7.1}Beschrijving experiment}{41}{subsection.6.7.1}
-\contentsline {subsection}{\numberline {6.7.2}Resultaten}{41}{subsection.6.7.2}
+\contentsline {section}{\numberline {6.3}Transformaties combineren: minimum transformatie lengte}{42}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Beschrijving experiment}{42}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Resultaten}{42}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}{42}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Beschrijving experiment}{42}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Resultaten}{42}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Vergelijking transformatie scores}{42}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Beschrijving experiment}{42}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Resultaten}{42}{subsection.6.5.2}
+\contentsline {section}{\numberline {6.6}Invloed rij van Fibonacci op transformaties}{42}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Beschrijving experiment}{42}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Resultaten}{42}{subsection.6.6.2}
+\contentsline {section}{\numberline {6.7}Test Performantie algoritmes}{42}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Beschrijving experiment}{42}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Resultaten}{42}{subsection.6.7.2}
 \contentsline {chapter}{\chapternumberline {7}Besluit}{43}{chapter.7}
 \contentsline {section}{\numberline {7.1}Eerste onderwerp in dit hoofdstuk}{43}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Een item}{43}{subsection.7.1.1}
