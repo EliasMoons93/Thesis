@@ -8,7 +8,7 @@
 \contentsline {chapter}{Voorwoord}{i}{chapter*.1}
 \contentsline {chapter}{Samenvatting}{iv}{chapter*.2}
 \contentsline {chapter}{L"yst van figuren en tabellen}{v}{chapter*.3}
-\contentsline {chapter}{Lijst van afkortingen en symbolen}{vii}{chapter*.6}
+\contentsline {chapter}{Lijst van afkortingen en symbolen}{viii}{chapter*.6}
 \contentsline {chapter}{\chapternumberline {1}Inleiding}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Probleemstelling}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Vergelijking met voorgaand onderzoek}{1}{section.1.2}
@@ -73,33 +73,33 @@
 \contentsline {subsection}{\numberline {6.2.2}Resultaten}{41}{subsection.6.2.2}
 \contentsline {section}{\numberline {6.3}Transformaties combineren: minimum transformatie lengte}{42}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Beschrijving experiment}{42}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Resultaten}{42}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}{42}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Beschrijving experiment}{42}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Resultaten}{42}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}Vergelijking transformatie scores}{42}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Beschrijving experiment}{42}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Resultaten}{42}{subsection.6.5.2}
-\contentsline {section}{\numberline {6.6}Invloed rij van Fibonacci op transformaties}{42}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Beschrijving experiment}{42}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}Resultaten}{42}{subsection.6.6.2}
-\contentsline {section}{\numberline {6.7}Test Performantie algoritmes}{42}{section.6.7}
-\contentsline {subsection}{\numberline {6.7.1}Beschrijving experiment}{42}{subsection.6.7.1}
-\contentsline {subsection}{\numberline {6.7.2}Resultaten}{42}{subsection.6.7.2}
-\contentsline {chapter}{\chapternumberline {7}Besluit}{43}{chapter.7}
-\contentsline {section}{\numberline {7.1}Eerste onderwerp in dit hoofdstuk}{43}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Een item}{43}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Figuren}{43}{section.7.2}
-\contentsline {section}{\numberline {7.3}Tabellen}{43}{section.7.3}
-\contentsline {section}{\numberline {7.4}Besluit van dit hoofdstuk}{44}{section.7.4}
-\contentsline {appendix}{\chapternumberline {A}Broncode}{47}{appendix.A}
-\contentsline {section}{\numberline {A.1}Neuraal Netwerk Trainer}{47}{section.A.1}
-\contentsline {section}{\numberline {A.2}RPK-Model}{53}{section.A.2}
-\contentsline {section}{\numberline {A.3}Beste sequentie}{57}{section.A.3}
-\contentsline {section}{\numberline {A.4}Beste sequentie met minimum transformatie lengte}{59}{section.A.4}
-\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{67}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Poster}{69}{appendix.C}
-\contentsline {chapter}{Bibliografie}{71}{section*.28}
+\contentsline {subsection}{\numberline {6.3.2}Resultaten}{43}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}{43}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Beschrijving experiment}{43}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Resultaten}{44}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Vergelijking transformatie scores}{45}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Beschrijving experiment}{45}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Resultaten}{45}{subsection.6.5.2}
+\contentsline {section}{\numberline {6.6}Invloed rij van Fibonacci op transformaties}{45}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Beschrijving experiment}{45}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Resultaten}{45}{subsection.6.6.2}
+\contentsline {section}{\numberline {6.7}Test Performantie algoritmes}{45}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Beschrijving experiment}{45}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Resultaten}{45}{subsection.6.7.2}
+\contentsline {chapter}{\chapternumberline {7}Besluit}{47}{chapter.7}
+\contentsline {section}{\numberline {7.1}Eerste onderwerp in dit hoofdstuk}{47}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Een item}{47}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Figuren}{47}{section.7.2}
+\contentsline {section}{\numberline {7.3}Tabellen}{47}{section.7.3}
+\contentsline {section}{\numberline {7.4}Besluit van dit hoofdstuk}{48}{section.7.4}
+\contentsline {appendix}{\chapternumberline {A}Broncode}{51}{appendix.A}
+\contentsline {section}{\numberline {A.1}Neuraal Netwerk Trainer}{51}{section.A.1}
+\contentsline {section}{\numberline {A.2}RPK-Model}{57}{section.A.2}
+\contentsline {section}{\numberline {A.3}Beste sequentie}{61}{section.A.3}
+\contentsline {section}{\numberline {A.4}Beste sequentie met minimum transformatie lengte}{63}{section.A.4}
+\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{71}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Poster}{73}{appendix.C}
+\contentsline {chapter}{Bibliografie}{75}{section*.28}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

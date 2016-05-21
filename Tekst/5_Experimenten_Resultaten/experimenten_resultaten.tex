@@ -1,7 +1,7 @@
 \chapter{Experimenten en Resultaten}
 \label{hoofdstuk:ER}
 In dit hoofdstuk worden de belangrijkste experimenten besproken die uitgevoerd in het verloop van deze masterproef. Deze hebben zowel betrekking op de besproken melodische transformaties, de algoritmes om deze transformaties te combineren en ook het RPK-model dat gebruikt werd om deze transformaties te evalueren.\\
-De resultaten worden meestal weergegeven op een plot waarbij op de y as de gemiddelde probabiliteit staat. Deze probabiliteit staat voor de gemiddelde probabiliteit van voorkomen van een noot (gegeven de vorige noot) volgens het RPK-model in alle muziekstukken waarop er getest werd.
+De resultaten worden meestal weergegeven op een plot waarbij op de y as de gemiddelde probabiliteit staat. Deze probabiliteit staat voor de gemiddelde probabiliteit van voorkomen van een noot (gegeven de vorige noot) volgens het RPK-model in alle muziekstukken waarop er getest werd. Als er dus in dit hoofdstuk gesproken wordt over een gemiddelde probabiliteit van een bepaald muziekstuk dan betekent dit de gemiddelde probabiliteit van een noot in dit muziekstuk.
 
 \section{Transformaties combineren: 1 transformatie, meerdere iteraties}
 \label{experiment:1}
@@ -20,7 +20,7 @@ Dit experiment heeft betrekking tot het algoritme dat besproken werd in onderdee
   \label{tabel:exp1}
 \end{table}
 
-Deze test wordt uitgevoerd op 100 muziekstukken uit het Essencorpus. De gemiddelde consonantiescore van de originele stukken wordt berekend alsook de gemiddelde consonantiescore van het muziekstuk dat optimaal is volgens het RPK-model in de toonaard van de 100 stukken. Nu kan er gekeken worden naar hoe snel de consonantiescore zich gaat verplaatsten van die van het originele naar die van de theoretisch best mogelijke volgens het model afhankelijk van het aantal iteraties dat het algoritme wordt uitgevoerd.
+Deze test wordt uitgevoerd op 100 muziekstukken uit het Essencorpus. De gemiddelde probabiliteit van de originele stukken wordt berekend alsook de gemiddelde probabiliteit van het muziekstuk dat optimaal is volgens het RPK-model in de toonaard van de 100 stukken. Nu kan er gekeken worden naar hoe snel de consonantiescore zich gaat verplaatsten van die van het originele naar die van de theoretisch best mogelijke volgens het model afhankelijk van het aantal iteraties dat het algoritme wordt uitgevoerd.
 
 \subsection{Resultaten}
 
@@ -37,8 +37,7 @@ Er valt duidelijk op dat de eerste paar iteraties nog een redelijke verhoging va
 \section{Transformaties combineren: meerdere transformaties, 1 iteratie}
 \label{experiment:2}
 \subsection{Beschrijving experiment}
-Dit experiment heeft betrekking tot het algoritme dat besproken werd in onderdeel \ref{ETT:algo1}. Dit experiment gaat nagaan wat de invloed is van het aantal verschillende toegelaten transformaties op de consonantiescore van het totale muziekstuk. Zo zijn de vijf transformaties die gebruikt zullen worden weergegeven in tabel \ref{tabel:exp2}. Er wordt nu telkens slechts een iteratie van het algoritme uitgevoerd.\\
-Het experiment wordt eerst uitgevoerd met slechts een mogelijke transformatie. Dit zal dan transformatie 1 uit de tabel zijn. Daarna wordt het experiment uitgevoerd met 2 mogelijke transformaties. Dit zullen dan de eerste twee transformaties uit de tabel zijn enz..
+Dit experiment heeft betrekking tot het algoritme dat besproken werd in onderdeel \ref{ETT:algo1}. Het experiment gaat nagaan wat de invloed is van het aantal verschillende toegelaten transformaties op de consonantiescore van het totale muziekstuk. Zo zijn de vijf transformaties die gebruikt zullen worden weergegeven in tabel \ref{tabel:exp2}. Er wordt nu telkens slechts een iteratie van het algoritme uitgevoerd.\\
 
 \begin{table}
   \centering
@@ -60,6 +59,8 @@ Het experiment wordt eerst uitgevoerd met slechts een mogelijke transformatie. D
   \label{tabel:exp2}
 \end{table}
 
+Deze test wordt uitgevoerd op 50 muziekstukken uit het Essencorpus. De gemiddelde probabiliteit van de originele stukken wordt berekend alsook de gemiddelde probabiliteit van het muziekstuk dat optimaal is volgens het RPK-model in de toonaard van de 50 stukken. Nu kan er weer gekeken worden naar hoe snel de consonantiescore zich gaat verplaatsten van die van het originele naar die van de theoretisch best mogelijke volgens het model afhankelijk van het aantal transformaties dat aan het algoritme ter beschikking wordt gesteld. Het experiment wordt eerst uitgevoerd met slechts een mogelijke transformatie. Dit zal dan transformatie 1 uit de tabel zijn. Daarna wordt het experiment uitgevoerd met 2 mogelijke transformaties. Dit zullen dan de eerste twee transformaties uit de tabel zijn enz..
+
 \subsection{Resultaten}
 
 \begin{figure}[!ht]
@@ -75,14 +76,77 @@ In figuur \ref{figuur:exp2} worden de restultaten weergegeven van dit experiment
 \section{Transformaties combineren: minimum transformatie lengte}
 \label{experiment:3}
 \subsection{Beschrijving experiment}
+Dit experiment heeft betrekking tot het algoritme dat besproken werd in onderdeel \ref{ETT:algo2}. Het experiment gaat nagaan wat de invloed is van de minimum transformatielengte op de consonantiescore van het totale muziekstuk. Er wordt in dit experiment telkens gebruik gemaakt van 2 transformaties die beschreven zijn in tabel \ref{tabel:exp3}. Er wordt telkens slechts een iteratie van het algoritme uitgevoerd.\\
+
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c c c c c c c }
+    Diff (mod 8) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+    \hline
+    \hline
+    Verhoging transformatie 1 & 5 & -4 & 1 & -3 & 1 & 1 & 2 & 3 \\
+    \hline
+    Verhoging transformatie 2 & 1 & 3 & 4 & -5 & -1 & 6 & 5 & -1 \\
+  \end{tabular}
+  \caption{Transformaties gebruikt in het experiment van onderdeel \ref{experiment:3}.}
+  \label{tabel:exp3}
+\end{table}
+
+Dit experiment wordt uitgevoerd op 50 muziekstukken uit het Essencorpus en dit voor alle waarden van de minimum transformatie lengte tussen 1 en 10. Voor elk van deze 10 gevallen wordt de gemiddelde probabiliteit van het getransformeerde muziekstuk berekend.
 
 \subsection{Resultaten}
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.75\textwidth]{5_Experimenten_Resultaten/exp3_res}
+  \caption{Resultaten van het experiment uitgevoerd in deel \ref{experiment:3}. De groene lijn staat voor de gemiddelde probabiliteit van een noot in de originele melodie, de rode lijn voor de gemiddelde probabiliteit van de theoritisch beste melodielijn in de toonaarden waarop getest werd en de blauwe lijn geeft de gemiddelde probabiliteit van een noot weer na uitvoer van het algoritme afhankelijk van de minimum transformatie lengte.}
+  \label{figuur:exp3}
+\end{figure}
+
+Figuur \ref{figuur:exp3} geeft de resultaten weer van het experiment. Het is duidelijk dat een hogere minimum transformatie lengte leidt tot een kleinere verbetering van de consonantiescore, wat te verwachten was. De grafiek is ook monotoon dalen voor stijgende waarde van de minimum transformatie lengte. Dit moet ook zo zijn aangezien alle transformaties die geldig zijn voor een zekere transformatie lengte ook altijd geldig zijn voor alle kortere transformatie lengtes.
 
 \section{Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}
 \label{experiment:4}
 \subsection{Beschrijving experiment}
+Dit experiment is opgezet als extra test om het geloof in de juiste werking van de algoritmes beschreven in \ref{ETT:algo1} en \ref{ETT:algo2} te versterken. Aangezien de implementaties van deze twee algoritmen toch op een aantal vlakken (vooral de voorstelling van de paden) verschillen van elkaar, is het interessant om voor een minimum transformatie lengte van 1 eens te kijken of de twee algoritmes hetzelfde resultaat geven. Dit zou normaal gezien altijd het geval moeten zijn aangezien de twee algoritmes hetzelfde doel en dezelfde middelen hebben in het geval van een minimum transformatie lengte van 1. De transformatie waarvan gebruik gaat worden gemaakt staat beschreven in tabel \ref{tabel:exp4}.
+
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c c c c c c c }
+    Diff (mod 8) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+    \hline
+    \hline
+    Verhoging & 5 & -4 & 1 & -3 & 1 & 1 & 2 & 3 \\
+  \end{tabular}
+  \caption{Transformatie gebruikt in het experiment van onderdeel \ref{experiment:4}.}
+  \label{tabel:exp4}
+\end{table}
+
+Voor deze transformatie gaat het experiment zoals het beschreven staat in onderdel \ref{experiment:1} herhaald worden maar dan ook voor het tweede algoritme. Dus voor een aantal iteraties van 1 tot en met 10 van het algoritme gaan de probabiliteiten die beide algoritmes opleveren voor dezelfde transformatie op dezelfde 100 testgevallen uit het Essencorpus vergeleken worden.
 
 \subsection{Resultaten}
+
+\begin{table}
+  \centering
+  \begin{tabular}{c | c | c }    
+    \# iteraties & Algoritme 1 & Algoritme 2 \\
+    \hline
+    1 & -1.69 & -1.69\\
+    2 & -1.57 & -1.57\\
+    3 & -1.54 & -1.54\\
+    4 & -1.51 & -1.51\\
+    5 & -1.50 & -1.50\\
+    6 & -1.50 & -1.50\\
+    7 & -1.50 & -1.50\\
+    8 & -1.50 & -1.50\\
+    9 & -1.50 & -1.50\\
+    10 & -1.50 & -1.50\\
+  \end{tabular}
+  \caption{Resulaten van experiment \ref{experiment:4}. Gemiddelde consonantiescores voor de twee algoritmen (logaritme van de probabiliteit) na een gegeven aantal iteraties. Algoritme 1 staat beschreven in \ref{ETT:algo1}, algoritme 2 is hetgene dat beschreven staat in \ref{ETT:algo2}.}
+  \label{tabel:res4}
+\end{table}
+
+In tabel \ref{tabel:res4} staan de resultaten van dit experiment weergegeven. Beide algoritmen leveren dezelfde gemiddelde consonantiescore (logaritme van de gemiddelde probabiliteit) voor een muziekstukje na eenzelfde aantal iteraties gebruik makende van dezelfde transformatie. Dit versterkt de stelling dat de twee algoritmes wel degelijk werken zoals gewenst.
 
 \section{Vergelijking transformatie scores}
 \label{experiment:5}
