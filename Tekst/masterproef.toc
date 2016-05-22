@@ -79,9 +79,12 @@
 \contentsline {section}{\numberline {6.5}Vergelijking van de twee melodische transformaties}{45}{section.6.5}
 \contentsline {subsection}{\numberline {6.5.1}Beschrijving experiment}{45}{subsection.6.5.1}
 \contentsline {subsection}{\numberline {6.5.2}Resultaten}{45}{subsection.6.5.2}
-\contentsline {section}{\numberline {6.6}Test Performantie algoritmes}{45}{section.6.6}
+\contentsline {section}{\numberline {6.6}Vergelijking Fibonacci transformatie met gemiddelde transformatie}{45}{section.6.6}
 \contentsline {subsection}{\numberline {6.6.1}Beschrijving experiment}{45}{subsection.6.6.1}
 \contentsline {subsection}{\numberline {6.6.2}Resultaten}{45}{subsection.6.6.2}
+\contentsline {section}{\numberline {6.7}Test Performantie algoritmes}{45}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Beschrijving experiment}{45}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Resultaten}{45}{subsection.6.7.2}
 \contentsline {chapter}{\chapternumberline {7}Besluit}{47}{chapter.7}
 \contentsline {section}{\numberline {7.1}Eerste onderwerp in dit hoofdstuk}{47}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Een item}{47}{subsection.7.1.1}
