@@ -8,7 +8,6 @@
 \contentsline {chapter}{Voorwoord}{i}{chapter*.1}
 \contentsline {chapter}{Samenvatting}{iv}{chapter*.2}
 \contentsline {chapter}{L"yst van figuren en tabellen}{v}{chapter*.3}
-\contentsline {chapter}{Lijst van afkortingen en symbolen}{viii}{chapter*.6}
 \contentsline {chapter}{\chapternumberline {1}Inleiding}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Probleemstelling}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Vergelijking met voorgaand onderzoek}{1}{section.1.2}
@@ -28,42 +27,42 @@
 \contentsline {section}{\numberline {3.1}Neuraal Netwerk}{11}{section.3.1}
 \contentsline {section}{\numberline {3.2}Keuze tussen Polyfone en Monofone Muziek}{13}{section.3.2}
 \contentsline {section}{\numberline {3.3}RPK-Model}{14}{section.3.3}
-\contentsline {subsubsection}{Bepaling score van een volledige melodielijn}{15}{section*.9}
-\contentsline {subsubsection}{Beoordeling van een muziekstuk}{17}{section*.10}
+\contentsline {subsubsection}{Bepaling score van een volledige melodielijn}{15}{section*.6}
+\contentsline {subsubsection}{Beoordeling van een muziekstuk}{17}{section*.7}
 \contentsline {chapter}{\chapternumberline {4}Melodische Transformatie}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Inleiding}{19}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Fibonacci}{19}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Beschrijving van een Transformatie}{19}{subsection.4.1.2}
-\contentsline {subsubsection}{Afronding naar de toonaard}{20}{section*.11}
+\contentsline {subsubsection}{Afronding naar de toonaard}{20}{section*.8}
 \contentsline {section}{\numberline {4.2}Afbeelding afhankelijk van positie}{20}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Beschrijving transformatie}{20}{subsection.4.2.1}
-\contentsline {subsubsection}{Voorbeeld}{20}{section*.12}
-\contentsline {subsubsection}{Bespreking transformatie}{21}{section*.13}
+\contentsline {subsubsection}{Voorbeeld}{20}{section*.9}
+\contentsline {subsubsection}{Bespreking transformatie}{21}{section*.10}
 \contentsline {section}{\numberline {4.3}Afbeelding afhankelijk van afstand ten opzichte van vorige noot}{22}{section.4.3}
-\contentsline {subsubsection}{Beschrijving transformatie}{22}{section*.14}
-\contentsline {subsubsection}{Voorbeeld}{22}{section*.15}
-\contentsline {subsubsection}{Bespreking transformatie}{23}{section*.16}
+\contentsline {subsubsection}{Beschrijving transformatie}{22}{section*.11}
+\contentsline {subsubsection}{Voorbeeld}{22}{section*.12}
+\contentsline {subsubsection}{Bespreking transformatie}{23}{section*.13}
 \contentsline {chapter}{\chapternumberline {5}Transformaties Combineren}{25}{chapter.5}
 \contentsline {section}{\numberline {5.1}Beste sequentie}{26}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Doelstelling}{26}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Idee van het algoritme}{26}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Werking van het algoritme}{26}{subsection.5.1.3}
-\contentsline {subsubsection}{Initialisatie}{27}{section*.17}
-\contentsline {subsubsection}{Een stap in het algoritme}{28}{section*.18}
-\contentsline {subsubsection}{Extractie van het beste pad}{29}{section*.19}
+\contentsline {subsubsection}{Initialisatie}{27}{section*.14}
+\contentsline {subsubsection}{Een stap in het algoritme}{28}{section*.15}
+\contentsline {subsubsection}{Extractie van het beste pad}{29}{section*.16}
 \contentsline {subsection}{\numberline {5.1.4}Performantie en geheugencomplexiteit}{30}{subsection.5.1.4}
-\contentsline {subsubsection}{Tijd}{31}{section*.20}
-\contentsline {subsubsection}{Geheugen}{31}{section*.21}
+\contentsline {subsubsection}{Tijd}{31}{section*.17}
+\contentsline {subsubsection}{Geheugen}{31}{section*.18}
 \contentsline {section}{\numberline {5.2}Beste sequentie met minimum transformatie lengte}{31}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Doelstelling}{31}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Idee van het algoritme}{31}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Werking van het algoritme}{32}{subsection.5.2.3}
-\contentsline {subsubsection}{Initialisatie}{34}{section*.22}
-\contentsline {subsubsection}{Een stap in het algoritme}{34}{section*.23}
-\contentsline {subsubsection}{Extractie van het beste pad}{36}{section*.24}
+\contentsline {subsubsection}{Initialisatie}{34}{section*.19}
+\contentsline {subsubsection}{Een stap in het algoritme}{34}{section*.20}
+\contentsline {subsubsection}{Extractie van het beste pad}{36}{section*.21}
 \contentsline {subsection}{\numberline {5.2.4}Performantie en geheugencomplexiteit}{37}{subsection.5.2.4}
-\contentsline {subsubsection}{Tijd}{37}{section*.25}
-\contentsline {subsubsection}{Geheugen}{38}{section*.26}
+\contentsline {subsubsection}{Tijd}{37}{section*.22}
+\contentsline {subsubsection}{Geheugen}{38}{section*.23}
 \contentsline {chapter}{\chapternumberline {6}Experimenten en Resultaten}{39}{chapter.6}
 \contentsline {section}{\numberline {6.1}Transformaties combineren: 1 transformatie, meerdere iteraties}{39}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Beschrijving experiment}{39}{subsection.6.1.1}
@@ -77,15 +76,12 @@
 \contentsline {section}{\numberline {6.4}Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}{43}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}Beschrijving experiment}{43}{subsection.6.4.1}
 \contentsline {subsection}{\numberline {6.4.2}Resultaten}{44}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}Vergelijking transformatie scores}{45}{section.6.5}
+\contentsline {section}{\numberline {6.5}Vergelijking van de twee melodische transformaties}{45}{section.6.5}
 \contentsline {subsection}{\numberline {6.5.1}Beschrijving experiment}{45}{subsection.6.5.1}
 \contentsline {subsection}{\numberline {6.5.2}Resultaten}{45}{subsection.6.5.2}
-\contentsline {section}{\numberline {6.6}Invloed rij van Fibonacci op transformaties}{45}{section.6.6}
+\contentsline {section}{\numberline {6.6}Test Performantie algoritmes}{45}{section.6.6}
 \contentsline {subsection}{\numberline {6.6.1}Beschrijving experiment}{45}{subsection.6.6.1}
 \contentsline {subsection}{\numberline {6.6.2}Resultaten}{45}{subsection.6.6.2}
-\contentsline {section}{\numberline {6.7}Test Performantie algoritmes}{45}{section.6.7}
-\contentsline {subsection}{\numberline {6.7.1}Beschrijving experiment}{45}{subsection.6.7.1}
-\contentsline {subsection}{\numberline {6.7.2}Resultaten}{45}{subsection.6.7.2}
 \contentsline {chapter}{\chapternumberline {7}Besluit}{47}{chapter.7}
 \contentsline {section}{\numberline {7.1}Eerste onderwerp in dit hoofdstuk}{47}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Een item}{47}{subsection.7.1.1}
@@ -99,7 +95,7 @@
 \contentsline {section}{\numberline {A.4}Beste sequentie met minimum transformatie lengte}{63}{section.A.4}
 \contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{71}{appendix.B}
 \contentsline {appendix}{\chapternumberline {C}Poster}{73}{appendix.C}
-\contentsline {chapter}{Bibliografie}{75}{section*.28}
+\contentsline {chapter}{Bibliografie}{75}{section*.25}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
