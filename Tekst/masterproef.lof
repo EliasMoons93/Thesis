@@ -36,8 +36,11 @@
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Resultaten van het experiment uitgevoerd in deel \ref {experiment:1}. De groene lijn staat voor de gemiddelde probabiliteit van een noot in de originele melodie, de rode lijn voor de gemiddelde probabiliteit van de theoritisch beste melodielijn in de toonaarden waarop getest werd en de blauwe lijn geeft de gemiddelde probabiliteit van een noot weer na uitvoer van het algoritme na een verschillend aantal iteraties.}}{43}{figure.6.1}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Resultaten van het experiment uitgevoerd in deel \ref {experiment:2}. De groene lijn staat voor de gemiddelde probabiliteit van een noot in de originele melodie, de rode lijn voor de gemiddelde probabiliteit van de theoritisch beste melodielijn in de toonaarden waarop getest werd en de blauwe lijn geeft de gemiddelde probabiliteit van een noot weer na uitvoer van het algoritme afhankelijk van het aantal transformaties dat ter beschikking gesteld was aan het algoritme.}}{45}{figure.6.2}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Resultaten van het experiment uitgevoerd in deel \ref {experiment:3}. De groene lijn staat voor de gemiddelde probabiliteit van een noot in de originele melodie, de rode lijn voor de gemiddelde probabiliteit van de theoritisch beste melodielijn in de toonaarden waarop getest werd en de blauwe lijn geeft de gemiddelde probabiliteit van een noot weer na uitvoer van het algoritme afhankelijk van de minimum transformatie lengte.}}{46}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultaten van het experiment uitgevoerd in deel \ref {experiment:7}. Tijdsduur van het algoritme in seconden t.o.v. het aantal noten in de originele melodie.}}{48}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Resultaten van het experiment uitgevoerd in deel \ref {experiment:8}. Tijdsduur van het algoritme in seconden t.o.v. het aantal transformaties dat het algoritme ter beschikking heeft.}}{48}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Resultaten van het experiment uitgevoerd in deel \ref {experiment:9}. Tijdsduur van het algoritme in seconden t.o.v. de opgelegde minimum transformatie lengte.}}{49}{figure.6.6}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Het KU~Leuven logo.}}{49}{figure.7.1}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Het KU~Leuven logo.}}{51}{figure.7.1}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
