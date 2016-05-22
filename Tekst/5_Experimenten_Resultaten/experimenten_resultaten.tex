@@ -3,6 +3,108 @@
 In dit hoofdstuk worden de belangrijkste experimenten besproken die uitgevoerd in het verloop van deze masterproef. Deze hebben zowel betrekking op de besproken melodische transformaties, de algoritmes om deze transformaties te combineren en ook het RPK-model dat gebruikt werd om deze transformaties te evalueren.\\
 De resultaten worden meestal weergegeven op een plot waarbij op de y as de gemiddelde probabiliteit staat. Deze probabiliteit staat voor de gemiddelde probabiliteit van voorkomen van een noot (gegeven de vorige noot) volgens het RPK-model in alle muziekstukken waarop er getest werd. Als er dus in dit hoofdstuk gesproken wordt over een gemiddelde probabiliteit van een bepaald muziekstuk dan betekent dit de gemiddelde probabiliteit van een noot in dit muziekstuk.
 
+\section{Vergelijking van de twee melodische transformaties}
+\label{experiment:5}
+\subsection{Beschrijving experiment}
+Dit experiment heeft als opzet om de twee verschillende soorten transformaties die besproken werden in hoofdstuk \ref{hoofdstuk:MT} te vergelijken in performantie. De eerste transformatie gaat een noot in de melodielijn transformeren naargelang zijn positie in de notensequentie (deze transformatie noemen we in het vervolg van die onderdeel T1). De tweede transformatie gaat een noot transformeren enkel op basis van zijn (melodische) afstand ten opzichte van de vorige noot in de melodielijn (deze transformatie noemen we in de rest van dit onderdeel T2). De werking van deze twee transformaties staat beschreven respectievelijk in hoofdstukken \ref{MT:positie} en \ref{MT:afstand_vorige}.
+
+Voor dit experiment zullen voor 50 testgevallen telkens 10 verschillende willekeurige voorkomens voor beide transformatie getest worden. Zo een willekeurige transformatie wordt bekomen door 8 opeenvolgende getallen tussen -5 en +6 (beide grenzen inclusief) willekeurig te genereren. Noem deze 8 getallen in volgorde $X_{i}$ met 0$\leq$ i$\leq$ 7. Voor T1 levert dit dan de transformatie op beschreven in tabel \ref{tabel:exp5:T1}, voor T2 levert dit de transformatie beschreven in tabel \ref{tabel:exp5:T2}.
+
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c c c c c c c }
+    Pos (mod 8) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+    \hline
+    \hline
+    Verhoging & $X_{0}$ & $X_{1}$ & $X_{2}$ & $X_{3}$ & $X_{4}$ & $X_{5}$ & $X_{6}$ & $X_{7}$ \\
+  \end{tabular}
+  \caption{Willekeurige transformatie volgens T1, gebruikt in het experiment van onderdeel \ref{experiment:5}.}
+  \label{tabel:exp5:T1}
+\end{table}
+
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c c c c c c c }
+    Diff (mod 8) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+    \hline
+    \hline
+    Verhoging & $X_{0}$ & $X_{1}$ & $X_{2}$ & $X_{3}$ & $X_{4}$ & $X_{5}$ & $X_{6}$ & $X_{7}$ \\
+  \end{tabular}
+  \caption{Willekeurige transformatie volgens T2, gebruikt in het experiment van onderdeel \ref{experiment:5}.}
+  \label{tabel:exp5:T2}
+\end{table}
+
+Voor elk van de 50 testgevallen worden zo dus 20 transformaties gegenereerd (10 voor T1 en 10 voor T2). Over deze 50 testgevallen en 10 transformaties per transformatie soort wordt dan een gemiddelde consonantiescore berekend. De exponenti\"ele van deze consonantie score levert dan voor beide transformatie soorten een gemiddelde probabiliteit van een getransformeerd muziekstuk.
+
+\subsection{Resultaten}
+
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c }    
+    Transformatie & Consonantiescore & Probabiliteit(\%)\\
+    \hline
+    Oiginele melodie & -2.36 & 9.42\\
+    T1 & -3.72 & 2.43\\
+    T2 & -3.19 & 4.12\\
+  \end{tabular}
+  \caption{Resulaten van experiment \ref{experiment:5}. Gemiddelde consonantiescores voor de twee soorten transformaties en de originele melodielijnen die getranformeerd werden. De twee geteste soorten van transformaties staan beschreven in onderdelen \ref{MT:positie}(T1) en \ref{MT:afstand_vorige}(T2).}
+  \label{tabel:res5}
+\end{table}
+
+In tabel \ref{tabel:res5} staan de resultaten van dit experiment weergegeven. Er valt meteen op dat beide transformaties de originele melodielijnen gemiddeld gezien transformeren naar een nieuwe melodielijn met een minder goede consonantiescore. Er is ook een duidelijk verschil merkbaar in kwaliteit van de transformaties, T2 scoort merkbaar beter dan T1. Dit is ook logisch aangezien T1 eigenlijk niets van informatie over het muziekstuk in rekening brengt, buiten zijn absolute positie (modulo 8). T2 brengt de afstand tot de vorige noot in rekening wat er toe kan leiden dat in sommige gevallen de intervallen tussen opeenvolgende noten relatief kleiner gehouden wordt dan bij T1, wat consistenter betere scores kan opleveren volgens het RPK-model.
+
+\section{Vergelijking Fibonacci transformatie met gemiddelde transformatie}
+\label{experiment:6}
+\subsection{Beschrijving experiment}
+Het doel van dit experiment is om na te gaan of een transformatie, die gebaseerd is op de rij van Fibonacci een beter resultaat geeft dan een gemiddelde transformatie. De reden dat er specifiek getest wordt op de rij van Fibonacci is omdat deze bekende rij in zoveel verschillende onderdelen van de natuur te herkennen valt dat het in zeker zin niet onlogisch zou zijn, moest deze ook in de muziek onder bepaalde vormen voorkomen. Voor beide soorten van transformaties die beschreven staan in onderdelen \ref{MT:positie} en \ref{MT:afstand_vorige} (en die we in het kort respectievelijk T1 en T2 noemen), wordt zo een transformatie gecre\"eerd die gebaseerd is op de rij van fibonacci. Deze transformaties worden beschreven door tabellen \ref{tabel:exp6:T1} en \ref{tabel:exp6:T2}. Hierbij is elk getal op de onderste rij telkens de gelijk aan het overeenkomstig element uit de rij van fibonacci modulo 12, waarbij de waarde van elke sprong tussen -5 en +6 ligt.
+
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c c c c c c c }
+    Positie (mod 8) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+    \hline
+    \hline
+    Verhoging & 1 & 1 & 2 & 3 & 5 & -4 & 1 & -3 \\
+  \end{tabular}
+  \caption{Fibonacci transformatie volgens T1 gebruikt in het experiment van onderdeel \ref{experiment:6}.}
+  \label{tabel:exp6:T1}
+\end{table}
+
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c c c c c c c }
+    Diff (mod 8) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+    \hline
+    \hline
+    Verhoging & 1 & 1 & 2 & 3 & 5 & -4 & 1 & -3 \\
+  \end{tabular}
+  \caption{Fibonacci transformatie volgens T2 gebruikt in het experiment van onderdeel \ref{experiment:6}.}
+  \label{tabel:exp6:T2}
+\end{table}
+
+Nu wordt op dezelfde 50 testgevallen als waarop getest werd in experiment \ref{experiment:5}, deze twee transformaties toegepast. De gemiddelde consonantiescores die deze twee Fibonacci transformaties opleveren kunnen nu vergeleken worden met het gemiddelde algemene geval voor de twee soorten transformaties. 
+
+\subsection{Resultaten}
+
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c }    
+    Transformatie & Consonantiescore & Probabiliteit(\%)\\
+    \hline
+    Oiginele melodie & -2.36 & 9.42\\
+    T1 & -2.92 & 5.42\\
+    T2 & -2.63 & 7.21\\
+  \end{tabular}
+  \caption{Resulaten van experiment \ref{experiment:6}. Gemiddelde consonantiescores voor de twee Fibonacci transformaties en de originele melodielijnen die getranformeerd werden.}
+  \label{tabel:res6}
+\end{table}
+
+Tabel \ref{tabel:res6} geeft de resultaten van de Fibonacci transformaties weer. In tabel \ref{tabel:res5} staan de resultaten van dezelfde soorten transformaties maar dan met willekeurige sprongen in plaats van sprongen volgens de rij van Fibonacci. Er valt op dat voor beide transformatie soorten, de transformatie volgens de rij van Fibonacci merkbaar beter scoort dan een gemiddelde transformatie van zijn soort. Een reden hiervoor is dat de sprongen in de Fibonacci transformaties redelijk klein zijn (bijvoorbeeld drie keer op acht een sprong van slechts een halve toon). Hierdoor zal het originele muziekstuk minder aangepast worden en de score dus ook niet zo veel verslechteren dan na een gemiddelde transformatie. 
+
+Voor de Fibonacci transformatie volgens T2 kan zelfs gezegd worden dat deze zeer goed scoort, aangezien de consonantiescore die gemiddeld bekomen wordt met deze transformatie zelfs in de buurt ligt van de originele melodielijn. De reden hiervoor is dat er bij deze transformatie veel dezelfde noten na elkaar gecre\"eerd worden (wat goede scores geeft voor het RPK-model aangezien de \textit{proximity} maximaal is). Dit komt doordat sprongen in dit algoritme in tegengestelde richting uitgevoerd worden als de afstand ten opzichte van de vorige noot. En afstanden van grootte 1, 2 en 3 worden bijvoorbeeld allemaal gecounterd door een sprong van dezelfde grootte in tegengestelde richting. Hierdoor zullen noten die op zo een afstand van elkaar zitten telkens op dezelfde noot afgebeeld worden.
+
+Er kan dus besloten worden dat deze Fibonacci transformaties iets betere resultaten leveren dan een gemiddelde transformatie (wat de consonantiescore betreft). Dit betekent echter niet automatisch dat de muziekstukken ook beter klinken want bijvoorbeeld bij de Fibonacci transformatie volgens tabel \ref{tabel:exp6:T2} zullen sequenties gecre\"eerd worden die veel dezelfde noten bevatten, wat over het algemeen niet als interessante muziek beschouwd wordt.
+
 \section{Transformaties combineren: 1 transformatie, meerdere iteraties}
 \label{experiment:1}
 \subsection{Beschrijving experiment}
@@ -147,44 +249,6 @@ Voor deze transformatie gaat het experiment zoals het beschreven staat in onderd
 \end{table}
 
 In tabel \ref{tabel:res4} staan de resultaten van dit experiment weergegeven. Beide algoritmen leveren dezelfde gemiddelde consonantiescore (logaritme van de gemiddelde probabiliteit) voor een muziekstukje na eenzelfde aantal iteraties gebruik makende van dezelfde transformatie. Dit versterkt de stelling dat de twee algoritmes wel degelijk werken zoals gewenst.
-
-\section{Vergelijking van de twee melodische transformaties}
-\label{experiment:5}
-\subsection{Beschrijving experiment}
-
-\subsection{Resultaten}
-
-\begin{table}
-  \centering
-  \begin{tabular}{c | c c }    
-    Transformatie & Consonantiescore & Probabiliteit(\%)\\
-    \hline
-    Oiginele melodie & -2.36 & 9.42\\
-    Transformatie volgens \ref{MT:positie} & -3.72 & 2.43\\
-    Transformatie volgens \ref{MT:afstand_vorige} & -3.19 & 4.12\\
-  \end{tabular}
-  \caption{Resulaten van experiment \ref{experiment:5}. Gemiddelde consonantiescores voor de twee soorten transformaties en de originele melodielijnen die getranformeerd werden. De twee geteste soorten van transformaties staan beschreven in onderdelen \ref{MT:positie} en \ref{MT:afstand_vorige}.}
-  \label{tabel:res5}
-\end{table}
-
-\section{Vergelijking Fibonacci transformatie met gemiddelde transformatie}
-\label{experiment:6}
-\subsection{Beschrijving experiment}
-
-\subsection{Resultaten}
-
-\begin{table}
-  \centering
-  \begin{tabular}{c | c c }    
-    Transformatie & Consonantiescore & Probabiliteit(\%)\\
-    \hline
-    Oiginele melodie & -2.36 & 9.42\\
-    Transformatie volgens \ref{MT:positie} & -2.92 & 5.42\\
-    Transformatie volgens \ref{MT:afstand_vorige} & -2.63 & 7.21\\
-  \end{tabular}
-  \caption{Resulaten van experiment \ref{experiment:6}. Gemiddelde consonantiescores voor de twee Fibonacci transformaties en de originele melodielijnen die getranformeerd werden.}
-  \label{tabel:res6}
-\end{table}
 
 \section{Test Performantie algoritmes}
 \label{experiment:7}

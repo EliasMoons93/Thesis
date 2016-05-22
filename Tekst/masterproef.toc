@@ -64,41 +64,41 @@
 \contentsline {subsubsection}{Tijd}{37}{section*.22}
 \contentsline {subsubsection}{Geheugen}{38}{section*.23}
 \contentsline {chapter}{\chapternumberline {6}Experimenten en Resultaten}{39}{chapter.6}
-\contentsline {section}{\numberline {6.1}Transformaties combineren: 1 transformatie, meerdere iteraties}{39}{section.6.1}
+\contentsline {section}{\numberline {6.1}Vergelijking van de twee melodische transformaties}{39}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Beschrijving experiment}{39}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Resultaten}{40}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Transformaties combineren: meerdere transformaties, 1 iteratie}{41}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Beschrijving experiment}{41}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.2}Vergelijking Fibonacci transformatie met gemiddelde transformatie}{40}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Beschrijving experiment}{40}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Resultaten}{41}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}Transformaties combineren: minimum transformatie lengte}{42}{section.6.3}
+\contentsline {section}{\numberline {6.3}Transformaties combineren: 1 transformatie, meerdere iteraties}{42}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Beschrijving experiment}{42}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Resultaten}{43}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}{43}{section.6.4}
+\contentsline {subsection}{\numberline {6.3.2}Resultaten}{42}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Transformaties combineren: meerdere transformaties, 1 iteratie}{43}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}Beschrijving experiment}{43}{subsection.6.4.1}
 \contentsline {subsection}{\numberline {6.4.2}Resultaten}{44}{subsection.6.4.2}
-\contentsline {section}{\numberline {6.5}Vergelijking van de twee melodische transformaties}{45}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Beschrijving experiment}{45}{subsection.6.5.1}
+\contentsline {section}{\numberline {6.5}Transformaties combineren: minimum transformatie lengte}{44}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Beschrijving experiment}{44}{subsection.6.5.1}
 \contentsline {subsection}{\numberline {6.5.2}Resultaten}{45}{subsection.6.5.2}
-\contentsline {section}{\numberline {6.6}Vergelijking Fibonacci transformatie met gemiddelde transformatie}{45}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Beschrijving experiment}{45}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}Resultaten}{45}{subsection.6.6.2}
-\contentsline {section}{\numberline {6.7}Test Performantie algoritmes}{45}{section.6.7}
-\contentsline {subsection}{\numberline {6.7.1}Beschrijving experiment}{45}{subsection.6.7.1}
-\contentsline {subsection}{\numberline {6.7.2}Resultaten}{45}{subsection.6.7.2}
-\contentsline {chapter}{\chapternumberline {7}Besluit}{47}{chapter.7}
-\contentsline {section}{\numberline {7.1}Eerste onderwerp in dit hoofdstuk}{47}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Een item}{47}{subsection.7.1.1}
-\contentsline {section}{\numberline {7.2}Figuren}{47}{section.7.2}
-\contentsline {section}{\numberline {7.3}Tabellen}{47}{section.7.3}
-\contentsline {section}{\numberline {7.4}Besluit van dit hoofdstuk}{48}{section.7.4}
-\contentsline {appendix}{\chapternumberline {A}Broncode}{51}{appendix.A}
-\contentsline {section}{\numberline {A.1}Neuraal Netwerk Trainer}{51}{section.A.1}
-\contentsline {section}{\numberline {A.2}RPK-Model}{57}{section.A.2}
-\contentsline {section}{\numberline {A.3}Beste sequentie}{61}{section.A.3}
-\contentsline {section}{\numberline {A.4}Beste sequentie met minimum transformatie lengte}{63}{section.A.4}
-\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{71}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Poster}{73}{appendix.C}
-\contentsline {chapter}{Bibliografie}{75}{section*.25}
+\contentsline {section}{\numberline {6.6}Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}{46}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Beschrijving experiment}{46}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Resultaten}{47}{subsection.6.6.2}
+\contentsline {section}{\numberline {6.7}Test Performantie algoritmes}{47}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Beschrijving experiment}{47}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Resultaten}{47}{subsection.6.7.2}
+\contentsline {chapter}{\chapternumberline {7}Besluit}{49}{chapter.7}
+\contentsline {section}{\numberline {7.1}Eerste onderwerp in dit hoofdstuk}{49}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Een item}{49}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}Figuren}{49}{section.7.2}
+\contentsline {section}{\numberline {7.3}Tabellen}{49}{section.7.3}
+\contentsline {section}{\numberline {7.4}Besluit van dit hoofdstuk}{50}{section.7.4}
+\contentsline {appendix}{\chapternumberline {A}Broncode}{53}{appendix.A}
+\contentsline {section}{\numberline {A.1}Neuraal Netwerk Trainer}{53}{section.A.1}
+\contentsline {section}{\numberline {A.2}RPK-Model}{59}{section.A.2}
+\contentsline {section}{\numberline {A.3}Beste sequentie}{63}{section.A.3}
+\contentsline {section}{\numberline {A.4}Beste sequentie met minimum transformatie lengte}{65}{section.A.4}
+\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{73}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Poster}{75}{appendix.C}
+\contentsline {chapter}{Bibliografie}{77}{section*.25}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
