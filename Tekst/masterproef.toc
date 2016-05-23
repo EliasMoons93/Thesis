@@ -116,6 +116,10 @@
 \contentsline {subsubsection}{Beschrijving experiment}{56}{section*.57}
 \contentsline {subsubsection}{Resultaten}{56}{section*.58}
 \contentsline {chapter}{\chapternumberline {7}Besluit}{59}{chapter.7}
+\contentsline {section}{\numberline {7.1}Samenvatting}{59}{section.7.1}
+\contentsline {section}{\numberline {7.2}Verder onderzoek}{60}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Uitbreiding context RPK-model}{60}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Algoritme dat combineert met als doel het behouden van de consonantiescore}{60}{subsection.7.2.2}
 \contentsline {appendix}{\chapternumberline {A}Broncode}{63}{appendix.A}
 \contentsline {section}{\numberline {A.1}Neuraal Netwerk Trainer}{63}{section.A.1}
 \contentsline {section}{\numberline {A.2}RPK-Model}{69}{section.A.2}
