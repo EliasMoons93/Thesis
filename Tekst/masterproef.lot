@@ -16,25 +16,23 @@
 \contentsline {table}{\numberline {4.1}{\ignorespaces Transformatie afhankelijk van de positie van de noot.}}{20}{table.4.1}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Transformatie afhankelijk van de afstand van de huidige noot tot de vorige noot.}}{22}{table.4.2}
 \addvspace {10pt}
-\contentsline {table}{\numberline {5.1}{\ignorespaces Voorstelling transformatie gebruik in figuur \ref {figuur:stap_algo_1}.}}{29}{table.5.1}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Voorstelling transformatie gebruik in figuur \ref {figuur:stap_algo_1}.}}{31}{table.5.1}
 \addvspace {10pt}
-\contentsline {table}{\numberline {6.1}{\ignorespaces Willekeurige transformatie volgens T1, gebruikt in het experiment van onderdeel \ref {experiment:5}.}}{40}{table.6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Willekeurige transformatie volgens T2, gebruikt in het experiment van onderdeel \ref {experiment:5}.}}{40}{table.6.2}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Resulaten van experiment \ref {experiment:5}. Gemiddelde consonantiescores voor de twee soorten transformaties en de originele melodielijnen die getranformeerd werden. De twee geteste soorten van transformaties staan beschreven in onderdelen \ref {MT:positie}(T1) en \ref {MT:afstand_vorige}(T2).}}{40}{table.6.3}
-\contentsline {table}{\numberline {6.4}{\ignorespaces Fibonacci transformatie volgens T1 gebruikt in het experiment van onderdeel \ref {experiment:6}.}}{41}{table.6.4}
-\contentsline {table}{\numberline {6.5}{\ignorespaces Fibonacci transformatie volgens T2 gebruikt in het experiment van onderdeel \ref {experiment:6}.}}{41}{table.6.5}
-\contentsline {table}{\numberline {6.6}{\ignorespaces Resulaten van experiment \ref {experiment:6}. Gemiddelde consonantiescores voor de twee Fibonacci transformaties en de originele melodielijnen die getranformeerd werden.}}{41}{table.6.6}
-\contentsline {table}{\numberline {6.7}{\ignorespaces Transformatie gebruikt in het experiment van onderdeel \ref {experiment:1}.}}{46}{table.6.7}
-\contentsline {table}{\numberline {6.8}{\ignorespaces Transformaties gebruikt in het experiment van onderdeel \ref {experiment:2}.}}{47}{table.6.8}
-\contentsline {table}{\numberline {6.9}{\ignorespaces Transformaties gebruikt in het experiment van onderdeel \ref {experiment:3}.}}{49}{table.6.9}
-\contentsline {table}{\numberline {6.10}{\ignorespaces Transformatie gebruikt in het experiment van onderdeel \ref {experiment:4}.}}{50}{table.6.10}
-\contentsline {table}{\numberline {6.11}{\ignorespaces Resulaten van experiment \ref {experiment:4}. Gemiddelde consonantiescores voor de twee algoritmen (logaritme van de probabiliteit) na een gegeven aantal iteraties. Algoritme 1 staat beschreven in \ref {ETT:algo1}, algoritme 2 is hetgene dat beschreven staat in \ref {ETT:algo2}.}}{51}{table.6.11}
-\contentsline {table}{\numberline {6.12}{\ignorespaces Transformatie gebruikt in het experiment van onderdeel \ref {experiment:7}.}}{51}{table.6.12}
-\contentsline {table}{\numberline {6.13}{\ignorespaces Transformaties gebruikt in het experiment van onderdeel \ref {experiment:8}.}}{53}{table.6.13}
-\contentsline {table}{\numberline {6.14}{\ignorespaces Transformaties gebruikt in het experiment van onderdeel \ref {experiment:9}.}}{54}{table.6.14}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Willekeurige transformatie volgens T1, gebruikt in het experiment van onderdeel \ref {experiment:5}.}}{42}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Willekeurige transformatie volgens T2, gebruikt in het experiment van onderdeel \ref {experiment:5}.}}{42}{table.6.2}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Resulaten van experiment \ref {experiment:5}. Gemiddelde consonantiescores voor de twee soorten transformaties en de originele melodielijnen die getranformeerd werden. De twee geteste soorten van transformaties staan beschreven in onderdelen \ref {MT:positie}(T1) en \ref {MT:afstand_vorige}(T2).}}{42}{table.6.3}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Fibonacci transformatie volgens T1 gebruikt in het experiment van onderdeel \ref {experiment:6}.}}{43}{table.6.4}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Fibonacci transformatie volgens T2 gebruikt in het experiment van onderdeel \ref {experiment:6}.}}{43}{table.6.5}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Resulaten van experiment \ref {experiment:6}. Gemiddelde consonantiescores voor de twee Fibonacci transformaties en de originele melodielijnen die getranformeerd werden.}}{43}{table.6.6}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Transformatie gebruikt in het experiment van onderdeel \ref {experiment:1}.}}{48}{table.6.7}
+\contentsline {table}{\numberline {6.8}{\ignorespaces Transformaties gebruikt in het experiment van onderdeel \ref {experiment:2}.}}{49}{table.6.8}
+\contentsline {table}{\numberline {6.9}{\ignorespaces Transformaties gebruikt in het experiment van onderdeel \ref {experiment:3}.}}{51}{table.6.9}
+\contentsline {table}{\numberline {6.10}{\ignorespaces Transformatie gebruikt in het experiment van onderdeel \ref {experiment:4}.}}{52}{table.6.10}
+\contentsline {table}{\numberline {6.11}{\ignorespaces Resulaten van experiment \ref {experiment:4}. Gemiddelde consonantiescores voor de twee algoritmen (logaritme van de probabiliteit) na een gegeven aantal iteraties. Algoritme 1 staat beschreven in \ref {ETT:algo1}, algoritme 2 is hetgene dat beschreven staat in \ref {ETT:algo2}.}}{53}{table.6.11}
+\contentsline {table}{\numberline {6.12}{\ignorespaces Transformatie gebruikt in het experiment van onderdeel \ref {experiment:7}.}}{53}{table.6.12}
+\contentsline {table}{\numberline {6.13}{\ignorespaces Transformaties gebruikt in het experiment van onderdeel \ref {experiment:8}.}}{55}{table.6.13}
+\contentsline {table}{\numberline {6.14}{\ignorespaces Transformaties gebruikt in het experiment van onderdeel \ref {experiment:9}.}}{56}{table.6.14}
 \addvspace {10pt}
-\contentsline {table}{\numberline {7.1}{\ignorespaces Een tabel zoals het niet moet.}}{58}{table.7.1}
-\contentsline {table}{\numberline {7.2}{\ignorespaces Een tabel zoals het beter is.}}{58}{table.7.2}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
