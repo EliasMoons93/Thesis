@@ -22,25 +22,20 @@
 \BOOKMARK [1][-]{section.5.1}{Beste sequentie}{chapter.5}% 22
 \BOOKMARK [1][-]{section.5.2}{Beste sequentie met minimum transformatie lengte}{chapter.5}% 23
 \BOOKMARK [0][-]{chapter.6}{Experimenten en Resultaten}{}% 24
-\BOOKMARK [1][-]{section.6.1}{Vergelijking van de twee melodische transformaties}{chapter.6}% 25
-\BOOKMARK [1][-]{section.6.2}{Vergelijking Fibonacci transformatie met gemiddelde transformatie}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.3}{Transformaties combineren: 1 transformatie, meerdere iteraties}{chapter.6}% 27
-\BOOKMARK [1][-]{section.6.4}{Transformaties combineren: meerdere transformaties, 1 iteratie}{chapter.6}% 28
-\BOOKMARK [1][-]{section.6.5}{Transformaties combineren: minimum transformatie lengte}{chapter.6}% 29
-\BOOKMARK [1][-]{section.6.6}{Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}{chapter.6}% 30
-\BOOKMARK [1][-]{section.6.7}{Tijdsafhankelijkheid algoritme 5.2 van lengte invoer}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.8}{Tijdsafhankelijkheid algoritme 5.2 van aantal toegelaten transformaties}{chapter.6}% 32
-\BOOKMARK [1][-]{section.6.9}{Tijdsafhankelijkheid algoritme 5.2 van minimum transformatie lengte}{chapter.6}% 33
-\BOOKMARK [0][-]{chapter.7}{Besluit}{}% 34
-\BOOKMARK [1][-]{section.7.1}{Eerste onderwerp in dit hoofdstuk}{chapter.7}% 35
-\BOOKMARK [1][-]{section.7.2}{Figuren}{chapter.7}% 36
-\BOOKMARK [1][-]{section.7.3}{Tabellen}{chapter.7}% 37
-\BOOKMARK [1][-]{section.7.4}{Besluit van dit hoofdstuk}{chapter.7}% 38
-\BOOKMARK [0][-]{appendix.A}{Broncode}{}% 39
-\BOOKMARK [1][-]{section.A.1}{Neuraal Netwerk Trainer}{appendix.A}% 40
-\BOOKMARK [1][-]{section.A.2}{RPK-Model}{appendix.A}% 41
-\BOOKMARK [1][-]{section.A.3}{Beste sequentie}{appendix.A}% 42
-\BOOKMARK [1][-]{section.A.4}{Beste sequentie met minimum transformatie lengte}{appendix.A}% 43
-\BOOKMARK [0][-]{appendix.B}{IEEE\137Paper}{}% 44
-\BOOKMARK [0][-]{appendix.C}{Poster}{}% 45
-\BOOKMARK [0][-]{section*.25}{Bibliografie}{}% 46
+\BOOKMARK [1][-]{section.6.1}{Experimenten met melodische transformaties}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.2}{Experimenten met het RPK-model}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.3}{Experimenten over de werking van de algoritmes voor het combineren van transformaties}{chapter.6}% 27
+\BOOKMARK [1][-]{section.6.4}{Experimenten over de tijdscomplexiteit van de algoritmes voor het combineren van transformaties}{chapter.6}% 28
+\BOOKMARK [0][-]{chapter.7}{Besluit}{}% 29
+\BOOKMARK [1][-]{section.7.1}{Eerste onderwerp in dit hoofdstuk}{chapter.7}% 30
+\BOOKMARK [1][-]{section.7.2}{Figuren}{chapter.7}% 31
+\BOOKMARK [1][-]{section.7.3}{Tabellen}{chapter.7}% 32
+\BOOKMARK [1][-]{section.7.4}{Besluit van dit hoofdstuk}{chapter.7}% 33
+\BOOKMARK [0][-]{appendix.A}{Broncode}{}% 34
+\BOOKMARK [1][-]{section.A.1}{Neuraal Netwerk Trainer}{appendix.A}% 35
+\BOOKMARK [1][-]{section.A.2}{RPK-Model}{appendix.A}% 36
+\BOOKMARK [1][-]{section.A.3}{Beste sequentie}{appendix.A}% 37
+\BOOKMARK [1][-]{section.A.4}{Beste sequentie met minimum transformatie lengte}{appendix.A}% 38
+\BOOKMARK [0][-]{appendix.B}{IEEE\137Paper}{}% 39
+\BOOKMARK [0][-]{appendix.C}{Poster}{}% 40
+\BOOKMARK [0][-]{section*.49}{Bibliografie}{}% 41

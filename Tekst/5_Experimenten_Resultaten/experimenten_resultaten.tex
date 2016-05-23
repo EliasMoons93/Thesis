@@ -3,9 +3,10 @@
 In dit hoofdstuk worden de belangrijkste experimenten besproken die uitgevoerd in het verloop van deze masterproef. Deze hebben zowel betrekking op de besproken melodische transformaties, de algoritmes om deze transformaties te combineren en ook het RPK-model dat gebruikt werd om deze transformaties te evalueren.\\
 De resultaten worden meestal weergegeven op een plot waarbij op de y as de gemiddelde probabiliteit staat. Deze probabiliteit staat voor de gemiddelde probabiliteit van voorkomen van een noot (gegeven de vorige noot) volgens het RPK-model in alle muziekstukken waarop er getest werd. Als er dus in dit hoofdstuk gesproken wordt over een gemiddelde probabiliteit van een bepaald muziekstuk dan betekent dit de gemiddelde probabiliteit van een noot in dit muziekstuk.
 
-\section{Vergelijking van de twee melodische transformaties}
+\section{Experimenten met melodische transformaties}
+\subsection{Vergelijking van de twee melodische transformaties}
 \label{experiment:5}
-\subsection{Beschrijving experiment}
+\subsubsection{Beschrijving experiment}
 Dit experiment heeft als opzet om de twee verschillende soorten transformaties die besproken werden in hoofdstuk \ref{hoofdstuk:MT} te vergelijken in performantie. De eerste transformatie gaat een noot in de melodielijn transformeren naargelang zijn positie in de notensequentie (deze transformatie noemen we in het vervolg van die onderdeel T1). De tweede transformatie gaat een noot transformeren enkel op basis van zijn (melodische) afstand ten opzichte van de vorige noot in de melodielijn (deze transformatie noemen we in de rest van dit onderdeel T2). De werking van deze twee transformaties staat beschreven respectievelijk in hoofdstukken \ref{MT:positie} en \ref{MT:afstand_vorige}.
 
 Voor dit experiment zullen voor 50 testgevallen telkens 10 verschillende willekeurige voorkomens voor beide transformatie getest worden. Zo een willekeurige transformatie wordt bekomen door 8 opeenvolgende getallen tussen -5 en +6 (beide grenzen inclusief) willekeurig te genereren. Noem deze 8 getallen in volgorde $X_{i}$ met 0$\leq$ i$\leq$ 7. Voor T1 levert dit dan de transformatie op beschreven in tabel \ref{tabel:exp5:T1}, voor T2 levert dit de transformatie beschreven in tabel \ref{tabel:exp5:T2}.
@@ -36,7 +37,7 @@ Voor dit experiment zullen voor 50 testgevallen telkens 10 verschillende willeke
 
 Voor elk van de 50 testgevallen worden zo dus 20 transformaties gegenereerd (10 voor T1 en 10 voor T2). Over deze 50 testgevallen en 10 transformaties per transformatie soort wordt dan een gemiddelde consonantiescore berekend. De exponenti\"ele van deze consonantie score levert dan voor beide transformatie soorten een gemiddelde probabiliteit van een getransformeerd muziekstuk.
 
-\subsection{Resultaten}
+\subsubsection{Resultaten}
 
 \begin{table}
   \centering
@@ -53,9 +54,9 @@ Voor elk van de 50 testgevallen worden zo dus 20 transformaties gegenereerd (10 
 
 In tabel \ref{tabel:res5} staan de resultaten van dit experiment weergegeven. Er valt meteen op dat beide transformaties de originele melodielijnen gemiddeld gezien transformeren naar een nieuwe melodielijn met een minder goede consonantiescore. Er is ook een duidelijk verschil merkbaar in kwaliteit van de transformaties, T2 scoort merkbaar beter dan T1. Dit is ook logisch aangezien T1 eigenlijk niets van informatie over het muziekstuk in rekening brengt, buiten zijn absolute positie (modulo 8). T2 brengt de afstand tot de vorige noot in rekening wat er toe kan leiden dat in sommige gevallen de intervallen tussen opeenvolgende noten relatief kleiner gehouden wordt dan bij T1, wat consistenter betere scores kan opleveren volgens het RPK-model.
 
-\section{Vergelijking Fibonacci transformatie met gemiddelde transformatie}
+\subsection{Vergelijking Fibonacci transformatie met gemiddelde transformatie}
 \label{experiment:6}
-\subsection{Beschrijving experiment}
+\subsubsection{Beschrijving experiment}
 Het doel van dit experiment is om na te gaan of een transformatie, die gebaseerd is op de rij van Fibonacci een beter resultaat geeft dan een gemiddelde transformatie. De reden dat er specifiek getest wordt op de rij van Fibonacci is omdat deze bekende rij in zoveel verschillende onderdelen van de natuur te herkennen valt dat het in zeker zin niet onlogisch zou zijn, moest deze ook in de muziek onder bepaalde vormen voorkomen. Voor beide soorten van transformaties die beschreven staan in onderdelen \ref{MT:positie} en \ref{MT:afstand_vorige} (en die we in het kort respectievelijk T1 en T2 noemen), wordt zo een transformatie gecre\"eerd die gebaseerd is op de rij van fibonacci. Deze transformaties worden beschreven door tabellen \ref{tabel:exp6:T1} en \ref{tabel:exp6:T2}. Hierbij is elk getal op de onderste rij telkens de gelijk aan het overeenkomstig element uit de rij van fibonacci modulo 12, waarbij de waarde van elke sprong tussen -5 en +6 ligt.
 
 \begin{table}
@@ -84,7 +85,7 @@ Het doel van dit experiment is om na te gaan of een transformatie, die gebaseerd
 
 Nu wordt op dezelfde 50 testgevallen als waarop getest werd in experiment \ref{experiment:5}, deze twee transformaties toegepast. De gemiddelde consonantiescores die deze twee Fibonacci transformaties opleveren kunnen nu vergeleken worden met het gemiddelde algemene geval voor de twee soorten transformaties. 
 
-\subsection{Resultaten}
+\subsubsection{Resultaten}
 
 \begin{table}
   \centering
@@ -105,9 +106,62 @@ Voor de Fibonacci transformatie volgens T2 kan zelfs gezegd worden dat deze zeer
 
 Er kan dus besloten worden dat deze Fibonacci transformaties iets betere resultaten leveren dan een gemiddelde transformatie (wat de consonantiescore betreft). Dit betekent echter niet automatisch dat de muziekstukken ook beter klinken want bijvoorbeeld bij de Fibonacci transformatie volgens tabel \ref{tabel:exp6:T2} zullen sequenties gecre\"eerd worden die veel dezelfde noten bevatten, wat over het algemeen niet als interessante muziek beschouwd wordt.
 
-\section{Transformaties combineren: 1 transformatie, meerdere iteraties}
+\section{Experimenten met het RPK-model}
+\subsection{Afhankelijkheid score RPK-Model en gemiddelde afstand tussen opeenvolgende noten}
+\label{experiment:10}
+\subsubsection{Beschrijving experiment}
+De bedoeling van dit experiment is om na te gaan hoe sterk het verband is tussen de consonantiescore van een muziekstuk en de gemiddelde afstand tussen opeenvolgende noten in datzelfde muziekstuk. De reden dat deze test wordt gedaan is om dat de afstand tot de vorige noot een belangrijke parameter is in de berekening van de consonantiescore volgens het RPK-model. Indien er een sterke afhankelijkheid zou zijn dan kan de gemiddelde afstand tot opeenvolgende noten in een muziekstuk als een soort eerste voorspeller dienen voor de consonantiescore die computationeel veel minder zwaar is dan de berekening van de consonantiescore zelf.
+
+Voor dit experiment wordt voor 100 muziekstukken uit het Essencorpus de consonantiescore berekend alsook de gemiddelde afstand tussen twee opeenvolgende noten. Hierna wordt de absolute waarde van de consonantiescore uitgezet ten opzichte van de gemiddelde afstand. 
+
+\subsubsection{Resultaten}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.75\textwidth]{5_Experimenten_Resultaten/exp10_res}
+  \caption{Resultaten van het experiment uitgevoerd in deel \ref{experiment:10}. Absolute waarde van de consonantiescore uitgezet t.o.v. de gemiddelde afstand in halve tonen tussen opeenvolgende noten in het muziekstuk.}
+  \label{figuur:exp10}
+\end{figure}
+
+De resulaten van dit experiment staan weergegeven in figuur \ref{figuur:exp10}. op de y-as staat de absolute waarde van de consonantiescore gegeven, een lagere score komt hierbij overeen met een hogere probabiliteit van het muziekstuk volgens het RPK-model. Op de figuur is er een verband zichtbaar waarbij een hogere gemiddelde afstand tussen opeenvolgende noten gemiddeled gezien ook leidt tot een hogere absolute waarde voor de consonantiescore (en dus een lagere probabiliteit voor het muziekstuk). Het verband is echter niet sterk genoeg om de afstand tussen opeenvolgende noten als nuttige voorspeller te zien voor de consonantiescore van een muziekstuk.
+
+\subsection{Afhankelijkheid score RPK-Model en afstand ten opzichte van gemiddelde notendistributie}
+\label{experiment:11}
+\subsubsection{Beschrijving experiment}
+De bedoeling van dit experiment is om na te gaan hoe sterk het verband is tussen de consonantiescore van een muziekstuk en de afwijking van de notendistributie in het muziekstuk ten opzichte van de gemiddelde notendistributie in het Essencorpus. In figuren \ref{figuur:key_major} en \ref{figuur:key_minor} werden reeds de distributies van alle noten in het Essencorpus weergegeven naargelang hun nootfunctie in de toonaard en naargelang de toonaard groot of klein is. Voor elk muziekstuk kan zo ook een distributie berekend worden en de afstand tot deze gemiddelde distributie zou een voorspeller kunnen zijn voor de consonantiescore van het muziekstuk. 
+
+Voor dit experiment wordt voor 100 muziekstukken uit het Essencorpus de consonantiescore berekend alsook de afstand tussen de notendistributie van het muziekstuk en de notendistributie van het Essencorpus. De afstand tussen deze twee distributies is de zogenaamnde Bhattacharyya afstand \cite{url:Bhattacharyya}. 
+
+\subsubsection{Resultaten}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.75\textwidth]{5_Experimenten_Resultaten/exp11_res}
+  \caption{Resultaten van het experiment uitgevoerd in deel \ref{experiment:11}. Absolute waarde van de consonantiescore uitgezet t.o.v. de afstand tot de gemiddelde notendistributie in het Essencorpus.}
+  \label{figuur:exp11}
+\end{figure}
+
+De resultaten van dit experiment staan weergegeven in figuur \ref{figuur:exp11}. op de y-as staat weer de absolute waarde van de consonantiescore, op de x-as de Bhattacharyya afstand van de notendistributie van het huidige stuk tot de gemiddelde distributie van het Essencorpus. Er is een duidelijk verband merkbaar tussen deze twee waarden. Een stijging van de Bhattacharyya afstand zorgt gemiddeld gezien voor een stijging voor de absolute waarde van de consonantiescore (en dus een verlaging van de probabiliteit van het muziekstukje volgens het RPK-model).
+
+\subsection{Afhankelijkheid score RPK-Model en combinatie metrieken uit experimenten \ref{experiment:10} en \ref{experiment:11}}
+\label{experiment:12}
+\subsubsection{Beschrijving experiment}
+In experimenten \ref{experiment:10} en \ref{experiment:11} werd al duidelijk dat er wel degelijk een verband merkbaar is tussen de consonantiescore en de twee daar besproken metrieken. Het voordeel van deze metrieken was is ze computationeel minder veel minder zwaar zijn dan de berekening van de consonantiescore zelf. De afhankelijkheid was echter telkens niet voldoende om echt als een goede voorspeller beschouwd te worden. Het doel van dit experiment is om te kijken of een combinatie van deze twee metrieken (die beide toch een zeker afhankelijkheid vertonen) misschien tot betere resultaten kan leiden.
+
+In dit experiment wordt voor 100 muziekstukken uit het Essencorpus eerst de consonantiescore bereken. Vervolgens wordt ook het product van de afstand van zijn notendistributie ten opzichte van die van het Essencorpus en de gemiddelde afstand tussen opeenvolgende noten in het muziekstuk berekend.
+
+\subsubsection{Resultaten}
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.75\textwidth]{5_Experimenten_Resultaten/exp12_res}
+  \caption{Resultaten van het experiment uitgevoerd in deel \ref{experiment:12}. Absolute waarde van de consonantiescore uitgezet t.o.v. het product van de afstand tot de gemiddelde notendistributie in het Essencorpus en de gemiddelde afstand tussen opeenvolgende noten in het muziekstuk.}
+  \label{figuur:exp12}
+\end{figure}
+
+De resultaten van dit experiment zijn zichtbaar op figuur \ref{figuur:exp12}. Op de y-as wordt de absolute waarde van de consonantiescore weergegeven. Op de x-as de waarde van het product van de twee afstandsmetrieken die besproken werden. Er is een duidelijk verband merkbaar waarbij een hogere waarde van het product gemiddeld gezien ook leidt tot een hogere absolute waarde van de consonantiescore (en dus een lagere probabiliteit van het muziekstuk).
+
+\section{Experimenten over de werking van de algoritmes voor het combineren van transformaties}
+\subsection{Transformaties combineren: 1 transformatie, meerdere iteraties}
 \label{experiment:1}
-\subsection{Beschrijving experiment}
+\subsubsection{Beschrijving experiment}
 Dit experiment heeft betrekking tot het algoritme dat besproken werd in onderdeel \ref{ETT:algo1}. Dit experiment gaat nagaan wat de invloed is van het aantal iteraties van het aantal iteraties van dit algoritme op de consonantiescore van het totale muziekstuk. Er wordt in dit algoritme slechts gebruik gemaakt van een transformatie. Deze gebruikte transformatie wordt weergegeven in tabel \ref{tabel:exp1}.
 
 \begin{table}
@@ -124,8 +178,7 @@ Dit experiment heeft betrekking tot het algoritme dat besproken werd in onderdee
 
 Deze test wordt uitgevoerd op 100 muziekstukken uit het Essencorpus. De gemiddelde probabiliteit van de originele stukken wordt berekend alsook de gemiddelde probabiliteit van het muziekstuk dat optimaal is volgens het RPK-model in de toonaard van de 100 stukken. Nu kan er gekeken worden naar hoe snel de consonantiescore zich gaat verplaatsten van die van het originele naar die van de theoretisch best mogelijke volgens het model afhankelijk van het aantal iteraties dat het algoritme wordt uitgevoerd.
 
-\subsection{Resultaten}
-
+\subsubsection{Resultaten}
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.75\textwidth]{5_Experimenten_Resultaten/exp1_res}
@@ -136,9 +189,9 @@ Deze test wordt uitgevoerd op 100 muziekstukken uit het Essencorpus. De gemiddel
 In figuur \ref{figuur:exp1} worden de restultaten weergegeven van dit experiment. De groene lijn op de figuur geeft de gemiddelde probabiliteit weer van alle melodie\"en waarop getest werd. De rode lijn geeft voor al deze melodie\"en de gemiddelde waarde mee voor het theoretisch beste muziekstuk dat volgens het RPK-model gemaakt kan worden in deze toonaard. Tot slot geeft de blauwe lijn de gemiddelde probabiliteit weer van een noot in de getransformeerde melodie, na toepassing van 1 tot 10 iteraties van de transformatie.\\
 Er valt duidelijk op dat de eerste paar iteraties nog een redelijke verhoging van de probabiliteit teweeg brengt, maar dat na een vijftal iteraties gemiddeld gezien een soort van maximum bereikt is dat met deze transformatie kan bekomen worden. De reden dat deze waarde nog zo ver onder het theoretische maximum ligt, heeft er vooral mee te maken dat er maar 1 mogelijke transformatie is dat het algoritme mag gebruiken, hierdoor zijn er nog steeds maar een zeer beperkt aantal mogelijkheiden om een bepaalde noot te transformeren, en kunnen bijgevolg nog steeds de meeste noten niet bereikt worden vanuit eender welke noot.
 
-\section{Transformaties combineren: meerdere transformaties, 1 iteratie}
+\subsection{Transformaties combineren: meerdere transformaties, 1 iteratie}
 \label{experiment:2}
-\subsection{Beschrijving experiment}
+\subsubsection{Beschrijving experiment}
 Dit experiment heeft betrekking tot het algoritme dat besproken werd in onderdeel \ref{ETT:algo1}. Het experiment gaat nagaan wat de invloed is van het aantal verschillende toegelaten transformaties op de consonantiescore van het totale muziekstuk. Zo zijn de vijf transformaties die gebruikt zullen worden weergegeven in tabel \ref{tabel:exp2}. Er wordt nu telkens slechts een iteratie van het algoritme uitgevoerd.\\
 
 \begin{table}
@@ -153,9 +206,9 @@ Dit experiment heeft betrekking tot het algoritme dat besproken werd in onderdee
     \hline
     Verhoging transformatie 3 & 1 & 4 & 5 & -3 & 2 & -1 & 1 & 0 \\
     \hline
-    Verhoging transformatie 2 & 4 & 6 & -2 & 4 & 2 & 6 & -4 & 2 \\
+    Verhoging transformatie 4 & 4 & 6 & -2 & 4 & 2 & 6 & -4 & 2 \\
     \hline
-    Verhoging transformatie -2 & -3 & -2 & 3 & -1 & 4 & -3 & 2 & -4 \\
+    Verhoging transformatie 5 & -3 & -2 & 3 & -1 & 4 & -3 & 2 & -4 \\
   \end{tabular}
   \caption{Transformaties gebruikt in het experiment van onderdeel \ref{experiment:2}.}
   \label{tabel:exp2}
@@ -163,8 +216,7 @@ Dit experiment heeft betrekking tot het algoritme dat besproken werd in onderdee
 
 Deze test wordt uitgevoerd op 50 muziekstukken uit het Essencorpus. De gemiddelde probabiliteit van de originele stukken wordt berekend alsook de gemiddelde probabiliteit van het muziekstuk dat optimaal is volgens het RPK-model in de toonaard van de 50 stukken. Nu kan er weer gekeken worden naar hoe snel de consonantiescore zich gaat verplaatsten van die van het originele naar die van de theoretisch best mogelijke volgens het model afhankelijk van het aantal transformaties dat aan het algoritme ter beschikking wordt gesteld. Het experiment wordt eerst uitgevoerd met slechts een mogelijke transformatie. Dit zal dan transformatie 1 uit de tabel zijn. Daarna wordt het experiment uitgevoerd met 2 mogelijke transformaties. Dit zullen dan de eerste twee transformaties uit de tabel zijn enz..
 
-\subsection{Resultaten}
-
+\subsubsection{Resultaten}
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.75\textwidth]{5_Experimenten_Resultaten/exp2_res}
@@ -175,9 +227,9 @@ Deze test wordt uitgevoerd op 50 muziekstukken uit het Essencorpus. De gemiddeld
 In figuur \ref{figuur:exp2} worden de restultaten weergegeven van dit experiment. Het is duidelijk dat een  hoger aantal transformaties ook telkens een betere score teruggeeft. Als we de resultaten van dit experiment vergelijken met dat uit onderdeel \ref{experiment:1}, dan merken we op dat het aantal transformaties een grotere impact heeft op de probabiliteit dan het aantal iteraties. De grootste reden hiervoor is dat een extra transformaties er voor kan zorgen dat er voor elke een noot in het muziekstuk een extra mogelijke noot is waarnaar hij getransformeerd kan worden. Dit zorgt voor enorm veel extra mogelijkheden waardoor er hogere probabiliteiten kunnen bekomen worden dan in het geval waarbij het aantal iteraties verhoogd wordt in plaats van het aantal mogelijke transformaties.  
 
 
-\section{Transformaties combineren: minimum transformatie lengte}
+\subsection{Transformaties combineren: minimum transformatie lengte}
 \label{experiment:3}
-\subsection{Beschrijving experiment}
+\subsubsection{Beschrijving experiment}
 Dit experiment heeft betrekking tot het algoritme dat besproken werd in onderdeel \ref{ETT:algo2}. Het experiment gaat nagaan wat de invloed is van de minimum transformatielengte op de consonantiescore van het totale muziekstuk. Er wordt in dit experiment telkens gebruik gemaakt van 2 transformaties die beschreven zijn in tabel \ref{tabel:exp3}. Er wordt telkens slechts een iteratie van het algoritme uitgevoerd.\\
 
 \begin{table}
@@ -196,8 +248,7 @@ Dit experiment heeft betrekking tot het algoritme dat besproken werd in onderdee
 
 Dit experiment wordt uitgevoerd op 50 muziekstukken uit het Essencorpus en dit voor alle waarden van de minimum transformatie lengte tussen 1 en 10. Voor elk van deze 10 gevallen wordt de gemiddelde probabiliteit van het getransformeerde muziekstuk berekend.
 
-\subsection{Resultaten}
-
+\subsubsection{Resultaten}
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.75\textwidth]{5_Experimenten_Resultaten/exp3_res}
@@ -207,9 +258,9 @@ Dit experiment wordt uitgevoerd op 50 muziekstukken uit het Essencorpus en dit v
 
 Figuur \ref{figuur:exp3} geeft de resultaten weer van het experiment. Het is duidelijk dat een hogere minimum transformatie lengte leidt tot een kleinere verbetering van de consonantiescore, wat te verwachten was. De grafiek is ook monotoon dalen voor stijgende waarde van de minimum transformatie lengte. Dit moet ook zo zijn aangezien alle transformaties die geldig zijn voor een zekere transformatie lengte ook altijd geldig zijn voor alle kortere transformatie lengtes.
 
-\section{Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}
+\subsection{Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}
 \label{experiment:4}
-\subsection{Beschrijving experiment}
+\subsubsection{Beschrijving experiment}
 Dit experiment is opgezet als extra test om het geloof in de juiste werking van de algoritmes beschreven in \ref{ETT:algo1} en \ref{ETT:algo2} te versterken. Aangezien de implementaties van deze twee algoritmen toch op een aantal vlakken (vooral de voorstelling van de paden) verschillen van elkaar, is het interessant om voor een minimum transformatie lengte van 1 eens te kijken of de twee algoritmes hetzelfde resultaat geven. Dit zou normaal gezien altijd het geval moeten zijn aangezien de twee algoritmes hetzelfde doel en dezelfde middelen hebben in het geval van een minimum transformatie lengte van 1. De transformatie waarvan gebruik gaat worden gemaakt staat beschreven in tabel \ref{tabel:exp4}.
 
 \begin{table}
@@ -226,8 +277,7 @@ Dit experiment is opgezet als extra test om het geloof in de juiste werking van 
 
 Voor deze transformatie gaat het experiment zoals het beschreven staat in onderdel \ref{experiment:1} herhaald worden maar dan ook voor het tweede algoritme. Dus voor een aantal iteraties van 1 tot en met 10 van het algoritme gaan de probabiliteiten die beide algoritmes opleveren voor dezelfde transformatie op dezelfde 100 testgevallen uit het Essencorpus vergeleken worden.
 
-\subsection{Resultaten}
-
+\subsubsection{Resultaten}
 \begin{table}
   \centering
   \begin{tabular}{c | c | c }    
@@ -250,11 +300,27 @@ Voor deze transformatie gaat het experiment zoals het beschreven staat in onderd
 
 In tabel \ref{tabel:res4} staan de resultaten van dit experiment weergegeven. Beide algoritmen leveren dezelfde gemiddelde consonantiescore (logaritme van de gemiddelde probabiliteit) voor een muziekstukje na eenzelfde aantal iteraties gebruik makende van dezelfde transformatie. Dit versterkt de stelling dat de twee algoritmes wel degelijk werken zoals gewenst.
 
-\section{Tijdsafhankelijkheid algoritme \ref{ETT:algo2} van lengte invoer}
+\section{Experimenten over de tijdscomplexiteit van de algoritmes voor het combineren van transformaties}
+\subsection{Tijdsafhankelijkheid algoritme \ref{ETT:algo2} van het aantal noten in de melodielijn}
 \label{experiment:7}
-\subsection{Beschrijving experiment}
+\subsubsection{Beschrijving experiment}
+Van het algoritme beschreven in onderdeel \ref{ETT:algo2} werd reeds beargumenteerd dat de uitvoertijd lineair afhankelijk is van het aantal noten van de originele melodielijn. De bedoeling is nu om experimenteel na te gaan of dit wel klopt. Om dit te testen wordt gebruik gemaakt van een transformatie die beschreven staat in tabel \ref{tabel:exp7}.
 
-\subsection{Resultaten}
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c c c c c c c }
+    Diff (mod 8) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+    \hline
+    \hline
+    Verhoging & 1 & 1 & 2 & 3 & 5 & -4 & 1 & -3 \\
+  \end{tabular}
+  \caption{Transformatie gebruikt in het experiment van onderdeel \ref{experiment:7}.}
+  \label{tabel:exp7}
+\end{table}
+
+Voor 20 verschillende lengtes van melodielijnen (10 tot en met 200 met stapgrootte 10) wordt nu de uitvoertijd gemeten. Hierna kan de uitvoertijd van het algoritme uitgezet worden ten opzicht van de invoergrootte en zou er een lineair verband zichtbaar moeten zijn.
+
+\subsubsection{Resultaten}
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.75\textwidth]{5_Experimenten_Resultaten/exp7_res}
@@ -262,11 +328,46 @@ In tabel \ref{tabel:res4} staan de resultaten van dit experiment weergegeven. Be
   \label{figuur:exp7}
 \end{figure}
 
-\section{Tijdsafhankelijkheid algoritme \ref{ETT:algo2} van aantal toegelaten transformaties}
-\label{experiment:8}
-\subsection{Beschrijving experiment}
+In figuur \ref{figuur:exp7} worden de resultaten van dit experiment weergegeven in een scatter plot. Er is een duidelijk lineair verband zichtbaar tussen de grootte van de melodielijn en de uitvoertijd. Dit komt overeen met de afhankelijkheid die beredeneerd werd in hoofdstuk \ref{ETT:algo2}.
 
-\subsection{Resultaten}
+\subsection{Tijdsafhankelijkheid algoritme \ref{ETT:algo2} van aantal toegelaten transformaties}
+\label{experiment:8}
+\subsubsection{Beschrijving experiment}
+Dit experiment heeft betrekking op het algoritme beschreven in hoofdstuk \ref{ETT:algo2}. Er werd gesteld dat de uitvoertijd van dit algoritme evenredig is met het kwadraat van het aantal toegelaten transformaties. De bedoeling van dit experiment is om na te gaan of deze beredenering kan kloppen door voor verschillende aantallen transformaties te berekenen hoelang het algoritme nodig heeft om eenzelfde invoer te verwerken. De tien transformaties die gebruikt worden in dit experiment staan beschreven in tabel \ref{tabel:exp8}. Het maakt voor de snelheid va uitvoer van het algoritme geen verschil welke transformaties er meegegeven worden (10 dezelfde transformaties duren even lang om te verwerken dan 10 verschillende), maar voor de volledigheid zijn de transformaties hier toch weergegeven aangezien deze gebruikt werden tijdens het experiment.
+
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c c c c c c c }
+    Diff (mod 8) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+    \hline
+    \hline
+    Verhoging transformatie 1 & 5 & -4 & 1 & -3 & 1 & 1 & 2 & 3 \\
+    \hline
+    Verhoging transformatie 2 & 1 & 3 & 4 & -5 & -1 & 6 & 5 & -1 \\
+    \hline
+    Verhoging transformatie 3 & 1 & 4 & 5 & -3 & 2 & -1 & 1 & 0 \\
+    \hline
+    Verhoging transformatie 4 & 4 & 6 & -2 & 4 & 2 & 6 & -4 & 2 \\
+    \hline
+    Verhoging transformatie 5 & -3 & -2 & 3 & -1 & 4 & -3 & 2 & -4 \\
+    \hline
+    Verhoging transformatie 6 & 1 & 1 & 2 & 3 & 5 & -4 & 1 & -3 \\
+    \hline
+    Verhoging transformatie 7 & -1 & 6 & 5 & -1 & 2 & 1 & 3 & 4 \\
+    \hline
+    Verhoging transformatie 8 & 2 & -1 & 1 & 0 & 3 & 1 & 4 & 5 \\
+    \hline
+    Verhoging transformatie 9 & 2 & 6 & -4 & 2 & 4 & 6 & -2 & 4 \\
+    \hline
+    Verhoging transformatie 10 & 4 & -3 & 2 & -4 & -3 & -2 & 3 & -1 \\
+  \end{tabular}
+  \caption{Transformaties gebruikt in het experiment van onderdeel \ref{experiment:8}.}
+  \label{tabel:exp8}
+\end{table}
+
+Voor eenzelfde melodielijn wordt 10 keer het algoritme uitgevoerd. De eerste keer heeft het algoritme enkel `transformatie' 1 ter beschikking. De tweede keer heeft het algoritme zowel `transformatie 1' als `transformatie 2' ter beschikking, enz..
+
+\subsubsection{Resultaten}
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.75\textwidth]{5_Experimenten_Resultaten/exp8_res}
@@ -274,17 +375,40 @@ In tabel \ref{tabel:res4} staan de resultaten van dit experiment weergegeven. Be
   \label{figuur:exp8}
 \end{figure}
 
-\section{Tijdsafhankelijkheid algoritme \ref{ETT:algo2} van minimum transformatie lengte}
-\label{experiment:9}
-\subsection{Beschrijving experiment}
+De resultaten van dit experiment staan weergegeven in een scatter plot in figuur \ref{figuur:exp8}. Op deze figuur lijkt een kwadratische afhankelijkheid tussen het aantal beschikbaren transformaties en de uitvoertijd van het algoritme zichtbaar. Dit komt overeen met de beredeneerde afhankelijkheid van in hoofdstuk \ref{ETT:algo2}.
 
-\subsection{Resultaten}
+\subsection{Tijdsafhankelijkheid algoritme \ref{ETT:algo2} van minimum transformatie lengte}
+\label{experiment:9}
+\subsubsection{Beschrijving experiment}
+Van het algoritme beschreven in hoofdstuk \ref{ETT:algo2} werd reeds beredeneerd dat de uitvoertijd van het algoritme afhankelijk is van $ML \times (AN-ML)$. Met ML, de minimum transformatie lengte en AN het aantal noten in de originele melodie. De bedoeling van dit experiment is om na te gaan of deze beredeneerde afhankelijkheid ook zichtbaar is in realiteit. Het algoritme kreeg tijdens dit experiment telkens twee transformaties ter beschikking, deze staan beschreven in tabel \ref{tabel:exp9}.
+
+\begin{table}
+  \centering
+  \begin{tabular}{c | c c c c c c c c }
+    Diff (mod 8) & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+    \hline
+    \hline
+    Verhoging transformatie 1 & 5 & -4 & 1 & -3 & 1 & 1 & 2 & 3 \\
+    \hline
+    Verhoging transformatie 2 & 1 & 1 & 2 & 3 & 5 & -4 & 1 & -3 \\
+  \end{tabular}
+  \caption{Transformaties gebruikt in het experiment van onderdeel \ref{experiment:9}.}
+  \label{tabel:exp9}
+\end{table}
+
+In dit experiment wordt telkens eenzelfde melodielijn met een lengte van 30 noten (dus AN=30) meegegeven aan het algoritme. En nu wordt voor 30 verschillende waarden van de minimum transformatie lengte (ML van 1 tot en met 30), het algoritme uitgevoerd.
+
+\subsubsection{Resultaten}
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.75\textwidth]{5_Experimenten_Resultaten/exp9_res}
   \caption{Resultaten van het experiment uitgevoerd in deel \ref{experiment:9}. Tijdsduur van het algoritme in seconden t.o.v. de opgelegde minimum transformatie lengte.}
   \label{figuur:exp9}
 \end{figure}
+
+De resultaten van dit experiment zijn zichtbaar op de scatter plot van figuur \ref{figuur:exp9}. Dit experiment lijkt de stelling dat de uitvoertijd afhankelijk is van $ML \times (AN-ML)$ te staven.
+
+
 
 %%% Local Variables: 
 %%% mode: latex
