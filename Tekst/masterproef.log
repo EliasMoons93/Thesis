@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  23 MAY 2016 16:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  25 MAY 2016 10:27
 entering extended mode
 **masterproef.tex
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.tex
@@ -2116,7 +2116,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
 Here is how much of TeX's memory you used:
  26085 strings out of 493921
  459142 string characters out of 3144877
- 889559 words of memory out of 3000000
+ 890594 words of memory out of 3000000
  27759 multiletter control sequences out of 15000+200000
  78109 words of font info for 124 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -2138,7 +2138,7 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files
 eX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
 s/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
 urw/helvetic/uhvr8a.pfb>
-Output written on masterproef.pdf (99 pages, 1343420 bytes).
+Output written on masterproef.pdf (99 pages, 1343667 bytes).
 PDF statistics:
  2063 PDF objects out of 2073 (max. 8388607)
  917 named destinations out of 1000 (max. 500000)
