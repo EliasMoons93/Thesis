@@ -126,8 +126,8 @@
 \contentsline {section}{\numberline {A.3}Beste sequentie}{73}{section.A.3}
 \contentsline {section}{\numberline {A.4}Beste sequentie met minimum transformatie lengte}{75}{section.A.4}
 \contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{83}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Poster}{85}{appendix.C}
-\contentsline {chapter}{Bibliografie}{87}{section*.60}
+\contentsline {appendix}{\chapternumberline {C}Poster}{91}{appendix.C}
+\contentsline {chapter}{Bibliografie}{93}{section*.60}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
