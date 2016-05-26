@@ -1,26 +1,33 @@
 \begin{thebibliography}{10}
 
-\bibitem{url:backpropagation}
-Backpropagation.
-\newblock URL: \url{https://en.wikipedia.org/wiki/Backpropagation}.
-
-\bibitem{url:temperley}
-David temperley.
-\newblock URL: \url{http://davidtemperley.com/}.
-
 \bibitem{url:musicxml}
 Musicxml.
 \newblock URL: \url{http://www.musicxml.com/}.
+
+\bibitem{book:musicGeeksNerds}
+P.~Kroger.
+\newblock {\em Music for Geeks and Nerds}.
+\newblock 2012.
 
 \bibitem{book:musimathics}
 G.~Loy.
 \newblock {\em Musimathics}.
 \newblock The MIT Press, Cambridge, Massachusetts, 2006.
 
+\bibitem{url:midi}
+D.~Marshall.
+\newblock Introduction to midi (musical instrument digital interface).
+\newblock URL: \url{https://www.cs.cf.ac.uk/Dave/Multimedia/node155.html}.
+
 \bibitem{url:Fibonacci}
 W.~MathWorld.
 \newblock Fibonacci number.
 \newblock URL: \url{http://mathworld.wolfram.com/FibonacciNumber.html}.
+
+\bibitem{url:backpropagation}
+M.~Nielsen.
+\newblock Backpropagation.
+\newblock URL: \url{http://neuralnetworksanddeeplearning.com/chap2.html}, 2016.
 
 \bibitem{book:ANN}
 M.~Nielsen.
@@ -63,21 +70,5 @@ Wikipedia.
 Wikipedia.
 \newblock Dynamic programming.
 \newblock URL: \url{https://en.wikipedia.org/wiki/Dynamic_programming}.
-
-\bibitem{url:bach}
-Wikipedia.
-\newblock Johann sebastian bach.
-\newblock URL: \url{https://en.wikipedia.org/wiki/Johann_Sebastian_Bach}.
-
-\bibitem{url:midi}
-Wikipedia.
-\newblock Musical instrument digital interface.
-\newblock URL:
-  \url{https://nl.wikipedia.org/wiki/Musical_Instrument_Digital_Interface}.
-
-\bibitem{url:mozart}
-Wikipedia.
-\newblock Wolfgang amadeus mozart.
-\newblock URL: \url{https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart}.
 
 \end{thebibliography}

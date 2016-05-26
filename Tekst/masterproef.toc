@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {1.3}Doelstelling}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}Assumpties en beperkingen}{2}{section.1.4}
 \contentsline {section}{\numberline {1.5}Overzicht van de tekst}{3}{section.1.5}
-\contentsline {chapter}{\chapternumberline {2}Muzikale Achtergrond}{5}{chapter.2}
+\contentsline {chapter}{\chapternumberline {2}Muzikale achtergrond}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Ritme}{5}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Tijdssignaturen}{5}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Tempo}{6}{subsection.2.1.2}
@@ -23,13 +23,13 @@
 \contentsline {subsection}{\numberline {2.2.1}Toonhoogte}{7}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Octaaf en onderverdeling in toonhoogtes}{7}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Toonladders en toonaarden}{8}{subsection.2.2.3}
-\contentsline {chapter}{\chapternumberline {3}Objectieve Beoordeling van een Muziekstuk}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Neuraal Netwerk}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Keuze tussen Polyfone en Monofone Muziek}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}RPK-Model}{14}{section.3.3}
-\contentsline {subsubsection}{Bepaling score van een volledige melodielijn}{15}{section*.6}
+\contentsline {chapter}{\chapternumberline {3}Objectieve beoordeling van een muziekstuk}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Neuraal netwerk}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Keuze tussen polyfone en monofone Muziek}{13}{section.3.2}
+\contentsline {section}{\numberline {3.3}RPK-model}{14}{section.3.3}
+\contentsline {subsubsection}{Bepaling score van een volledige melodielijn}{16}{section*.6}
 \contentsline {subsubsection}{Beoordeling van een muziekstuk}{17}{section*.7}
-\contentsline {chapter}{\chapternumberline {4}Melodische Transformatie}{19}{chapter.4}
+\contentsline {chapter}{\chapternumberline {4}Melodische transformatie}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Inleiding}{19}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Fibonacci}{19}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Beschrijving van een Transformatie}{19}{subsection.4.1.2}
@@ -42,7 +42,7 @@
 \contentsline {subsubsection}{Beschrijving transformatie}{22}{section*.11}
 \contentsline {subsubsection}{Voorbeeld}{22}{section*.12}
 \contentsline {subsubsection}{Bespreking transformatie}{23}{section*.13}
-\contentsline {chapter}{\chapternumberline {5}Transformaties Combineren}{25}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}Transformaties combineren}{25}{chapter.5}
 \contentsline {subsubsection}{Opmerking}{25}{section*.14}
 \contentsline {section}{\numberline {5.1}Beste sequentie}{26}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Doelstelling}{26}{subsection.5.1.1}
@@ -74,15 +74,15 @@
 \contentsline {subsection}{\numberline {5.2.4}Performantie en geheugencomplexiteit}{39}{subsection.5.2.4}
 \contentsline {subsubsection}{Tijd}{39}{section*.33}
 \contentsline {subsubsection}{Geheugen}{39}{section*.34}
-\contentsline {chapter}{\chapternumberline {6}Experimenten en Resultaten}{41}{chapter.6}
-\contentsline {section}{\numberline {6.1}Experimenten met melodische transformaties}{41}{section.6.1}
+\contentsline {chapter}{\chapternumberline {6}Experimenten en resultaten}{41}{chapter.6}
+\contentsline {section}{\numberline {6.1}Melodische transformaties}{41}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Vergelijking van de twee melodische transformaties}{41}{subsection.6.1.1}
 \contentsline {subsubsection}{Beschrijving experiment}{41}{section*.35}
 \contentsline {subsubsection}{Resultaten}{42}{section*.36}
 \contentsline {subsection}{\numberline {6.1.2}Vergelijking Fibonacci transformatie met gemiddelde transformatie}{43}{subsection.6.1.2}
 \contentsline {subsubsection}{Beschrijving experiment}{43}{section*.37}
 \contentsline {subsubsection}{Resultaten}{43}{section*.38}
-\contentsline {section}{\numberline {6.2}Experimenten met het RPK-model}{44}{section.6.2}
+\contentsline {section}{\numberline {6.2}RPK-model}{44}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Afhankelijkheid score RPK-Model en gemiddelde afstand tussen opeenvolgende noten}{44}{subsection.6.2.1}
 \contentsline {subsubsection}{Beschrijving experiment}{44}{section*.39}
 \contentsline {subsubsection}{Resultaten}{45}{section*.40}
@@ -92,7 +92,7 @@
 \contentsline {subsection}{\numberline {6.2.3}Afhankelijkheid score RPK-Model en combinatie metrieken uit experimenten \ref {experiment:10} en \ref {experiment:11}}{46}{subsection.6.2.3}
 \contentsline {subsubsection}{Beschrijving experiment}{46}{section*.43}
 \contentsline {subsubsection}{Resultaten}{47}{section*.44}
-\contentsline {section}{\numberline {6.3}Experimenten over de werking van de algoritmes voor het combineren van transformaties}{48}{section.6.3}
+\contentsline {section}{\numberline {6.3}Werking van de algoritmes voor het combineren van transformaties}{48}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Transformaties combineren: 1 transformatie, meerdere iteraties}{48}{subsection.6.3.1}
 \contentsline {subsubsection}{Beschrijving experiment}{48}{section*.45}
 \contentsline {subsubsection}{Resultaten}{48}{section*.46}
@@ -105,7 +105,7 @@
 \contentsline {subsection}{\numberline {6.3.4}Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}{52}{subsection.6.3.4}
 \contentsline {subsubsection}{Beschrijving experiment}{52}{section*.51}
 \contentsline {subsubsection}{Resultaten}{52}{section*.52}
-\contentsline {section}{\numberline {6.4}Experimenten over de tijdscomplexiteit van de algoritmes voor het combineren van transformaties}{53}{section.6.4}
+\contentsline {section}{\numberline {6.4}Tijdscomplexiteit van de algoritmes voor het combineren van transformaties}{53}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}Tijdsafhankelijkheid algoritme \ref {ETT:algo2} van het aantal noten in de melodielijn}{53}{subsection.6.4.1}
 \contentsline {subsubsection}{Beschrijving experiment}{53}{section*.53}
 \contentsline {subsubsection}{Resultaten}{53}{section*.54}
@@ -121,8 +121,8 @@
 \contentsline {subsection}{\numberline {7.2.1}Uitbreiding context RPK-model}{60}{subsection.7.2.1}
 \contentsline {subsection}{\numberline {7.2.2}Algoritme dat combineert met als doel het behouden van de consonantiescore}{60}{subsection.7.2.2}
 \contentsline {appendix}{\chapternumberline {A}Broncode}{63}{appendix.A}
-\contentsline {section}{\numberline {A.1}Neuraal Netwerk Trainer}{63}{section.A.1}
-\contentsline {section}{\numberline {A.2}RPK-Model}{69}{section.A.2}
+\contentsline {section}{\numberline {A.1}Neuraal netwerk trainer}{63}{section.A.1}
+\contentsline {section}{\numberline {A.2}RPK-model}{69}{section.A.2}
 \contentsline {section}{\numberline {A.3}Beste sequentie}{73}{section.A.3}
 \contentsline {section}{\numberline {A.4}Beste sequentie met minimum transformatie lengte}{75}{section.A.4}
 \contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{83}{appendix.B}

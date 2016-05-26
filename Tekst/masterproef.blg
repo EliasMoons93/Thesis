@@ -11,8 +11,7 @@ A level-1 auxiliary file: Appendix_1_Paper/paper.aux
 A level-1 auxiliary file: Appendix_2_Poster/poster.aux
 The style file: abbrv.bst
 Database file #1: referenties.bib
-Warning--to sort, need author or key in url:temperley
-Warning--to sort, need author or key in url:backpropagation
 Warning--to sort, need author or key in url:musicxml
+Warning--empty publisher in book:musicGeeksNerds
 Warning--empty publisher in book:ANN
-(There were 4 warnings)
+(There were 3 warnings)
