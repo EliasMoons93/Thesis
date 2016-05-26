@@ -25,20 +25,20 @@
 \contentsline {subsection}{\numberline {2.2.3}Toonladders en toonaarden}{8}{subsection.2.2.3}
 \contentsline {chapter}{\chapternumberline {3}Objectieve beoordeling van een muziekstuk}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Neuraal netwerk}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Keuze tussen polyfone en monofone Muziek}{13}{section.3.2}
+\contentsline {section}{\numberline {3.2}Keuze tussen polyfone en monofone muziek}{13}{section.3.2}
 \contentsline {section}{\numberline {3.3}RPK-model}{14}{section.3.3}
 \contentsline {subsubsection}{Bepaling score van een volledige melodielijn}{16}{section*.6}
 \contentsline {subsubsection}{Beoordeling van een muziekstuk}{17}{section*.7}
 \contentsline {chapter}{\chapternumberline {4}Melodische transformatie}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Inleiding}{19}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Fibonacci}{19}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Beschrijving van een Transformatie}{19}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Beschrijving van een transformatie}{19}{subsection.4.1.2}
 \contentsline {subsubsection}{Afronding naar de toonaard}{20}{section*.8}
-\contentsline {section}{\numberline {4.2}Afbeelding afhankelijk van positie}{20}{section.4.2}
+\contentsline {section}{\numberline {4.2}Afbeelding afhankelijk van de positie}{20}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Beschrijving transformatie}{20}{subsection.4.2.1}
 \contentsline {subsubsection}{Voorbeeld}{20}{section*.9}
 \contentsline {subsubsection}{Bespreking transformatie}{21}{section*.10}
-\contentsline {section}{\numberline {4.3}Afbeelding afhankelijk van afstand ten opzichte van vorige noot}{22}{section.4.3}
+\contentsline {section}{\numberline {4.3}Afbeelding afhankelijk van de afstand ten opzichte van vorige noot}{22}{section.4.3}
 \contentsline {subsubsection}{Beschrijving transformatie}{22}{section*.11}
 \contentsline {subsubsection}{Voorbeeld}{22}{section*.12}
 \contentsline {subsubsection}{Bespreking transformatie}{23}{section*.13}

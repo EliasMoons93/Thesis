@@ -55,20 +55,21 @@ D.~Temperley.
 \newblock {\em Music and Probability}.
 \newblock The MIT Press, Cambridge, Massachusetts, 2007.
 
+\bibitem{book:bhattacharyya}
+N.~A. Thacker, F.~J. Aherne, and P.~I. Rockett.
+\newblock The bhattacharyya metric as an absolute similarity measure for
+  frequency coded data, 1998.
+
+\bibitem{url:DP}
+Topcoder.
+\newblock Dynamic programming - from novice to advanced.
+\newblock URL:
+  \url{https://www.topcoder.com/community/data-science/data-science-tutorials/dynamic-programming-from-novice-to-advanced/}.
+
 \bibitem{url:FFNN}
 S.~University.
 \newblock Feed-forward networks.
 \newblock URL:
   \url{http://cs.stanford.edu/people/eroberts/courses/soco/projects/neural-networks/Architecture/feedforward.html}.
-
-\bibitem{url:Bhattacharyya}
-Wikipedia.
-\newblock Bhattacharyya distance.
-\newblock URL: \url{https://en.wikipedia.org/wiki/Bhattacharyya_distance}.
-
-\bibitem{url:DP}
-Wikipedia.
-\newblock Dynamic programming.
-\newblock URL: \url{https://en.wikipedia.org/wiki/Dynamic_programming}.
 
 \end{thebibliography}

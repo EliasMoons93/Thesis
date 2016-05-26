@@ -1,6 +1,6 @@
 \chapter{Objectieve beoordeling van een muziekstuk}
 \label{hoofdstuk:OBM}
-Om melodische transformaties te kunnen beoordelen is er nood aan een framework dat kan voorspellen of een gegeven melodie al dan niet goed klinkt. In dit hoofdstuk worden twee dergelijke modellen besproken die een bepaalde `consonantiescore' (maat voor het goed klinken van een muziekstuk) gaan toekennen aan een muziekstuk. 
+Om melodische transformaties te kunnen beoordelen is er nood aan een framework dat kan voorspellen of een gegeven melodie al dan niet goed klinkt. In dit hoofdstuk worden twee dergelijke modellen besproken die een bepaalde consonantiescore (maat voor het goed klinken van een muziekstuk) gaan toekennen aan een muziekstuk. 
 
 Allereerst wordt een aanpak besproken die gebruik maakt van een artificieel neuraal netwerk \cite{book:ANN}. Deze methode is speciaal gemaakt voor het beoordelen van polyfone muziek, waarbij er meerdere noten tegelijk klinken. Polyfone muziek wordt in verdere hoofdstukken van deze masterproef niet meer besproken. Het eerste onderdeel van dit hoofdstuk zal bijgevolg dus weinig invloed hebben op het vervolg van de tekst. De methode is echter wel onderzocht geweest en leverde enkele interessante resultaten op waardoor de methode toch even in het kort vermeld wordt. 
 
@@ -79,13 +79,13 @@ Dit leidt er toe dat dit neuraal netwerk niet gebruikt kan worden als verificato
 
 De broncode die geschreven werd voor het trainen van dit neuraal netwerk is beschikbaar in appendix \ref{Broncode:ANN}. Er zijn een aantal parameters die ingesteld kunnen worden in dit algoritme. Allereerst is er het aantal neuronen in de verborgen laag. Er kan ook een waarde voor de \textit{learning rate} opgegeven worden en dan zijn er nog twee parameters die een bias kunnen defini\"eren.
 
-\section{Keuze tussen polyfone en monofone Muziek}
+\section{Keuze tussen polyfone en monofone muziek}
 \label{OBM:OMM}
 In deze thesis wordt gewerkt met transformaties op een muziektheoretische manier (en dus niet fysisch met frequenties). Daarom is wordt er gebruik gemaakt van muziekstukken die in het MusicXML\cite{url:musicxml} formaat beschikbaar zijn. Het nadeel van deze keuze is dat er slechts een beperkt aantal muziekstukken beschikbaar is. Dit in tegenstelling tot bijvoorbeeld het MIDI-formaat\cite{url:midi} waarbij dit niet het geval is. 
 
-De polyfone(meerstemmige) muziek die beschkbaar is in het gewenste formaat bestaat eigenlijk bijna uitsluitend uit klassieke muziek. Verder is er ook nog een redelijk groot corpus beschikbaar van folkmuziek, het zogenaamde Essencorpus\cite{url:essen}. Deze muziek is wel monofoon (eenstemmig).
+De polyfone(meerstemmige) muziek die beschikbaar is in het gewenste formaat bestaat eigenlijk bijna uitsluitend uit klassieke muziek. Verder is er ook nog een redelijk groot corpus beschikbaar van folkmuziek, het zogenaamde Essencorpus\cite{url:essen}. Deze muziek is wel monofoon (eenstemmig).
 
-Aangezien de methode met het neuraal netwerk die beschreven staat in bovenstaand onderdeel niet voldoende werkte voor de meerstemminge stukken moest er een andere weg ingeslagen worden. Ofwel verder werken met meerstemmige muziek maar met een ander framework dat de context in rekening brengt. Ofwel de focus verleggen naar eenstemmige muziek. Gezien het grootste deel van de meerstemmige muziekstukken klassieke stukken zijn, is de keuze gemaakt om over te schakelen op eenstemmige muziek. Dit omdat de complexiteit van het aanpassen van muziekstukken met meerdere lijnen veel hoger is dan die van muziekstukken met slechts een instrument. Ook omdat klassieke muziekstukken veel delicater zijn om te behandelen dan stukken folkmuziek die enkel uit een melodielijn bestaan. Alle transformaties die zullen besproken worden in de rest van deze masterproef zullen dus ook uit een enkele melodielijn bestaan.
+Aangezien de methode met het neuraal netwerk die beschreven staat in bovenstaand onderdeel niet voldoende werkte voor de meerstemmige stukken moest er een andere weg ingeslagen worden. Ofwel verder werken met meerstemmige muziek maar met een ander framework dat de context in rekening brengt. Ofwel de focus verleggen naar eenstemmige muziek. Gezien het grootste deel van de meerstemmige muziekstukken klassieke stukken zijn, is de keuze gemaakt om over te schakelen op eenstemmige muziek. Dit omdat de complexiteit van het aanpassen van muziekstukken met meerdere lijnen veel hoger is dan die van muziekstukken met slechts een instrument. Ook omdat klassieke muziekstukken veel delicater zijn om te behandelen dan stukken folkmuziek die enkel uit een melodielijn bestaan. Alle transformaties die zullen besproken worden in de rest van deze masterproef zullen dus ook uit een enkele melodielijn bestaan.
 
 \section{RPK-model}
 \label{OBM:RPK}
@@ -113,7 +113,7 @@ Verder is er ook nog de \textit{proximity}, dit heeft te maken met de relatieve 
   \label{figuur:proximity}
 \end{figure}
 
-Ten slotte wordt er ook nog rekening gehouden met de \textit{key}, ofwel de toonaard van het muziekstuk. Afhankelijk van de toonaard zijn bepaalde noten waarschijnlijker om voor te komen dan andere. Zo is de grondtoon van een toonladder bijvoorbeeld altijd sterk aanwezig terwijl de noot die een halve toon hoger ligt quasi nooit zal voorkomen in het muziekstuk. Ook is er een verschil in profiel tussen majeur en mineur toonaarden, hier wordt ook rekening mee gehouden. Dit wordt ook ge\"illustreed in figuren \ref{figuur:key_major} en \ref{figuur:key_minor} die resprectievelijk voor stukken die in grote en kleine toonaarden staan de distributies van noten uit het Essencorpus weergeeft. 
+Ten slotte wordt er ook nog rekening gehouden met de \textit{key}, ofwel de toonaard van het muziekstuk. Afhankelijk van de toonaard zijn bepaalde noten waarschijnlijker om voor te komen dan andere. Zo is de grondtoon van een toonladder bijvoorbeeld altijd sterk aanwezig terwijl de noot die een halve toon hoger ligt quasi nooit zal voorkomen in het muziekstuk. Ook is er een verschil in profiel tussen majeur en mineur toonaarden, hier wordt ook rekening mee gehouden. Dit wordt ook ge\"illustreerd in figuren \ref{figuur:key_major} en \ref{figuur:key_minor} die respectievelijk voor stukken die in grote en kleine toonaarden staan de distributies van noten uit het Essencorpus weergeeft. 
 
 \begin{figure}[!ht]
   \centering
@@ -129,7 +129,7 @@ Ten slotte wordt er ook nog rekening gehouden met de \textit{key}, ofwel de toon
   \label{figuur:key_minor}
 \end{figure}
 
-De \textit{range}- en \textit{proximity}-waarden worden gemodelleerd door een normaalverdeling rond respectievelijk de centrale en de vorige noot uit het muziekstuk. De \textit{key}-waarde van een noot wordt bepaald aan de hand van de frequentie van voorkomen van deze zijn nootfunctie in alle muziekstukken van het corpus.
+De \textit{range}- en \textit{proximity}-waarden worden gemodelleerd door een normaal verdeling rond respectievelijk de centrale en de vorige noot uit het muziekstuk. De \textit{key}-waarde van een noot wordt bepaald aan de hand van de frequentie van voorkomen van deze zijn nootfunctie in alle muziekstukken van het corpus.
 
 \subsubsection{Bepaling score van een volledige melodielijn}
 Nu kan voor elke noot in een melodielijn bepaald worden wat zijn waarschijnlijkheid is. Dit gebeurt door het product te nemen van zijn drie verschillende probabiliteitsscores (\textit{range}, \textit{proximity} en \textit{key}) en dit te normaliseren over alle mogelijke toonhoogtes. De score van een volledige melodielijn staat dan gelijk aan het gemiddelde score over al zijn noten. De score van een melodielijn geeft dus weer wat de gemiddelde waarschijnlijkheid is van een noot in die melodielijn volgens het RPK-model. 
@@ -141,9 +141,9 @@ De broncode die gebruikt werd om deze scores te berekenen wordt weergegeven in a
 \subsubsection{Beoordeling van een muziekstuk}
 Men zou snel kunnen stellen dat voor het beoordelen van een muziekstuk met het RPK-model er gewoon gekeken zal worden naar de score die het model geeft aan dat stuk en dat een hogere score dan logischerwijs overeenkomt met een (theoretisch gezien) beter muziekstuk. Er moet echter ook rekening gehouden worden met de beperkingen van het RPK-model. 
 
-Aangezien dit model afhankelijk is van de drie besproken parameters zal een ideale melodielijn voor dit model bestaan uit een opeenvolging van noten van telkens dezelfde toonhoogte (zodat de aftand tot de vorige noot telkens 0 is), waarvan deze noot zeer waarschijnlijk is in de toonaard en dicht bij de centrale toonhoogte ligt. Het RPK-model geeft dus hoge scores aan stukken die zich dicht rond de centrale noot afspelen en kleine sprongen vertonen tussen opeenvolgende noten. Dit zijn echter niet de meest interessante muziekstukken om naar te luisteren. 
+Aangezien dit model afhankelijk is van de drie besproken parameters zal een ideale melodielijn voor dit model bestaan uit een opeenvolging van noten van telkens dezelfde toonhoogte (zodat de afstand tot de vorige noot telkens 0 is), waarvan deze noot zeer waarschijnlijk is in de toonaard en dicht bij de centrale toonhoogte ligt. Het RPK-model geeft dus hoge scores aan stukken die zich dicht rond de centrale noot afspelen en kleine sprongen vertonen tussen opeenvolgende noten. Dit zijn echter niet de meest interessante muziekstukken om naar te luisteren. 
 
-Vandaar dat bij het beoordelen van een transformatie er gaat gekeken worden naar het verchil in scores tussen het originele muziekstuk en zijn getransformeerde versie. Hierbij zal een transformatie als beter bestempeld worden dan een andere wanneer hij gemiddeld gezien minder afwijking van score oplevert tussen de getransformeerde melodie en het originele muziekstuk. De reden dat dit zo gebeurt is omdat de originele stukken telkens verondersteld worden van goede kwaliteit te zijn. 
+Vandaar dat bij het beoordelen van een transformatie er gaat gekeken worden naar het verschil in scores tussen het originele muziekstuk en zijn getransformeerde versie. Hierbij zal een transformatie als beter bestempeld worden dan een andere wanneer hij gemiddeld gezien minder afwijking van score oplevert tussen de getransformeerde melodie en het originele muziekstuk. De reden dat dit zo gebeurt is omdat de originele stukken telkens verondersteld worden van goede kwaliteit te zijn. 
 
 Een sterke verbetering in score zou dan betekenen dat het stuk waarschijnlijk minder interessant is geworden (minder grote sprongen, meer voorspelbaarheid). Een sterke verlaging van de score zou betekenen dat het stuk te onvoorspelbaar geworden is en een grotere kans heeft om als frustrerend ervaren te worden door de luisteraar. Vandaar dat de score van het originele stuk telkens als een soort van `gouden verhouding' zal bekeken worden horende bij het ritme van dat stuk (dat onveranderd zal blijven na melodische transformatie) tussen voorspelbaarheid en verrassing.  
 

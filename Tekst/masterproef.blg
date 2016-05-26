@@ -11,7 +11,17 @@ A level-1 auxiliary file: Appendix_1_Paper/paper.aux
 A level-1 auxiliary file: Appendix_2_Poster/poster.aux
 The style file: abbrv.bst
 Database file #1: referenties.bib
+Warning--entry type for "book:bhattacharyya" isn't style-file defined
+--line 72 of file referenties.bib
 Warning--to sort, need author or key in url:musicxml
+Name 1 in "N. A. Thacker, and F. J. Aherne, and P. I. Rockett" has a comma at the end for entry book:bhattacharyya
+while executing---line 1049 of file abbrv.bst
+Name 2 in "N. A. Thacker, and F. J. Aherne, and P. I. Rockett" has a comma at the end for entry book:bhattacharyya
+while executing---line 1049 of file abbrv.bst
 Warning--empty publisher in book:musicGeeksNerds
 Warning--empty publisher in book:ANN
-(There were 3 warnings)
+Name 1 in "N. A. Thacker, and F. J. Aherne, and P. I. Rockett" has a comma at the end for entry book:bhattacharyya
+while executing---line 1090 of file abbrv.bst
+Name 2 in "N. A. Thacker, and F. J. Aherne, and P. I. Rockett" has a comma at the end for entry book:bhattacharyya
+while executing---line 1090 of file abbrv.bst
+(There were 4 error messages)
