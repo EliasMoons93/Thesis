@@ -42,8 +42,8 @@ Voor het beschrijven van het algoritme worden een aantal notaties en functies be
 $\mathcal{T}:$ Set van alle transformaties die beschikbaar zijn voor het algoritme, in deze set zit ook telkens de nultransformatie die een noot nooit verandert.\\
 $\mathcal{P}:$ Set van alle noten waar de vorige beschouwde noot naartoe getransformeerd kan worden.\\
 $\mathcal{C}:$ Set van alle noten waar de huidige noot naartoe getransformeerd kan worden.\\
-$x$: Noot uit de originele melodielijn die beschouwd wordt als huidige noot in het algoritme.\\
-$n$: Het aantal noten in het muziekstuk.
+$AN$: Het aantal noten in het muziekstuk.\\
+$x$: Noot uit de originele melodielijn die beschouwd wordt als huidige noot in het algoritme.
 \end{framed}
 
 De functie $transform$ geeft weer dat een vorige noot $p\in \mathcal{P}$ de huidige noot $x$ in de originele melodie onder transformatie $t\in \mathcal{T}$ afbeeldt naar noot $c\in \mathcal{C}$.
@@ -70,7 +70,7 @@ $posProb(c)=log(r) + log(k)$
 \subsubsection{Maximale probabiliteit}
 $prob(c)$ geeft het logaritme van de probabiliteit weer van het meest waarschijnlijke pad dat eindigt op deze noot $c\in \mathcal{C}$.
 
-Wanneer de eerste noot van het muziekstuk beschouwd wordt en $x$ dus de waarde heeft van deze eerste noot, de probabiliteit van het pad dat eindigt op deze noot gelijk zijn aan 1. en de probabiliteit van alle andere noten is gelijk aan 0. Dit komt omdat de eerst noot van een muziekstuk nooit getransformeerd wordt. Aangezien het algoritme werkt met de logaritmen van deze probabiliteiten zullen de waarden respectievelijk op 0 en $-\infty$ gezet worden. Wanneer $x$ gelijk is aan de eerste noot van het originele muziekstuk geldt dus:
+Wanneer de eerste noot van het muziekstuk beschouwd wordt en $x$ dus de waarde heeft van deze eerste noot, zal de probabiliteit van het pad dat eindigt op deze noot gelijk zijn aan 1. De probabiliteit van alle andere noten is gelijk aan 0. Dit komt omdat de eerst noot van een muziekstuk nooit getransformeerd wordt. Aangezien het algoritme werkt met de logaritmen van deze probabiliteiten zullen de waarden respectievelijk op 0 en $-\infty$ gezet worden. Wanneer $x$ gelijk is aan de eerste noot van het originele muziekstuk geldt dus:
 
 \begin{framed}
 \noindent
@@ -79,7 +79,7 @@ prob(c)=0 &\mbox{if } c==x\\
 prob(c)=-\infty &\mbox{if } c!=x \end{cases}$
 \end{framed}
 
-Voor alle andere noten van het muziekstuk geldt dat:
+Voor alle mogelijke noten op andere posities van het muziekstuk geldt dat:
 
 \begin{framed}
 \noindent
@@ -93,11 +93,11 @@ prob(c) = max(prob(p) + proxProb(p,c) + posProb(c)) \\
 Door deze functie achtereenvolgens toe te passen voor alle noten van het muziekstuk kan er bepaald worden wat de probabiliteit is van het beste pad, gebruik makend van de gegeven transformaties uit $\mathcal{T}$. Dit zal namelijk gelijk zijn aan de hoogste probabiliteit van alle noten $c\in \mathcal{C}$ in de laatste stap van het algoritme.
 
 \subsubsection{Optimale pad}
-We zijn natuurlijk niet enkel ge\"interesseerd in de probabiliteit van het optimale pad, maar ook dit pad zelf, want dit gaat de gevonden melodie weergeven. Daarom wordt er voor de elke combinatie van een positie in de melodie en de mogelijke noten die op die positie kunnen voorkomen, bijgehouden waarvan het optimale pad kwam dat uitkwam bij die exacte noot op die positie. Om deze paden voor te stellen wordt de functie $path$ gebruikt. Meer algemeen, stel we zijn op positie $i$ in het algoritme (we beschouwen dus de $i$-de noot van het muziekstuk), dan zal wanneer het optimale pad dat eindigt op noot $c\in \mathcal{C}$ komt van een zekere $p\in \mathcal{P}$, het volgende gelden:
+We zijn natuurlijk niet enkel ge\"interesseerd in de probabiliteit van het optimale pad, maar ook dit pad zelf, want dit gaat de gevonden melodie weergeven. Daarom wordt er voor de elke combinatie van een positie in de melodie en de mogelijke noten die op die positie kunnen voorkomen, bijgehouden waarvan het optimale pad kwam dat uitkwam bij die exacte noot op die positie. Om deze paden voor te stellen wordt de functie $path$ gebruikt. Meer algemeen, stel we zijn op positie $i$ in het algoritme (we beschouwen dus de $i$-de noot van het muziekstuk), dan zal wanneer het optimale pad dat eindigt op noot $n$ komt van een zekere $m$, het volgende gelden:
 
 \begin{framed}
 \noindent
-$path(i,c)=p$
+$path(i,n)=m$
 \end{framed}
 
 Wanneer het algoritme voor alle mogelijke noten op elke positie in de melodie de maximale probabiliteit bepaald heeft kan het optimale pad gevonden worden. Dit gebeurt zoals beschreven in algoritme \ref{alg:opt_pad}.
@@ -106,12 +106,12 @@ Wanneer het algoritme voor alle mogelijke noten op elke positie in de melodie de
 \caption{Optimaal pad}\label{alg:opt_pad}
 \begin{algorithmic}
 \State $note=argmax_{c \in \mathcal{C}}(prob(c))$
-\State Path.addToFront(note)
-\For {($i = n: i\geq 2: i=i-1$)}{}	
-	\State note = path(i,note)
-	\State Path.addToFront(note)
+\State $Path.addToFront(note)$
+\For {($i = AN: i\geq 2: i=i-1$)}{}	
+	\State $note = path(i,note)$
+	\State $Path.addToFront(note)$
 \EndFor
-\State \Return Path
+\State \Return $Path$
 \end{algorithmic}
 \end{algorithm}
 
@@ -145,93 +145,160 @@ De hoeveelheid geheugen die nodig is voor de uitvoer van het algoritme is lineai
 \label{ETT:algo2}
 
 \subsection{Doelstelling}
-Het algoritme dat in dit onderdeel beschreven wordt heeft dezelfde doelstelling als het algoritme beschreven in onderdeel \ref{ETT:algo1}. Enkel wordt dit algoritme aan nog een extra restrictie onderworpen.\\ 
-Zo zal dit algoritme afhankelijk zijn van drie parameters. De eerste twee parameters zijn een originele melodielijn en een aantal toegelaten transformaties. Als extra parameter is dit algoritme nog afhankelijk van een opgegeven minimum transformatie lengte.\\ 
-Dit betekent dat het algoritme enkel een deel van de originele melodielijn mag transformeren als het voor minstens dit opgegeven aantal opeenvolgende noten dezelfde transformatie toepast. Er zijn een aantal overeenkomsten tussen dit algoritme en het algoritme beschreven in sectie \ref{ETT:algo1}. Bij het bespreken van deze overeenkomsten zal er verwezen worden naar overeenkomstige delen in dat onderdeel. Daar waar dit algoritme verschilt van het vorige zal een volledige uitleg gegeven worden.
+Het algoritme dat in dit onderdeel beschreven wordt heeft dezelfde doelstelling als het algoritme beschreven in onderdeel \ref{ETT:algo1}. Enkel wordt dit algoritme aan nog een extra restrictie onderworpen.
+
+Zo zal dit algoritme afhankelijk zijn van drie parameters. De eerste twee parameters zijn een originele melodielijn en een aantal toegelaten transformaties. Als extra parameter is dit algoritme nog afhankelijk van een opgegeven minimum transformatie lengte.
+
+Dit betekent dat het algoritme enkel een deel van de originele melodielijn mag transformeren als het voor minstens dit opgegeven aantal opeenvolgende noten dezelfde transformatie uitvoert.
 
 \subsection{Idee van het algoritme}
 \subsubsection{Hoog niveau idee van het algoritme en notatie}
-Ook nu zal er gebruik gemaakt worden van de principes van \textit{dynamic programming}. Dit zal enkel op een verschillende manier gebeuren dan bij het vorige algoritme, aangezien de opgegeven minimumlengte verhindert om eenzelfde data representatie te gebruiken. Ook zullen dezelfde regels gelden als in het overeenkomstige onderdeel uit \ref{ETT:algo1} wat het bereik van een tranformatie betreft.\\ 
-Het idee van het algoritme bestaat erin om elke noot van het muziekstukje chronologisch te overlopen. Bij elke noot uit het originele stuk zijn er dan een aantal mogelijkheden om het beste pad te bepalen dat eindigt op een van de 14 mogelijke noten waarnaar de originele noot getransformeerd kan worden.\\ 
-Als in het vervolg van de tekst gesproken wordt over een `geldig pad', dan wordt hier een pad mee bedoeld dat de regels van de minimumlengte voor transformatie respecteert. De parameter die voor de minimum transformatie lengte staat wordt met `ML' aangeduid.
+Ook nu zal er gebruik gemaakt worden van de principes van \textit{dynamic programming}. Dit zal enkel op een verschillende manier gebeuren dan bij het vorige algoritme, aangezien de opgegeven minimumlengte verhindert om eenzelfde data representatie te gebruiken. Ook zullen dezelfde regels gelden als in het overeenkomstige onderdeel uit \ref{ETT:algo1} wat het bereik van een tranformatie betreft.
 
-\subsubsection{Verschillende mogelijkheden om tot een optimaal (sub)pad te komen} 
-Een eerste mogelijkheid voor een optimaal pad is de uitbreiding van eender welk optimaal pad dat eindigt bij een van de 14 mogelijkheden voor de vorige noot met het behouden van de huidige noot.\\ 
-Een tweede mogelijkheid is het uitbreiden van een optimaal pad dat geldig is, eindigt op de vorige noot en eindigt met transformatie f uit te breiden met dezelfde transformatie f.\\ 
+Het idee van het algoritme bestaat erin om elke noot van het muziekstukje chronologisch te overlopen. Bij elke noot uit het originele stuk zijn er dan een aantal mogelijkheden om het beste pad te bepalen dat eindigt op een van de 14 mogelijke noten waarnaar de originele noot getransformeerd kan worden.
+ 
+Als in het vervolg van de tekst gesproken wordt over een ``geldig pad'', dan wordt hier een pad mee bedoeld dat de regels van de minimumlengte voor transformatie respecteert.
+
+\subsubsection{Verschillende mogelijkheden om tot een optimaal pad te komen} 
+In dit onderdeel wordt een intu\"itieve beschrijving gegeven van hoe het optimale pad tot op een bepaalde positie in het muziekstuk kan berekend worden. Dit, gebruik makend van de optimale paden en bijhorende probabiliteiten van de noten op vorige posities in het muziekstuk.
+
+Een eerste mogelijkheid voor een optimaal pad is de uitbreiding van eender welk optimaal pad dat eindigt op een van de noten waar de vorige noot uit het muziekstuk naar getransformeerd kan worden.
+ 
+Een tweede mogelijkheid is het uitbreiden van een optimaal pad dat geldig is, eindigt op de vorige noot en eindigt met transformatie f uit te breiden met dezelfde transformatie f.
+ 
 Tot slot is er ook nog de mogelijkheid om eender welk optimaal en geldig pad dat een lengte ML korter is dan het huidige uit te breiden met ML keer dezelfde transformatie. Op deze manier kunnen alle optimale paden bekomen worden die aan de vooropgestelde eisen voldoen.
 
 \subsection{Werking van het algoritme}
-In dit onderdeel zal de werking van het algoritme beschreven worden. Als extra referentie voor de lezer is de broncode bijgevoegd in appendix \ref{Broncode:algo2}.\\
+In dit onderdeel zal de werking van het algoritme beschreven worden. Als extra referentie voor de lezer is de broncode bijgevoegd in appendix \ref{Broncode:algo2}. Tijdens de uitvoer van het algoritme zal achtereenvolgens elke noot in het muziekstuk overlopen worden. Nu zal voor elke transformatie apart bijgehouden worden wat de optimale paden en probabiliteiten zijn voor alle verschillende noten waar de huidige noot naartoe getransformeerd kan worden en die eindigen met die specifieke transformatie. 
 
-\subsubsection{Hulpvariabelen}
-Tijdens de uitvoering van het algoritme worden er 8 hulpvariabelen (allemaal arrays) gebruikt die hieronder opgelijst staan, met korte uitleg over hun betekenis.
+\subsubsection{Notatie}
+Voor het beschrijven van het algoritme worden een aantal notaties en functies beschreven. Allereerst wordt volgende notatie ingevoerd:
 
-\begin{itemize}
-    \item \textbf{prob\textunderscore keep\textunderscore past:} Houdt de probabiliteiten bij voor de optimale 	en geldige paden die eindigen op een van de laatste ML bekeken noten. En dit 		enkel voor de paden die eindigen zonder transformatie van de laatste noot.
-    \item \textbf{prob\textunderscore keep\textunderscore current:} Houdt de probabiliteit bij voor het optimaal en geldig pad dat eindigt op de huidig beschouwde noot. En dit enkel voor de paden die eindigen zonder transformatie van hun laatste noot.
-    \item \textbf{prob\textunderscore transform\textunderscore past:} Houdt voor elke toegelaten transformatie afzonderlijk de probabiliteiten bij voor de optimale en geldige paden die eindigen met deze transformatie. En dit voor al zo een paden die eindigen op een mogelijke transformatie van een van de laatste ML beschouwde noten.
-    \item \textbf{prob\textunderscore transform\textunderscore current:} Houdt voor elke toegelaten transformatie afzonderlijk de probabiliteiten bij voor de optimale en geldige paden die eindigen met deze transformatie. En dit voor al zo een paden die eindigen op de huidig beschouwde noot.
-    \item \textbf{path\textunderscore end\textunderscore on\textunderscore keep\textunderscore past:} Houdt de optimale en geldige paden bij die horen bij de probabiliteiten weergegeven in \textit{prob\textunderscore keep\textunderscore past}.
-    \item \textbf{path\textunderscore end\textunderscore on\textunderscore keep\textunderscore current:} Houdt het optimale pad bij dat hoort bij de probabiliteit weergegeven in \textit{prob\textunderscore keep\textunderscore current}.
-    \item \textbf{prob\textunderscore end\textunderscore on\textunderscore transform\textunderscore past:} Houdt de optimale en geldige paden bij, horende bij de probabiliteiten van \textit{prob\textunderscore transform\textunderscore past}.
-    \item \textbf{prob\textunderscore end\textunderscore on\textunderscore transform\textunderscore current:} Houdt de optimale en geldige paden bij, horende bij de probabiliteiten van \textit{prob\textunderscore transform\textunderscore current}.
-\end{itemize}
+\begin{framed}
+\noindent
+$\mathcal{T}:$ Set van alle transformaties die beschikbaar zijn voor het algoritme, in deze set zit ook telkens de nultransformatie die een noot nooit verandert.\\
+$nt$: De nultransformatie die ook in $\mathcal{T}$ zit.\\
+$ML$: De minimum transformatie lengte.\\
+$\mathcal{P_{ML}}:$ Set van alle noten waar de noot die $ML$ posities voor de huidige noot naartoe getransformeerd kan worden.\\
+$\mathcal{P}:$ Set van alle noten waar de vorige beschouwde noot naartoe getransformeerd kan worden.\\
+$\mathcal{C}:$ Set van alle noten waar de huidige noot naartoe getransformeerd kan worden.\\
+$AN$: Het aantal noten in het muziekstuk.\\
+$x$: Noot uit de originele melodielijn die beschouwd wordt als huidige noot in het algoritme.\\
+$i$: De index van de noot die momenteel beschouwd wordt in het algoritme.\\
+$OL$: Geordende lijst van de noten in de originele melodie.
+\end{framed}
 
-Ter verduidelijking worden de vormen en groottes van deze variabelen visueel voorgesteld met een aantal illustraties. In figuur \ref{figuur:prob_keep_algo_2} worden de datastructuren weergegeven die betrekking hebben tot het `niet-transformeren' van de laatst beschouwde noot.\\ 
-In figuur \ref{figuur:prob_transform_algo_2} worden de datastructuren weergegeven die betrekking hebben tot het transformeren van de laatst beschouwde noot. Voor elke beschikbare transformatie (in het totaal `AT' aantal transformaties) apart wordt er dezelfde soort info bijgehouden als voor het geval van `niet-transformatie'.\\ 
-In figuren \ref{figuur:path_keep_algo_2} en \ref{figuur:path_transform_algo_2} wordt weergegeven hoe de optimale (en geldige) paden bijgehouden worden die horen bij de probabiliteiten uit de vorige twee figuren. In de twee `past' tabellen uit deze twee figuren valt nog op te merken dat een pad dat rechts van een ander pad in zo een tabel staat, telkens exact een element langer is dan het andere. Dit komt omdat er voor dat optimale pad dat rechts staat al een element extra beschouwd is door het algoritme.\\
+De functie $transform$ geeft weer dat een vorige noot $p\in \mathcal{P}$ de huidige noot $x$ in de originele melodie onder transformatie $t\in \mathcal{T}$ afbeeldt naar noot $c\in \mathcal{C}$.
 
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=0.75\textwidth]{4_Efficient_Toepassen_Transformatie/prob_keep_algo_2}
-  \caption{Illustratie van de variabelen die probabiliteiten opslaan met betrekking tot het `niet-transformeren' van de laatste noot. Elk element in deze tabel stelt een (logaritme van een) probabiliteit voor.}
-  \label{figuur:prob_keep_algo_2}
-\end{figure}
+\begin{framed}
+\noindent
+$transform(p,x,t)=c$
+\end{framed}
 
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=0.75\textwidth]{4_Efficient_Toepassen_Transformatie/prob_transform_algo_2}
-  \caption{Illustratie van de variabelen die probabiliteiten opslaan met betrekking tot het transformeren van de laatste noot. Elk element in deze tabel stelt een (logaritme van een) probabiliteit voor.}
-  \label{figuur:prob_transform_algo_2}
-\end{figure}
+De functie $proxProb$ geeft het logaritme terug van de probabiliteit gegeven door de \textit{proximity} parameter van het RPK-model. Als voor de overgang van noot $p\in \mathcal{P}$ naar noot $c\in \mathcal{C}$, de afstandsprobabiliteit tussen deze twee noten gelijk is aan $d$, dan geeft de functie $proxProb$ de volgende waarde terug
 
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=0.75\textwidth]{4_Efficient_Toepassen_Transformatie/path_keep_algo_2}
-  \caption{Illustratie van de variabelen die optimale (geldige) paden opslaan met betrekking tot het `niet-transformeren' van de laatste noot. Elk element in deze tabel stelt een optimaal en geldig pad voor.}
-  \label{figuur:path_keep_algo_2}
-\end{figure}
+\begin{framed}
+\noindent
+$proxProb(p,c)=log(d)$
+\end{framed}
 
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=0.75\textwidth]{4_Efficient_Toepassen_Transformatie/path_transform_algo_2}
-  \caption{Illustratie van de variabelen die optimale (geldige) paden opslaan met betrekking tot het transformeren van de laatste noot. Elk element in deze tabel stelt een optimaal en geldig pad voor.}
-  \label{figuur:path_transform_algo_2}
-\end{figure}
+De functie $posProb$ geeft het logaritme terug van de probabiliteit van een noot die enkel afhangt van de toonhoogte van de noot zelf. Deze probabiliteiten komen overeen met de \textit{range} en de \textit{key} parameters uit het RPK-model. Deze probabiliteit is dus onafhankelijk van de voorgaande noot. stel dat voor een noot $c\in \mathcal{C}$ de probabiliteit door de \textit{range} parameter gegeven wordt door $r$. Stel ook dat de probabiliteit bepaald door de \textit{key} gegeven wordt door $k$. Nu wordt de totale $posProb$ gegeven door:
 
-\subsubsection{Verschil in opslag optimale paden met algoritme ui \ref{ETT:algo1}}
-Het valt op dat in dit algoritme optimale paden bijgehouden worden afhankelijk van met welke specifieke transformtie hun laatste noot bekomen is. Dit in tegenstelling tot het algoritme beschreven in onderdeel \ref{ETT:algo1} waar er een gemeenschappelijke \textit{matrix} werd opgesteld waaruit het optimale pad later geconstrueerd kon worden.\\ 
-De reden dat zo een matrix wel werke in het vorige algoritme was precies omdat er geen eis van minimum lengte was voor een transformatie. Dit betekent dat voor eender welke toonhoogte waarnaar de huidige noot getransformeerd kan worden, er kan besloten worden enkel afgaande op de probabiliteiten van de optimale paden voor iedere mogelijke toonhoogte die de vorige noot kan aannemen, wat de probabiliteiten zijn van de optimale paden die eindigen op deze toonhoogtes.\\ 
-Stel nu dat voor het algoritme besproken in dit onderdeel, dezelfde voorstelling zoud gebruikt worden. Nu zijn er twee problemen. Ten eerste, als we willen transformeren moet dat voor minsten ML opeenvolgende noten zijn, het volstaat dus niet meer om gewoon naar de vorige laag te kijken in de matrix om de nieuwe te bepalen, we gaan ook ML eenheden verder moeten teruggaan om op suboplossingen die voldoende korter zijn ineens ML keer de transformatie toe te passen.\\ 
-Het volgende probleem is dat we zelfs als we dan een nieuw pad vinden, we dit (voorlopig) optimale pad niet zomaar kunnen inschrijven in de \textit{matrix}. Dit komt doordat we dan ook andere paden zouden kunnen aanpassen die daardoor mogelijks een deel van hun pad getransformeerd zouden zien over een lengte korter dan ML wat in tegenstrijd is met de opgelegde eis van minimum transformatie lengte. Vandaar dat nu volledige paden apart bijgehouden worden in plaats van een matrix waaruit alle paden afgeleid kunnen worden. Dit is computationeel minder interessant maar noodzakelijk voor de correctheid van het algoritme.
+\begin{framed}
+\noindent
+$posProb(c)=log(r) + log(k)$
+\end{framed}
 
-\subsubsection{Initialisatie}
-De initialisatie verloopt vrij eenvoudig. Alle variabelen die optimale paden bijhouden worden ge\"initialiseerd op een lege array. Aangezien er voor de uitvoer van het algoritme uiteraard nog geen deel van een pad berekend is.\\ 
-De variabelen die betrekking hebben op de probabiliteiten van de optimale paden worden allemaal op een zeer lage waarde ge\"initialiseerd. Dit behalve voor variabele \textit{prob\textunderscore keep\textunderscore past}, waarvan de waarde horende bij de probabiliteit op het behouden van de eerste noot op 0 gezet wordt (wat overeenkomt met een kans van 1 aangezien de waarden waarmee gerekend worden, de logaritmen zijn van de eigenlijke waarden). Dit omdat de eerste noot van een melodielijn altijd behouden wordt, want om een transformatie in rekening te brengen moet er een vorige noot zijn die niet bestaat voor de eerste noot.
+Tot slot is er ook nog een algoritme $extendPath$ dat berekent wat het logaritme van de probabiliteit is van de uitbreiding van een pad. Deze uitbreiding moet van lengte $l$ zijn en volgens een meegegeven transformatie $t\in \mathcal{T}$ bekomen worden. Dit algoritme krijgt ook het pad $path$ waarop deze uitbreiding moet uitgevoerd worden mee. Tot slot wordt aan dit algoritme wordt ook een lijst $list$ van opeenvolgende noten meegegeven, dit zijn de noten van het originele muziekstuk waarop deze transformatie toegepast moet worden. Dit algoritme geeft niet alleen het logaritme van de probabiliteit van deze uitbreiding mee, maar ook het volledige pad dat na uitbreiding bekomen wordt.
 
-\subsubsection{Een stap in het algoritme}
-Stap n in het algoritme komt overeen met het berekenen van de optimale paden na transformatie van de eerste n+1 noten van het originele stuk. Om deze optimale paden te berekenen wordt gebruik gemaakt van de optimale paden van de vorige stappen in het algoritme. Deze worden dan zo effici\"ent mogelijk uitgebreid tot aan de huidig beschouwde noot.\\ 
-In de rest van deze paragraaf wordt er vanuit gegaan dat we momenteel bij noot n in het muziekstuk zitten in het algoritme. En we zoeken nu dus de optimale paden voor het toepassen van het algoritme op de eerste n+1 noten (aangezien de eerste noot, noot 0 is).\\
-Een eerste mogelijkheid om een optimaal pad van n+1 noten te vinden is om een van de optimale paden van lengte n uit te breiden met een `niet-transformatie' door de noot op positie n in de oorspronkelijk melodie gewoon te behouden. In dit geval maakt het niet uit of zo een optimaal pad van lengte n eindigt op een specifieke transformatie of niet. Indien zo een nieuw pad een hogere waarschijnlijkheid heeft dan het beste pad dat tot nu toe gevonden is, dan wordt dit pad opgeslagen in \textit{path\textunderscore end\textunderscore on\textunderscore keep\textunderscore current} en de overeenkomstige probabiliteit wordt bijgehouden in \textit{prob\textunderscore keep\textunderscore current}.\\
-Een tweede mogelijkheid is om een nieuw pad van lengte n+1 te construeren dat eindigt op een van de toegelaten transformaties. Voor elke transformatie f kan er dan het volgende gedaan worden om mogelijke optimale paden te vinden.\\ 
-Er is een eerste mogelijkheid om een optimaal pad van lengte n dat al eindigde op dezelfde transformatie uit te breiden naar een pad van lengte n+1 met deze transformatie. \\
-Er is nog een tweede mogelijkheid waarbij een optimaal pad van lengte n+1-ML wordt uitgebreid met ML transformaties volgens transformatie f. Dit om te voldoen aan de eisen van de minimum lengte van een transformatie. Deze paden van lengte n+1-ML waarover gesproken wordt kunnen zowel eindigen op een van de andere transformaties als eindigen op een `niet-transformatie'. Zolang ze daarna maar uitgebreid worden met ML keer de transformatie f.\\ 
-Ook hier zal bij al deze combinaties gekeken worden of de probabiliteit van het nieuwe geconstrueerde pad hoger ligt dan het beste pad tot nu toe. Indien dit het geval is wordt dit nieuwe pad opgeslagen in \textit{path\textunderscore end\textunderscore on\textunderscore transform\textunderscore current} en de overeenkomstige probabiliteit wordt bijgehouden in \textit{prob\textunderscore transform\textunderscore current}.\\
-Als laatste gedeelte van elke stap van het algoritme worden, net zoals in het algoritme beschreven in de vorige sectie, de variabelen weer klaargemaakt voor de uitvoer van de volgende iteratie. Alle probabiliteiten en paden worden een tijdsstap doorgeschoven in hun overeenkomstige variabelen. Paden die meer dan ML korter zijn dan de huidige beschouwde lengte worden niet meer bijgehouden. Dus voor elke iteratie n zullen aan het eind van de iteratiestap alle paden met lengte n+1-ML verwijderd worden omdat ze niet meer noodzakelijk zijn voor het vervolg van het algoritme.
+\begin{algorithm}
+\caption{$extendPath(l,t,Path,list)$}\label{alg:opt_pad}
+\begin{algorithmic}
+\State $Prob = 0$
+\State $p$ = $Path.last$
+\For {($i = 1: i \leq l: i=i+1$)}{}	
+	\State $x = list[i]$
+	\State $c = transform(p,x,t)$
+	\State $Path.add(c)$
+	\State $Prob = Prob + proxProb(p,c) + posProb(c)$
+	\State $p = c$
+\EndFor
+\State \Return $(Prob, Path)$ 
+\end{algorithmic}
+\end{algorithm}
 
-\subsubsection{Extractie van het beste pad}
-In tegenstelling tot het vorige algoritme waar het optimale pad nog moest bepaald worden door terug te lopen door de \textit{matrix}, zal de extractie van het optimale pad na uitvoeren van het algoritme hier een stuk vlotter verlopen. Dit komt doordat de volledige optimale paden van de deelproblemen (en uiteindelijk dus ook van het gehele probleem) telkens opgeslagen worden in hulpvariabelen.\\ 
-Het enige wat moet gebeuren om het beste pad te vinden is dus kijken naar alle mogelijke optimale paden voor de volledige melodie. Voor elke mogelijke transformatie en voor elke mogelijke eindnoot die met deze transformatie kan bekomen worden gaan we zo een optimaal pad hebben. Van deze optimale paden gaat het pad gekozen worden met de hoogste waarschijnlijkheid. Dit pad is het gezochte optimale pad dat voldoet aan alle voorwaarden opgelegd aan het algoritme.
+\subsubsection{Optimale paden voor verschillende transformaties}
+De reden dat paden die eindigen op verschillende transformaties apart bijgehouden worden heeft twee redenen. 
+
+Ten eerste zal, wanneer het algoritme op voorhand weet dat een bepaald pad geldig is (voldoet aan de voorwaarden voor minimum transformatie lengte) en eindigt op een zeker transformatie $t$, weten dat dit pad enkel door dezelfde transformatie $t$ kan uitgebreid worden naar enkel de volgende noot. Voor andere transformaties zal minstens $ML$ keer die transformatie moeten toegepast worden. Met deze voorstelling is het meteen duidelijk welke transformatie ook voor een noot mag uitgevoerd worden en welke voor minstens $ML$ volgende noten moet uitgevoerd worden om terug een geldig pad te bekomen.
+
+Ten tweede heeft het ook te maken met de extra eis van de minimum transformatie lengte. Indien alle optimale paden zouden bijgehouden worden met een $path$ relatie zoals in het vorige algoritme, die onafhankelijk zou zijn van de transformatie waarop ge\"eindigd werd, dan kan tijdens de uitvoer van het algoritme de regel van de minimum transformatie lengte geschonden worden. Een voorbeeld hiervan wordt hieronder gegeven:
+
+\begin{framed}
+\noindent
+Stel dat:
+$ML=2$\\
+$path(3,W_1) = V_1$\\
+$path(2,V_1) = U_1$\\
+$path(3,W_2) = V_2$\\
+$path(2,V_2) = U_2$\\
+Dan zijn momenteel de optimale paden voor $W_1$ en $W_2$, respectievelijk $U_1-V_1-W_1$ en $U_2-V_2-W_2$.\\
+Stel verder dat het optimale pad voor $W_1$ bekomen werd door tweemaal een transformatie $t_1 \in \mathcal{T}$ toe te passen en dat het optimale pad voor $W_2$ bekomen werd door tweemaal $t_2 \in \mathcal{T}$ toe te passen.\\
+Beide paden zijn momenteel dus geldig onder de voorwaarde van de minimum transformatie lengte.\\
+Stel nu dat er in het verdere verloop van het algoritme nog een beter pad gevonden wordt dat eindigt in $W_2$ en dat verloopt volgens $U_2-V_1-W_2$. Stel ook dat dit pad gevonden werd door het tweemaal toepassen van $t_3 \in \mathcal{T}$. Nu wordt de $path$ functie aangepast zodat deze de juiste waarden teruggeeft.\\
+Nu geldt:\\
+$path(3,W_1) = V_1$\\
+$path(2,V_1) = U_2$\\
+$path(3,W_2) = V_1$\\
+$path(2,V_2) = U_2$\\
+Dan zijn nu de optimale paden voor $W_1$ en $W_2$, respectievelijk $U_2-V_1-W_1$ en $U_2-V_1-W_2$.\\
+Het optimale pad van $W_1$ is nu geen geldig optimaal pad meer aangezien het door het achtereenvolgens toepassen van telkens een maal de transformatie $t3$ en $t1$ niet meer voldoet aan de voorwaarden van de minimum transformatie lengte.
+\end{framed}
+
+\subsubsection{Maximale probabiliteit}
+$prob(c,t)$ geeft het logaritme van de probabiliteit weer van het meest waarschijnlijke pad dat eindigt op deze noot $c\in \mathcal{C}$. Deze noot (en zelfs minstens de laatste $ML$ noten) moet in dit geval bekomen zijn door gebruik van transformatie $t \in \mathcal{T}$.
+
+Wanneer de eerste noot van het muziekstuk beschouwd wordt en $x$ dus de waarde heeft van deze eerste noot, zal de probabiliteit van het pad dat eindigt op deze noot gelijk zijn aan 1. De probabiliteit van alle andere noten is gelijk aan 0. Dit komt omdat de eerste noot van een muziekstuk nooit getransformeerd wordt. Dit zal enkel het geval zijn voor de nultransformatie. Voor alle andere transformaties zal eender welke noot een kans 0 hebben om deel uit te maken van het optimale pad aangezien er geen enkel optimaal pad kan zijn dat eindigt op een transformatie als dat pad maar een noot kan bevatten. Aangezien het algoritme werkt met de logaritmen van deze probabiliteiten zullen de waarden respectievelijk op 0 en $-\infty$ gezet worden. Wanneer $x$ gelijk is aan de eerste noot van het originele muziekstuk en transformatie $t\in \mathcal{T}$ beschouwd wordt geldt dan:
+
+\begin{framed}
+\noindent
+$\forall c\in \mathcal{C}, t\in \mathcal{T} \begin{cases} 
+prob(c,t)=0 &\mbox{if } c==x $ \& $ t=nt\\ 
+prob(c,t)=-\infty &\mbox{if } c==x $ \& $ t!=nt\\ 
+prob(c,t)=-\infty &\mbox{if } c!=x \end{cases}$
+\end{framed}
+
+Voor alle andere noten en transformaties op alle andere posities in het muziekstuk geldt:
+
+\begin{framed}
+\noindent
+\begin{multline}
+\forall t\in \mathcal{T}: 
+ProbSame(c,t) = max(prob(p,t) \\ 
++ extendPath(1,t,path(i-1,p,t),OL[i]).prob) \\
+| \forall p\in \mathcal{P}: transform(p,x,t)=c
+\end{multline}
+
+\begin{multline}
+\forall t\in \mathcal{T}: 
+ProbDifferent(c,t) = max(prob(p_{ML},t) \\ 
++ extendPath(i-ML,t,path(i-ML,p_{ML},t1).prob,OL[(i-ML+1)..i]) \\
+| \forall p_{ML}\in \mathcal{P_{ML}}, \forall t1\in \mathcal{T}:\\
+t1!=t, extendPath(i-ML,t,path(i-ML,p_{ML},t1).path.last=c
+\end{multline}
+
+\begin{multline}
+\forall c\in \mathcal{C}, t\in \mathcal{T}: 
+prob(c,t) = max(ProbSame(c,t), ProbDifferent(c,t))
+\end{multline}
+\end{framed}
+
+Door deze functie achtereenvolgens toe te passen voor alle noten van het muziekstuk kan er bepaald worden wat de probabiliteit is van het beste pad, gebruik makend van de gegeven transformaties uit $\mathcal{T}$ rekening houdend met de minimum transformatie lengte $ML$. Dit zal namelijk gelijk zijn aan de hoogste probabiliteit van de combinatie van alle noten $c\in \mathcal{C}$ en transformaties $t\in \mathcal{T}$ in de laatste stap van het algoritme.
+
+\subsubsection{Optimale pad}
+$path(i,n,t)$ stelt het volledige pad voor dat optimaal is onder de gegeven voorwaarden en dat eindigt bij noot $n$ op positie $i$ en door te eindigen met transformatie $t\in \mathcal{T}$. Initieel zijn al deze paden volledig leeg, enkel het pad dat eindigt op de nultransformatie en op de noot die gelijk is aan de startnoot bestaat uit exact deze noot. Telkens er een pad gevonden wordt dat eindigt op  noot $n$ en met transformatie $t\in \mathcal{T}$, dan zal niet enkel de $prob(n,t)$ waarde aangepast worden, maar ook $path(i,n,t)$ zal het nieuwe beste pad bevatten voor de combinatie van deze parameters.
+
+Aangezien volledige beste paden bijgehouden worden moet er geen werk verricht worden om het beste pad te bepalen. Er moet enkel dat pad gekozen worden van lengte $AN$ dat de hoogste probabiliteit oplevert. Voor de combinatie van alle noten $c\in \mathcal{C}$ en transformaties $t\in \mathcal{T}$ is er zo een optimaal pad dat hier een kandidaat voor is. Van al deze kandidaten zal het pad met de hoogste probabiliteit het optimale pad zijn voor het geheel.
 
 \subsection{Performantie en geheugencomplexiteit}
 In dit algoritme zijn er drie parameters waar rekening mee dient gehouden te worden bij het bespreken van de tijds- en geheugencomplexiteit. Deze drie parameters zijn het aantal noten in de originele melodielijn (AN), het aantal beschikbare transformaties (AT) en de minimum transformatie lengte (ML).
