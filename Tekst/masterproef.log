@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  27 MAY 2016 00:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.7)  27 MAY 2016 15:28
 entering extended mode
 **masterproef.tex
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.tex
@@ -1056,7 +1056,47 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 s\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 )))
-(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.aux
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\framed\framed.sty"
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip193
+\fb@frw=\dimen219
+\fb@frh=\dimen220
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count199
+\float@exts=\toks46
+\float@box=\box46
+\@float@everytoks=\toks47
+\@floatcapt=\box47
+)
+\@float@every@algorithm=\toks48
+\c@algorithm=\count200
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
+Package: algpseudocode 
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count201
+\c@ALG@rem=\count202
+\c@ALG@nested=\count203
+\ALG@tlm=\skip194
+\ALG@thistlm=\skip195
+\c@ALG@Lnr=\count204
+\c@ALG@blocknr=\count205
+\c@ALG@storecount=\count206
+\c@ALG@tmpcounter=\count207
+\ALG@tmplength=\skip196
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.aux
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\0_Inleiding/inleiding.aux)
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\1_Muzikale_Achtergrond/muzikale_a
 chtergrond.aux
@@ -1146,6 +1186,9 @@ LaTeX Warning: Label `hoofdstuk:ETT' multiply defined.
 
 
 LaTeX Warning: Label `ETT:algo1' multiply defined.
+
+
+LaTeX Warning: Label `alg:opt_pad' multiply defined.
 
 
 LaTeX Warning: Label `figuur:matrix' multiply defined.
@@ -1305,38 +1348,38 @@ LaTeX Warning: Label `Broncode:algo2' multiply defined.
 
 ) (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_1_Paper/paper.aux)
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_2_Poster/poster.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 77.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count199
-\scratchdimen=\dimen219
-\scratchbox=\box46
-\nofMPsegments=\count200
-\nofMParguments=\count201
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count202
-\MPscratchDim=\dimen220
-\MPnumerator=\count203
-\makeMPintoPDFobject=\count204
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count208
+\scratchdimen=\dimen221
+\scratchbox=\box48
+\nofMPsegments=\count209
+\nofMParguments=\count210
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count211
+\MPscratchDim=\dimen222
+\MPnumerator=\count212
+\makeMPintoPDFobject=\count213
+\everyMPtoPDFconversion=\toks50
 )
 
 ******************************************************
@@ -1358,7 +1401,7 @@ Sidefoothsep and sidefootwidth: 7pt and 101pt
 Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
 ******************************************************
 
-LaTeX Info: Redefining \microtypecontext on input line 73.
+LaTeX Info: Redefining \microtypecontext on input line 77.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1372,8 +1415,8 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\AtBeginShipoutBox=\box47
-Package hyperref Info: Link coloring ON on input line 73.
+\AtBeginShipoutBox=\box49
+Package hyperref Info: Link coloring ON on input line 77.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1381,14 +1424,14 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count205
+\c@section@level=\count214
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 73.
-LaTeX Info: Redefining \ref on input line 73.
-LaTeX Info: Redefining \pageref on input line 73.
-LaTeX Info: Redefining \nameref on input line 73.
+LaTeX Info: Redefining \nameref on input line 77.
+LaTeX Info: Redefining \ref on input line 77.
+LaTeX Info: Redefining \pageref on input line 77.
+LaTeX Info: Redefining \nameref on input line 77.
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.out)
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.out)
 \@outlinefile=\write5
@@ -1401,7 +1444,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
-\c@lstlisting=\count206
+\c@lstlisting=\count215
 
 ABD: EveryShipout initializing macros
 Package microtype Info: Loading generic settings for font family
@@ -1412,27 +1455,27 @@ Package microtype Info: Loading generic settings for font family
 <logokuleng.pdf, id=162, 159.33528pt x 85.358pt>
 File: logokuleng.pdf Graphic file (type pdf)
  <use logokuleng.pdf>
-Package pdftex.def Info: logokuleng.pdf used on input line 73.
+Package pdftex.def Info: logokuleng.pdf used on input line 77.
 (pdftex.def)             Requested size: 159.33542pt x 85.3617pt.
  [-1
 
 
 {C:/Users/Elias/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Program 
 Files/KUL_Tex/tex/latex/kulemt/logokuleng.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 73.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 77.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 73.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 77.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 73.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 73.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 77.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 77.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1505,7 +1548,14 @@ File: 0_Inleiding/fibo.png Graphic file (type png)
 <use 0_Inleiding/fibo.png>
 Package pdftex.def Info: 0_Inleiding/fibo.png used on input line 24.
 (pdftex.def)             Requested size: 199.0pt x 112.08382pt.
- [2 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/0_Inleiding/fibo.png>]) [3]
+ [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.33 
+      <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/0_Inleiding/fibo.png>])
+[3]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\1_Muzikale_Achtergrond/muzikale_a
 chtergrond.tex [4
 
@@ -1534,9 +1584,21 @@ File: 1_Muzikale_Achtergrond/nootlengtes.png Graphic file (type png)
 Package pdftex.def Info: 1_Muzikale_Achtergrond/nootlengtes.png used on input l
 ine 38.
 (pdftex.def)             Requested size: 199.0pt x 36.05446pt.
- [6 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergrond/tijdss
-ignatuur.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergr
-ond/nootlengtes.png>]
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.45 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.2
+.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.45 
+      <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergrond/tijd
+ssignatuur.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achter
+grond/nootlengtes.png>]
 <1_Muzikale_Achtergrond/toonladder.jpeg, id=511, 501.875pt x 130.4875pt>
 File: 1_Muzikale_Achtergrond/toonladder.jpeg Graphic file (type jpg)
 
@@ -1544,8 +1606,20 @@ File: 1_Muzikale_Achtergrond/toonladder.jpeg Graphic file (type jpg)
 Package pdftex.def Info: 1_Muzikale_Achtergrond/toonladder.jpeg used on input l
 ine 65.
 (pdftex.def)             Requested size: 199.0pt x 51.7401pt.
- [7 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergrond/toonla
-dder.jpeg>]
+ [7pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.72 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.2
+.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.72 
+      <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergrond/toon
+ladder.jpeg>]
 <1_Muzikale_Achtergrond/do_groot.png, id=519, 322.3242pt x 113.7048pt>
 File: 1_Muzikale_Achtergrond/do_groot.png Graphic file (type png)
 
@@ -1561,9 +1635,21 @@ File: 1_Muzikale_Achtergrond/la_klein.png Graphic file (type png)
 Package pdftex.def Info: 1_Muzikale_Achtergrond/la_klein.png used on input line
  91.
 (pdftex.def)             Requested size: 199.0pt x 58.30653pt.
- [8 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergrond/do_gro
-ot.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergrond/la
-_klein.png>]) [9]
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.97 
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.2
+.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.97 
+      <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergrond/do_g
+root.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/1_Muzikale_Achtergrond/
+la_klein.png>]) [9]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\2_Objectieve_Beoordeling/objectie
 ve_beoordeling.tex [10
 
@@ -1581,8 +1667,14 @@ Missing character: There is no ; in font nullfont!
 
 Underfull \vbox (badness 1297) has occurred while \output is active []
 
- [12]
-[13] <2_Objectieve_Beoordeling/range.png, id=569, 711.8595pt x 311.36325pt>
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.73 
+     ] [13]
+<2_Objectieve_Beoordeling/range.png, id=569, 711.8595pt x 311.36325pt>
 File: 2_Objectieve_Beoordeling/range.png Graphic file (type png)
 
 <use 2_Objectieve_Beoordeling/range.png>
@@ -1616,17 +1708,47 @@ ine 127.
 
 Underfull \vbox (badness 4832) has occurred while \output is active []
 
- [15 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve_Beoordeling/ran
-ge.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve_Beoordeling/
-proximity.png>] [16 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve_
-Beoordeling/key_major.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Obje
-ctieve_Beoordeling/key_minor.png>]) [17]
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.136 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.136 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve_Beoordeling/r
+ange.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve_Beoordelin
+g/proximity.png>] [16pdfTeX warning (ext4): destination with the same identifie
+r (name{figure.3.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.140 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.140 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve_Beoordeling/k
+ey_major.png> <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/2_Objectieve_Beoord
+eling/key_minor.png>]) [17]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\3_Melodische_Transformatie/melodi
 sche_transformatie.tex [18
 
 
 
-] [19] [20]
+] [19] [20pdfTeX warning (ext4): destination with the same identifier (name{tab
+le.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.42 
+     ]
 <3_Melodische_Transformatie/transfo1.png, id=620, 889.52325pt x 387.24675pt>
 File: 3_Melodische_Transformatie/transfo1.png Graphic file (type png)
 
@@ -1637,122 +1759,214 @@ line 47.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/3_Melodische_Transformatie/t
-ransfo1.png>] [22]
-<3_Melodische_Transformatie/transfo2.png, id=637, 879.88725pt x 382.42876pt>
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.61 
+      <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/3_Melodische_Transformatie/
+transfo1.png>] [22pdfTeX warning (ext4): destination with the same identifier (
+name{table.4.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.83 A
+      ls we dan verder gaan naar de volgende noot merken we dat het verschil...
+] <3_Melodische_Transformatie/transfo2.png, id=637, 879.88725pt x 382.42876pt>
 File: 3_Melodische_Transformatie/transfo2.png Graphic file (type png)
 
 <use 3_Melodische_Transformatie/transfo2.png>
 Package pdftex.def Info: 3_Melodische_Transformatie/transfo2.png used on input 
 line 87.
 (pdftex.def)             Requested size: 298.5pt x 129.73811pt.
-) [23 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/3_Melodische_Transformatie/
-transfo2.png>]
+) [23pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.125 ...e_Transformatie/melodische_transformatie}
+                                                   <C:/Users/Elias/Documents/Gi
+tHub/Thesis/Tekst/3_Melodische_Transformatie/transfo2.png>]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\4_Efficient_Toepassen_Transformat
 ie/efficient_toepassen_transformatie.tex [24
 
 
 
-]
-Underfull \vbox (badness 6125) has occurred while \output is active []
-
- [25]
-[26] [27]
-<4_Efficient_Toepassen_Transformatie/matrix.png, id=680, 329.43076pt x 348.7027
+] [25] [26] [27] [28]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 106.
+ [29]
+<4_Efficient_Toepassen_Transformatie/matrix.png, id=697, 329.43076pt x 348.7027
 4pt>
 File: 4_Efficient_Toepassen_Transformatie/matrix.png Graphic file (type png)
  <use 4_Efficient_Toepassen_Transformatie/matrix.png>
 Package pdftex.def Info: 4_Efficient_Toepassen_Transformatie/matrix.png used on
- input line 51.
+ input line 155.
 (pdftex.def)             Requested size: 298.5pt x 315.98447pt.
+ [30]
+Underfull \vbox (badness 2334) has occurred while \output is active []
 
-Underfull \vbox (badness 2368) has occurred while \output is active []
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+1}) has been already used, duplicate ignored
 
- [28 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Transf
-ormatie/matrix.png>] [29]
-<4_Efficient_Toepassen_Transformatie/stap_algo_1.png, id=696, 392.667pt x 352.9
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.173 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Tran
+sformatie/matrix.png>]
+<4_Efficient_Toepassen_Transformatie/stap_algo_1.png, id=714, 392.667pt x 352.9
 185pt>
 File: 4_Efficient_Toepassen_Transformatie/stap_algo_1.png Graphic file (type pn
 g)
  <use 4_Efficient_Toepassen_Transformatie/stap_algo_1.png>
 Package pdftex.def Info: 4_Efficient_Toepassen_Transformatie/stap_algo_1.png us
-ed on input line 72.
+ed on input line 176.
 (pdftex.def)             Requested size: 298.5pt x 268.28546pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Transf
-ormatie/stap_algo_1.png>] [31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+ [32]
+[33pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.195 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.5
+.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.195 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Tran
+sformatie/stap_algo_1.png>] [34] [35]
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 145--148
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--252
 
  []
 
-
-<4_Efficient_Toepassen_Transformatie/prob_keep_algo_2.png, id=738, 412.54124pt 
+[36]
+<4_Efficient_Toepassen_Transformatie/prob_keep_algo_2.png, id=761, 412.54124pt 
 x 371.58826pt>
 File: 4_Efficient_Toepassen_Transformatie/prob_keep_algo_2.png Graphic file (ty
 pe png)
  <use 4_Efficient_Toepassen_Transformatie/prob_keep_algo_2.png>
 Package pdftex.def Info: 4_Efficient_Toepassen_Transformatie/prob_keep_algo_2.p
-ng used on input line 151.
+ng used on input line 255.
 (pdftex.def)             Requested size: 298.5pt x 268.8701pt.
 
-<4_Efficient_Toepassen_Transformatie/prob_transform_algo_2.png, id=739, 519.741
+<4_Efficient_Toepassen_Transformatie/prob_transform_algo_2.png, id=762, 519.741
 74pt x 348.70274pt>
 File: 4_Efficient_Toepassen_Transformatie/prob_transform_algo_2.png Graphic fil
 e (type png)
 
 <use 4_Efficient_Toepassen_Transformatie/prob_transform_algo_2.png>
 Package pdftex.def Info: 4_Efficient_Toepassen_Transformatie/prob_transform_alg
-o_2.png used on input line 158.
+o_2.png used on input line 262.
 (pdftex.def)             Requested size: 298.5pt x 200.27371pt.
 
-<4_Efficient_Toepassen_Transformatie/path_keep_algo_2.png, id=740, 390.258pt x 
+<4_Efficient_Toepassen_Transformatie/path_keep_algo_2.png, id=763, 390.258pt x 
 370.38374pt>
 File: 4_Efficient_Toepassen_Transformatie/path_keep_algo_2.png Graphic file (ty
 pe png)
  <use 4_Efficient_Toepassen_Transformatie/path_keep_algo_2.png>
 Package pdftex.def Info: 4_Efficient_Toepassen_Transformatie/path_keep_algo_2.p
-ng used on input line 165.
+ng used on input line 269.
 (pdftex.def)             Requested size: 298.5pt x 283.30307pt.
 
-<4_Efficient_Toepassen_Transformatie/path_transform_algo_2.png, id=741, 529.98p
+<4_Efficient_Toepassen_Transformatie/path_transform_algo_2.png, id=764, 529.98p
 t x 353.52075pt>
 File: 4_Efficient_Toepassen_Transformatie/path_transform_algo_2.png Graphic fil
 e (type png)
 
 <use 4_Efficient_Toepassen_Transformatie/path_transform_algo_2.png>
 Package pdftex.def Info: 4_Efficient_Toepassen_Transformatie/path_transform_alg
-o_2.png used on input line 172.
+o_2.png used on input line 276.
 (pdftex.def)             Requested size: 298.5pt x 199.11385pt.
- [34]
-[35 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Transfo
-rmatie/prob_keep_algo_2.png>] [36 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst
-/4_Efficient_Toepassen_Transformatie/prob_transform_algo_2.png>]
-Underfull \vbox (badness 4995) has occurred while \output is active []
+ [37pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+3}) has been already used, duplicate ignored
 
- [37 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Transf
-ormatie/path_keep_algo_2.png>]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.286 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Tran
+sformatie/prob_keep_algo_2.png>] [38pdfTeX warning (ext4): destination with the
+ same identifier (name{figure.5.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.290 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Tran
+sformatie/prob_transform_algo_2.png>] [39pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.5.5}) has been already used, duplicate ignor
+ed
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.300 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Tran
+sformatie/path_keep_algo_2.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Transf
-ormatie/path_transform_algo_2.png>]) [39]
+ [40pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.300 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/4_Efficient_Toepassen_Tran
+sformatie/path_transform_algo_2.png>] [41]) [42]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\5_Experimenten_Resultaten/experim
-enten_resultaten.tex [40
+enten_resultaten.tex [43
 
 
 
-] [41]
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42]
-[43]
-<5_Experimenten_Resultaten/exp10_res.png, id=827, 281.25075pt x 183.084pt>
+ [44pdfTeX warning (ext4): destination with the same identifier (name{table.6.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.61 
+     pdfTeX warning (ext4): destination with the same identifier (name{table.6.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.61 
+     pdfTeX warning (ext4): destination with the same identifier (name{table.6.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.61 
+     ] [45pdfTeX warning (ext4): destination with the same identifier (name{tab
+le.6.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.104 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.6
+.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.104 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.6
+.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.104 
+      ]
+<5_Experimenten_Resultaten/exp10_res.png, id=846, 281.25075pt x 183.084pt>
 File: 5_Experimenten_Resultaten/exp10_res.png Graphic file (type png)
 
 <use 5_Experimenten_Resultaten/exp10_res.png>
@@ -1762,19 +1976,32 @@ line 120.
 
 Underfull \vbox (badness 2529) has occurred while \output is active []
 
- [44]
-[45 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/exp
-10_res.png>]
-<5_Experimenten_Resultaten/exp11_res.png, id=846, 280.6485pt x 197.538pt>
+ [46]
+[47pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.133 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/
+exp10_res.png>]
+<5_Experimenten_Resultaten/exp11_res.png, id=864, 280.6485pt x 197.538pt>
 File: 5_Experimenten_Resultaten/exp11_res.png Graphic file (type png)
 
 <use 5_Experimenten_Resultaten/exp11_res.png>
 Package pdftex.def Info: 5_Experimenten_Resultaten/exp11_res.png used on input 
 line 137.
 (pdftex.def)             Requested size: 298.5pt x 210.1187pt.
- [46 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/ex
-p11_res.png>]
-<5_Experimenten_Resultaten/exp12_res.png, id=861, 302.3295pt x 222.8325pt>
+ [48pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.149 I
+       n dit experiment wordt voor 100 muziekstukken uit het Essencorpus eer...
+ <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/exp11_
+res.png>]
+<5_Experimenten_Resultaten/exp12_res.png, id=879, 302.3295pt x 222.8325pt>
 File: 5_Experimenten_Resultaten/exp12_res.png Graphic file (type png)
 
 <use 5_Experimenten_Resultaten/exp12_res.png>
@@ -1784,9 +2011,15 @@ line 154.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/ex
-p12_res.png>] <5_Experimenten_Resultaten/exp1_res.png, id=874, 288.47775pt x 20
-0.54926pt>
+ [49pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.166 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/
+exp12_res.png>]
+<5_Experimenten_Resultaten/exp1_res.png, id=892, 288.47775pt x 200.54926pt>
 File: 5_Experimenten_Resultaten/exp1_res.png Graphic file (type png)
 
 <use 5_Experimenten_Resultaten/exp1_res.png>
@@ -1801,10 +2034,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
 Underfull \vbox (badness 2261) has occurred while \output is active []
 
- [48]
-[49 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/exp
-1_res.png>]
-<5_Experimenten_Resultaten/exp2_res.png, id=893, 289.68225pt x 176.45924pt>
+ [50pdfTeX warning (ext4): destination with the same identifier (name{table.6.7
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.196 
+      ] [51pdfTeX warning (ext4): destination with the same identifier (name{fi
+gure.6.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.218 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.6
+.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.218 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/
+exp1_res.png>]
+<5_Experimenten_Resultaten/exp2_res.png, id=912, 289.68225pt x 176.45924pt>
 File: 5_Experimenten_Resultaten/exp2_res.png Graphic file (type png)
 
 <use 5_Experimenten_Resultaten/exp2_res.png>
@@ -1819,62 +2069,129 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
 Underfull \vbox (badness 8000) has occurred while \output is active []
 
- [50 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/ex
-p2_res.png>] <5_Experimenten_Resultaten/exp3_res.png, id=907, 289.68225pt x 176
-.45924pt>
+ [52pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.234 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/
+exp2_res.png>]
+<5_Experimenten_Resultaten/exp3_res.png, id=926, 289.68225pt x 176.45924pt>
 File: 5_Experimenten_Resultaten/exp3_res.png Graphic file (type png)
 
 <use 5_Experimenten_Resultaten/exp3_res.png>
 Package pdftex.def Info: 5_Experimenten_Resultaten/exp3_res.png used on input l
 ine 254.
 (pdftex.def)             Requested size: 298.5pt x 181.84389pt.
- [51 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/ex
-p3_res.png>]
+ [53pdfTeX warning (ext4): destination with the same identifier (name{table.6.9
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.260 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+6.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.260 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/
+exp3_res.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52]
-<5_Experimenten_Resultaten/exp7_res.png, id=942, 234.8775pt x 176.45924pt>
+ [54pdfTeX warning (ext4): destination with the same identifier (name{table.6.1
+0}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.308 
+      ]
+<5_Experimenten_Resultaten/exp7_res.png, id=960, 234.8775pt x 176.45924pt>
 File: 5_Experimenten_Resultaten/exp7_res.png Graphic file (type png)
 
 <use 5_Experimenten_Resultaten/exp7_res.png>
 Package pdftex.def Info: 5_Experimenten_Resultaten/exp7_res.png used on input l
 ine 326.
 (pdftex.def)             Requested size: 298.5pt x 224.2569pt.
- [53]
-<5_Experimenten_Resultaten/exp8_res.png, id=958, 234.8775pt x 176.45924pt>
+ [55pdfTeX warning (ext4): destination with the same identifier (name{table.6.1
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.337 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.6
+.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.337 
+      ]
+<5_Experimenten_Resultaten/exp8_res.png, id=976, 234.8775pt x 176.45924pt>
 File: 5_Experimenten_Resultaten/exp8_res.png Graphic file (type png)
 
 <use 5_Experimenten_Resultaten/exp8_res.png>
 Package pdftex.def Info: 5_Experimenten_Resultaten/exp8_res.png used on input l
 ine 373.
 (pdftex.def)             Requested size: 298.5pt x 224.2569pt.
- [54 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/ex
-p7_res.png>]
+ [56pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.380 \subsection
+                 {Tijdsafhankelijkheid algoritme \ref{ETT:algo2} van minimum...
+ <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/exp7_r
+es.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/ex
-p8_res.png>] <5_Experimenten_Resultaten/exp9_res.png, id=978, 234.8775pt x 176.
-45924pt>
+ [57pdfTeX warning (ext4): destination with the same identifier (name{table.6.1
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.384 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+6.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.384 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/
+exp8_res.png>]
+<5_Experimenten_Resultaten/exp9_res.png, id=997, 234.8775pt x 176.45924pt>
 File: 5_Experimenten_Resultaten/exp9_res.png Graphic file (type png)
 
 <use 5_Experimenten_Resultaten/exp9_res.png>
 Package pdftex.def Info: 5_Experimenten_Resultaten/exp9_res.png used on input l
 ine 404.
 (pdftex.def)             Requested size: 298.5pt x 224.2569pt.
- [56 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/ex
-p9_res.png>]) [57]
-(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\6_Besluit/besluit.tex [58
+ [58pdfTeX warning (ext4): destination with the same identifier (name{table.6.1
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.410 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+6.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.410 
+       <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/5_Experimenten_Resultaten/
+exp9_res.png>]) [59]
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\6_Besluit/besluit.tex [60
 
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59])
-[60] [61
+ [61])
+[62] [63
 
 
-] [62]
+] [64]
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/broncode.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/03/04 1.5c listings language file
@@ -1883,62 +2200,56 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 6.
 
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/NeuralNetwork
-Trainer.java [63
+Trainer.java [65
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [65]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [66]
-Overfull \hbox (3.06308pt too wide) in paragraph at lines 144--145
-[][] 
- []
-
-
-Overfull \hbox (3.06308pt too wide) in paragraph at lines 144--145
-[][] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [67]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68])
+ [68]
+Overfull \hbox (3.06308pt too wide) in paragraph at lines 144--145
+[][] 
+ []
+
+
+Overfull \hbox (3.06308pt too wide) in paragraph at lines 144--145
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70])
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/RPK.py
-[69]
+[71]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70]
+ [72]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [72])
-(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/BestSequenceC
-leaned.py [73]
+ [73]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [74])
+(C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/BestSequenceC
+leaned.py [75]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76])
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/BestCoordinat
-edSequenceCleaned.py [75]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [76]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [77]
+edSequenceCleaned.py [77]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [78]
@@ -1950,9 +2261,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [80]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81]))
-[82] (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_1_Paper/paper.tex
-<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1728, 614.295pt x 794.97pt>
+ [81]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [82]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [83]))
+[84] (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_1_Paper/paper.tex
+<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1746, 614.295pt x 794.97pt>
 File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
 
 <use Appendix_1_Paper/Paper_EliasMoons.pdf>
@@ -1996,7 +2313,7 @@ Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf used on input li
 ne 4.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1736, page=1, 614.295pt x 794.97pt>
+<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1754, page=1, 614.295pt x 794.97pt>
 File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
 
 <use Appendix_1_Paper/Paper_EliasMoons.pdf, page 1>
@@ -2009,7 +2326,7 @@ File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
 Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page1 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [83
+ [85
 
 
 
@@ -2030,122 +2347,122 @@ File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
 
 <use Appendix_1_Paper/Paper_EliasMoons.pdf, page 1>
 Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page1 used on i
-nput line 4.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [84 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_1_Paper/Paper_Elias
-Moons.pdf>]
-<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1771, page=2, 614.295pt x 794.97pt>
-File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
-
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 2>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page2 used on i
-nput line 4.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
-
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 2>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page2 used on i
-nput line 4.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
-
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 2>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page2 used on i
-nput line 4.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [85 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_1_Paper/Paper_Elias
-Moons.pdf>]
-<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1780, page=3, 614.295pt x 794.97pt>
-File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
-
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 3>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page3 used on i
-nput line 4.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
-
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 3>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page3 used on i
-nput line 4.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
-
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 3>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page3 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [86 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_1_Paper/Paper_Elias
 Moons.pdf>]
-<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1803, page=4, 614.295pt x 794.97pt>
+<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1789, page=2, 614.295pt x 794.97pt>
 File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
 
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 4>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page4 used on i
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 2>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page2 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
 
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 4>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page4 used on i
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 2>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page2 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
 
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 4>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page4 used on i
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 2>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page2 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [87 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_1_Paper/Paper_Elias
 Moons.pdf>]
-<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1809, page=5, 614.295pt x 794.97pt>
+<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1799, page=3, 614.295pt x 794.97pt>
 File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
 
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 5>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page5 used on i
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 3>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page3 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
 
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 5>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page5 used on i
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 3>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page3 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
 
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 5>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page5 used on i
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 3>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page3 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [88 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_1_Paper/Paper_Elias
 Moons.pdf>]
-<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1816, page=6, 614.295pt x 794.97pt>
+<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1822, page=4, 614.295pt x 794.97pt>
 File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
 
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 6>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page6 used on i
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 4>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page4 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
 
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 6>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page6 used on i
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 4>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page4 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
 
-<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 6>
-Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page6 used on i
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 4>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page4 used on i
 nput line 4.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [89 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_1_Paper/Paper_Elias
+Moons.pdf>]
+<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1827, page=5, 614.295pt x 794.97pt>
+File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
+
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 5>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page5 used on i
+nput line 4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
+
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 5>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page5 used on i
+nput line 4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
+
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 5>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page5 used on i
+nput line 4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [90 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_1_Paper/Paper_Elias
+Moons.pdf>]
+<Appendix_1_Paper/Paper_EliasMoons.pdf, id=1834, page=6, 614.295pt x 794.97pt>
+File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
+
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 6>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page6 used on i
+nput line 4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
+
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 6>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page6 used on i
+nput line 4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Appendix_1_Paper/Paper_EliasMoons.pdf Graphic file (type pdf)
+
+<use Appendix_1_Paper/Paper_EliasMoons.pdf, page 6>
+Package pdftex.def Info: Appendix_1_Paper/Paper_EliasMoons.pdf, page6 used on i
+nput line 4.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [91 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_1_Paper/Paper_Elias
 Moons.pdf>])
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_2_Poster/poster.tex
-[90
+[92
 
 
 
 ]
-<Appendix_2_Poster/Poster_EliasMoons.pdf, id=1827, 1690.27481pt x 2393.22108pt>
+<Appendix_2_Poster/Poster_EliasMoons.pdf, id=1845, 1690.27481pt x 2393.22108pt>
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 <use Appendix_2_Poster/Poster_EliasMoons.pdf>
 Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf used on input 
@@ -2158,7 +2475,7 @@ Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf used on input
 line 4.
 (pdftex.def)             Requested size: 1690.27069pt x 2393.21527pt.
 
-<Appendix_2_Poster/Poster_EliasMoons.pdf, id=1830, page=1, 1690.27481pt x 2393.
+<Appendix_2_Poster/Poster_EliasMoons.pdf, id=1848, page=1, 1690.27481pt x 2393.
 22108pt>
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
  <use Appendix_2_Poster/Poster_EliasMoons.pdf, page 1>
@@ -2171,7 +2488,7 @@ File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf, page1 used on
  input line 4.
 (pdftex.def)             Requested size: 596.86652pt x 845.08952pt.
- [91]
+ [93]
 File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 
 <use Appendix_2_Poster/Poster_EliasMoons.pdf, page 1>
@@ -2190,7 +2507,7 @@ File: Appendix_2_Poster/Poster_EliasMoons.pdf Graphic file (type pdf)
 Package pdftex.def Info: Appendix_2_Poster/Poster_EliasMoons.pdf, page1 used on
  input line 4.
 (pdftex.def)             Requested size: 596.86652pt x 845.08952pt.
- [92 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_2_Poster/Poster_Eli
+ [94 <C:/Users/Elias/Documents/GitHub/Thesis/Tekst/Appendix_2_Poster/Poster_Eli
 asMoons.pdf>])
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.bbl
 bibitemlist
@@ -2212,18 +2529,18 @@ $\T1/lmtt/m/n/10.95 eroberts / courses / soco / projects / neural-[]networks /
 Architecture /$
  []
 
-) [93
+) [95
 
 
 
-] [94
+] [96
 
 ]
 \tf@toc=\write6
 \tf@lof=\write7
 \tf@lot=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 144.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 144.
  (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\masterproef.aux
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\0_Inleiding/inleiding.aux)
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\1_Muzikale_Achtergrond/muzikale_a
@@ -2240,10 +2557,10 @@ enten_resultaten.aux)
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_0_Broncode/broncode.aux)
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_1_Paper/paper.aux)
 (C:\Users\Elias\Documents\GitHub\Thesis\Tekst\Appendix_2_Poster/poster.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
 Package rerunfilecheck Info: File `masterproef.out' has not changed.
-(rerunfilecheck)             Checksum: 9676BE18F958FE7DE491112615B3460F;2619.
+(rerunfilecheck)             Checksum: 0CC6741987A740A0575E09F8662754F0;2619.
 
 
 LaTeX Warning: There were undefined references.
@@ -2251,41 +2568,44 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 26106 strings out of 493921
- 460139 string characters out of 3144877
- 889335 words of memory out of 3000000
- 27777 multiletter control sequences out of 15000+200000
- 77979 words of font info for 123 fonts, out of 3000000 for 9000
+ 26727 strings out of 493921
+ 469281 string characters out of 3144877
+ 900884 words of memory out of 3000000
+ 28363 multiletter control sequences out of 15000+200000
+ 78358 words of font info for 127 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  60i,18n,70p,1186b,2001s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/
-MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/font
-s/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips
-/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/lm/lmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public
-/lm/lmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
-e1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/h
-elvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utm
-b8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on masterproef.pdf (104 pages, 1546495 bytes).
+iles (x86)/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files (x86)/
+MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files (x86)/MiKTeX 2.9/
+fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/d
+vips/lm/lm-rm.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8
+r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/lm/lmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/l
+m/lmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/urw/times/utmri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+urw/zapfchan/uzcmi8a.pfb>
+Output written on masterproef.pdf (106 pages, 1569121 bytes).
 PDF statistics:
- 2147 PDF objects out of 2487 (max. 8388607)
- 920 named destinations out of 1000 (max. 500000)
+ 2173 PDF objects out of 2487 (max. 8388607)
+ 929 named destinations out of 1000 (max. 500000)
  19499 words of extra memory for PDF output out of 20736 (max. 10000000)
 
