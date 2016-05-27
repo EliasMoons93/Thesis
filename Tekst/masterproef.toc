@@ -53,86 +53,77 @@
 \contentsline {subsubsection}{Notatie}{27}{section*.17}
 \contentsline {subsubsection}{Maximale probabiliteit}{28}{section*.18}
 \contentsline {subsubsection}{Optimale pad}{28}{section*.19}
-\contentsline {subsubsection}{Introductie notatie en functies}{29}{section*.20}
-\contentsline {subsection}{\numberline {5.1.4}Werking van het algoritme}{29}{subsection.5.1.4}
-\contentsline {subsubsection}{Hulpvariabelen}{29}{section*.21}
-\contentsline {subsubsection}{Kortere notatie toonhoogte}{30}{section*.22}
-\contentsline {subsubsection}{Betekenis van de inhoud van de hulpvariabelen}{30}{section*.23}
-\contentsline {subsubsection}{Verduidelijking inhoud van de \textit {matrix}-variabele}{30}{section*.24}
-\contentsline {subsubsection}{Initialisatie}{31}{section*.25}
-\contentsline {subsubsection}{Een stap in het algoritme}{32}{section*.26}
-\contentsline {subsubsection}{Extractie van het beste pad}{33}{section*.27}
-\contentsline {subsection}{\numberline {5.1.5}Performantie en geheugencomplexiteit}{34}{subsection.5.1.5}
-\contentsline {subsubsection}{Tijd}{34}{section*.28}
-\contentsline {subsubsection}{Geheugen}{34}{section*.29}
-\contentsline {section}{\numberline {5.2}Beste sequentie met minimum transformatie lengte}{35}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Doelstelling}{35}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Idee van het algoritme}{35}{subsection.5.2.2}
-\contentsline {subsubsection}{Hoog niveau idee van het algoritme en notatie}{35}{section*.30}
-\contentsline {subsubsection}{Verschillende mogelijkheden om tot een optimaal (sub)pad te komen}{35}{section*.31}
-\contentsline {subsection}{\numberline {5.2.3}Werking van het algoritme}{36}{subsection.5.2.3}
-\contentsline {subsubsection}{Hulpvariabelen}{36}{section*.32}
-\contentsline {subsubsection}{Verschil in opslag optimale paden met algoritme ui \ref {ETT:algo1}}{37}{section*.33}
-\contentsline {subsubsection}{Initialisatie}{38}{section*.34}
-\contentsline {subsubsection}{Een stap in het algoritme}{39}{section*.35}
-\contentsline {subsubsection}{Extractie van het beste pad}{41}{section*.36}
-\contentsline {subsection}{\numberline {5.2.4}Performantie en geheugencomplexiteit}{41}{subsection.5.2.4}
-\contentsline {subsubsection}{Tijd}{41}{section*.37}
-\contentsline {subsubsection}{Geheugen}{42}{section*.38}
-\contentsline {chapter}{\chapternumberline {6}Experimenten en resultaten}{43}{chapter.6}
-\contentsline {section}{\numberline {6.1}Melodische transformaties}{43}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Vergelijking van de twee melodische transformaties}{43}{subsection.6.1.1}
-\contentsline {subsubsection}{Beschrijving experiment}{43}{section*.39}
-\contentsline {subsubsection}{Resultaten}{44}{section*.40}
-\contentsline {subsection}{\numberline {6.1.2}Vergelijking Fibonacci transformatie met gemiddelde transformatie}{45}{subsection.6.1.2}
-\contentsline {subsubsection}{Beschrijving experiment}{45}{section*.41}
-\contentsline {subsubsection}{Resultaten}{45}{section*.42}
-\contentsline {section}{\numberline {6.2}RPK-model}{46}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Afhankelijkheid score RPK-Model en gemiddelde afstand tussen opeenvolgende noten}{46}{subsection.6.2.1}
-\contentsline {subsubsection}{Beschrijving experiment}{46}{section*.43}
-\contentsline {subsubsection}{Resultaten}{47}{section*.44}
-\contentsline {subsection}{\numberline {6.2.2}Afhankelijkheid score RPK-Model en afstand ten opzichte van gemiddelde notendistributie}{47}{subsection.6.2.2}
-\contentsline {subsubsection}{Beschrijving experiment}{47}{section*.45}
-\contentsline {subsubsection}{Resultaten}{48}{section*.46}
-\contentsline {subsection}{\numberline {6.2.3}Afhankelijkheid score RPK-Model en combinatie metrieken uit experimenten \ref {experiment:10} en \ref {experiment:11}}{48}{subsection.6.2.3}
-\contentsline {subsubsection}{Beschrijving experiment}{48}{section*.47}
-\contentsline {subsubsection}{Resultaten}{49}{section*.48}
-\contentsline {section}{\numberline {6.3}Werking van de algoritmes voor het combineren van transformaties}{50}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Transformaties combineren: 1 transformatie, meerdere iteraties}{50}{subsection.6.3.1}
-\contentsline {subsubsection}{Beschrijving experiment}{50}{section*.49}
-\contentsline {subsubsection}{Resultaten}{50}{section*.50}
-\contentsline {subsection}{\numberline {6.3.2}Transformaties combineren: meerdere transformaties, 1 iteratie}{51}{subsection.6.3.2}
-\contentsline {subsubsection}{Beschrijving experiment}{51}{section*.51}
+\contentsline {subsection}{\numberline {5.1.4}Performantie en geheugencomplexiteit}{29}{subsection.5.1.4}
+\contentsline {subsubsection}{Tijd}{29}{section*.20}
+\contentsline {subsubsection}{Geheugen}{30}{section*.21}
+\contentsline {section}{\numberline {5.2}Beste sequentie met minimum transformatie lengte}{31}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Doelstelling}{31}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Idee van het algoritme}{31}{subsection.5.2.2}
+\contentsline {subsubsection}{Hoog niveau idee van het algoritme en notatie}{31}{section*.22}
+\contentsline {subsubsection}{Verschillende mogelijkheden om tot een optimaal (sub)pad te komen}{31}{section*.23}
+\contentsline {subsection}{\numberline {5.2.3}Werking van het algoritme}{32}{subsection.5.2.3}
+\contentsline {subsubsection}{Hulpvariabelen}{32}{section*.24}
+\contentsline {subsubsection}{Verschil in opslag optimale paden met algoritme ui \ref {ETT:algo1}}{34}{section*.25}
+\contentsline {subsubsection}{Initialisatie}{35}{section*.26}
+\contentsline {subsubsection}{Een stap in het algoritme}{36}{section*.27}
+\contentsline {subsubsection}{Extractie van het beste pad}{37}{section*.28}
+\contentsline {subsection}{\numberline {5.2.4}Performantie en geheugencomplexiteit}{37}{subsection.5.2.4}
+\contentsline {subsubsection}{Tijd}{37}{section*.29}
+\contentsline {subsubsection}{Geheugen}{38}{section*.30}
+\contentsline {chapter}{\chapternumberline {6}Experimenten en resultaten}{39}{chapter.6}
+\contentsline {section}{\numberline {6.1}Melodische transformaties}{39}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Vergelijking van de twee melodische transformaties}{39}{subsection.6.1.1}
+\contentsline {subsubsection}{Beschrijving experiment}{39}{section*.31}
+\contentsline {subsubsection}{Resultaten}{40}{section*.32}
+\contentsline {subsection}{\numberline {6.1.2}Vergelijking Fibonacci transformatie met gemiddelde transformatie}{41}{subsection.6.1.2}
+\contentsline {subsubsection}{Beschrijving experiment}{41}{section*.33}
+\contentsline {subsubsection}{Resultaten}{41}{section*.34}
+\contentsline {section}{\numberline {6.2}RPK-model}{42}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Afhankelijkheid score RPK-Model en gemiddelde afstand tussen opeenvolgende noten}{42}{subsection.6.2.1}
+\contentsline {subsubsection}{Beschrijving experiment}{42}{section*.35}
+\contentsline {subsubsection}{Resultaten}{43}{section*.36}
+\contentsline {subsection}{\numberline {6.2.2}Afhankelijkheid score RPK-Model en afstand ten opzichte van gemiddelde notendistributie}{43}{subsection.6.2.2}
+\contentsline {subsubsection}{Beschrijving experiment}{43}{section*.37}
+\contentsline {subsubsection}{Resultaten}{44}{section*.38}
+\contentsline {subsection}{\numberline {6.2.3}Afhankelijkheid score RPK-Model en combinatie metrieken uit experimenten \ref {experiment:10} en \ref {experiment:11}}{44}{subsection.6.2.3}
+\contentsline {subsubsection}{Beschrijving experiment}{44}{section*.39}
+\contentsline {subsubsection}{Resultaten}{45}{section*.40}
+\contentsline {section}{\numberline {6.3}Werking van de algoritmes voor het combineren van transformaties}{46}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Transformaties combineren: 1 transformatie, meerdere iteraties}{46}{subsection.6.3.1}
+\contentsline {subsubsection}{Beschrijving experiment}{46}{section*.41}
+\contentsline {subsubsection}{Resultaten}{46}{section*.42}
+\contentsline {subsection}{\numberline {6.3.2}Transformaties combineren: meerdere transformaties, 1 iteratie}{47}{subsection.6.3.2}
+\contentsline {subsubsection}{Beschrijving experiment}{47}{section*.43}
+\contentsline {subsubsection}{Resultaten}{48}{section*.44}
+\contentsline {subsection}{\numberline {6.3.3}Transformaties combineren: minimum transformatie lengte}{49}{subsection.6.3.3}
+\contentsline {subsubsection}{Beschrijving experiment}{49}{section*.45}
+\contentsline {subsubsection}{Resultaten}{49}{section*.46}
+\contentsline {subsection}{\numberline {6.3.4}Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}{50}{subsection.6.3.4}
+\contentsline {subsubsection}{Beschrijving experiment}{50}{section*.47}
+\contentsline {subsubsection}{Resultaten}{50}{section*.48}
+\contentsline {section}{\numberline {6.4}Tijdscomplexiteit van de algoritmes voor het combineren van transformaties}{51}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Tijdsafhankelijkheid algoritme \ref {ETT:algo2} van het aantal noten in de melodielijn}{51}{subsection.6.4.1}
+\contentsline {subsubsection}{Beschrijving experiment}{51}{section*.49}
+\contentsline {subsubsection}{Resultaten}{51}{section*.50}
+\contentsline {subsection}{\numberline {6.4.2}Tijdsafhankelijkheid algoritme \ref {ETT:algo2} van aantal toegelaten transformaties}{52}{subsection.6.4.2}
+\contentsline {subsubsection}{Beschrijving experiment}{52}{section*.51}
 \contentsline {subsubsection}{Resultaten}{52}{section*.52}
-\contentsline {subsection}{\numberline {6.3.3}Transformaties combineren: minimum transformatie lengte}{53}{subsection.6.3.3}
-\contentsline {subsubsection}{Beschrijving experiment}{53}{section*.53}
-\contentsline {subsubsection}{Resultaten}{53}{section*.54}
-\contentsline {subsection}{\numberline {6.3.4}Transformaties combineren: Gelijkheid algoritmen voor transformatie lengte 1}{54}{subsection.6.3.4}
-\contentsline {subsubsection}{Beschrijving experiment}{54}{section*.55}
-\contentsline {subsubsection}{Resultaten}{54}{section*.56}
-\contentsline {section}{\numberline {6.4}Tijdscomplexiteit van de algoritmes voor het combineren van transformaties}{55}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Tijdsafhankelijkheid algoritme \ref {ETT:algo2} van het aantal noten in de melodielijn}{55}{subsection.6.4.1}
-\contentsline {subsubsection}{Beschrijving experiment}{55}{section*.57}
-\contentsline {subsubsection}{Resultaten}{55}{section*.58}
-\contentsline {subsection}{\numberline {6.4.2}Tijdsafhankelijkheid algoritme \ref {ETT:algo2} van aantal toegelaten transformaties}{56}{subsection.6.4.2}
-\contentsline {subsubsection}{Beschrijving experiment}{56}{section*.59}
-\contentsline {subsubsection}{Resultaten}{56}{section*.60}
-\contentsline {subsection}{\numberline {6.4.3}Tijdsafhankelijkheid algoritme \ref {ETT:algo2} van minimum transformatie lengte}{58}{subsection.6.4.3}
-\contentsline {subsubsection}{Beschrijving experiment}{58}{section*.61}
-\contentsline {subsubsection}{Resultaten}{58}{section*.62}
-\contentsline {chapter}{\chapternumberline {7}Besluit}{61}{chapter.7}
-\contentsline {section}{\numberline {7.1}Samenvatting}{61}{section.7.1}
-\contentsline {section}{\numberline {7.2}Verder onderzoek}{62}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Uitbreiding context RPK-model}{62}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Algoritme dat combineert met als doel het behouden van de consonantiescore}{62}{subsection.7.2.2}
-\contentsline {appendix}{\chapternumberline {A}Broncode}{65}{appendix.A}
-\contentsline {section}{\numberline {A.1}Neuraal netwerk trainer}{65}{section.A.1}
-\contentsline {section}{\numberline {A.2}RPK-model}{71}{section.A.2}
-\contentsline {section}{\numberline {A.3}Beste sequentie}{75}{section.A.3}
-\contentsline {section}{\numberline {A.4}Beste sequentie met minimum transformatie lengte}{77}{section.A.4}
-\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{85}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Poster}{93}{appendix.C}
-\contentsline {chapter}{Bibliografie}{95}{section*.64}
+\contentsline {subsection}{\numberline {6.4.3}Tijdsafhankelijkheid algoritme \ref {ETT:algo2} van minimum transformatie lengte}{54}{subsection.6.4.3}
+\contentsline {subsubsection}{Beschrijving experiment}{54}{section*.53}
+\contentsline {subsubsection}{Resultaten}{54}{section*.54}
+\contentsline {chapter}{\chapternumberline {7}Besluit}{57}{chapter.7}
+\contentsline {section}{\numberline {7.1}Samenvatting}{57}{section.7.1}
+\contentsline {section}{\numberline {7.2}Verder onderzoek}{58}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Uitbreiding context RPK-model}{58}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Algoritme dat combineert met als doel het behouden van de consonantiescore}{58}{subsection.7.2.2}
+\contentsline {appendix}{\chapternumberline {A}Broncode}{61}{appendix.A}
+\contentsline {section}{\numberline {A.1}Neuraal netwerk trainer}{61}{section.A.1}
+\contentsline {section}{\numberline {A.2}RPK-model}{67}{section.A.2}
+\contentsline {section}{\numberline {A.3}Beste sequentie}{71}{section.A.3}
+\contentsline {section}{\numberline {A.4}Beste sequentie met minimum transformatie lengte}{73}{section.A.4}
+\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{81}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Poster}{89}{appendix.C}
+\contentsline {chapter}{Bibliografie}{91}{section*.56}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}

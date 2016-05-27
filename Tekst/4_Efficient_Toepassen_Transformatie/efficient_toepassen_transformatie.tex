@@ -32,7 +32,7 @@ Elke noot kan dus theoretisch gezien (na afronding) afgebeeld worden op eender w
 Het belangrijkste idee van het algoritme is gebaseerd op de principes van \textit{dynamic programming} \cite{url:DP}. Toegepast op dit algoritme komt het er op neer dat achtereenvolgens voor elke noot in het muziekstuk het beste pad (en bijhorende beste score) bijgehouden zal worden voor elk van de 14 mogelijke toonhoogtes die deze noot kan aannemen in de nieuwe melodielijn. En enkel op deze optimale paden zal verder gerekend worden om te bepalen wat de beste paden zijn tot de 14 mogelijke toonhoogtes die de volgende noot in het muziekstuk kan aannemen. Dit wordt dan verder herhaald tot alle noten van de originele melodielijn overlopen zijn.
 
 \subsection{Werking van het algoritme}
-In dit onderdeel zal de werking van het algoritme beschreven worden. Als extra referentie voor de lezer is de broncode bijgevoegd in appendix A.1. Tijdens de uitvoer van het algoritme zal achtereenvolgens elke noot in het muziekstuk overlopen worden. Telkens zal voor elk van de noten waar de beschouwde noot naartoe getransformeerd kan worden enkel de probabiliteit bijgehouden worden van het pad dat eindigt op deze noot en het meest waarschijnlijk is.
+In dit onderdeel zal de werking van het algoritme beschreven worden. Als extra referentie voor de lezer is de broncode bijgevoegd in appendix \ref{Broncode:algo1}. Tijdens de uitvoer van het algoritme zal achtereenvolgens elke noot in het muziekstuk overlopen worden. Telkens zal voor elk van de noten waar de beschouwde noot naartoe getransformeerd kan worden enkel de probabiliteit bijgehouden worden van het pad dat eindigt op deze noot en het meest waarschijnlijk is.
 
 \subsubsection{Notatie}
 Voor het beschrijven van het algoritme worden een aantal notaties en functies beschreven. Allereerst wordt volgende notatie ingevoerd:
@@ -100,7 +100,7 @@ We zijn natuurlijk niet enkel ge\"interesseerd in de probabiliteit van het optim
 $path(i,c)=p$
 \end{framed}
 
-Wanneer het algoritme voor alle noten in het algoritme de probabiliteiten bepaald heeft kan het optimale pad gevonden worden. Dit gebeurt zoals beschreven in algoritme \ref{alg:opt_pad}.
+Wanneer het algoritme voor alle mogelijke noten op elke positie in de melodie de maximale probabiliteit bepaald heeft kan het optimale pad gevonden worden. Dit gebeurt zoals beschreven in algoritme \ref{alg:opt_pad}.
 
 \begin{algorithm}
 \caption{Optimaal pad}\label{alg:opt_pad}
@@ -115,73 +115,14 @@ Wanneer het algoritme voor alle noten in het algoritme de probabiliteiten bepaal
 \end{algorithmic}
 \end{algorithm}
 
-%%%%%%%%%%NEW TRY%%%%%%%%%
-
-\subsection{Werking van het algoritme}
-In dit onderdeel zal de werking van het algoritme beschreven worden. Als extra referentie voor de lezer is de broncode bijgevoegd in appendix \ref{Broncode:algo1}.
-
-\subsubsection{Hulpvariabelen}
-Het algoritme zal tijdens de uitvoering gebruik maken van 3 hulpvariabelen. De eerste twee van deze hulpvariabelen zijn eendimensionale arrays van lengte 14.\\
-De eerste array, die de naam \textit{past} meekrijgt, stelt de probabiliteiten voor van de beste paden eindigend bij alle mogelijke noten waarnaar de vorige beschouwde noot kan getransformeerd worden.\\ 
-De tweede array, die \textit{current} genoemd wordt, bevat de probabiliteiten van de beste paden die eindigen op een van de 14 mogelijke toonhoogtes waar de huidige noot naar getransformeerd kan worden. De waarden in deze twee arrays, zullen in het algoritme niet de probabiliteiten zelf bevatten, maar hun logaritmen, omdat dit computationeel interessanter is.\\ 
-De derde hulpvariabele, \textit{matrix}, is een tweedimensionale array en heeft een dimensie van de lengte van de melodielijn op 14. Deze variabele gaat voor elke mogelijke waarde die elke noot in het muziekstukje kan aannemen, weergeven vanwaar het beste pad komt dat eindigt bij deze noot.
-
-\subsubsection{Kortere notatie toonhoogte}
-Om de betekenis van deze variabelen nog iets concreter te maken zal gebruik gemaakt worden van de volgende notatie. De letter `C' voor de toonhoogte van de huidig beschouwde noot in de originele melodielijn. De letter `P' voor de toonhoogte van de vorige noot in het originele muziekstukje. Zo zal de waarde `C+3' staan voor de noot met een toonhoogte die drie halve tonen hoger ligt dan de huidige noot in het originele stukje. `P-4' zal dan bijvoorbeeld staan voor de noot met een toonhoogte die 4 halve tonen lager ligt dan de vorige noot in de originele melodielijn.\\
-Als er in het vervolg van het stuk gesproken wordt over noot n, dan wordt hiermee de noot (n+1)'ste noot van het muziekstuk mee bedooeld. Zo zal noot 0 de eerste noot van het muziekstuk zijn, noot 1 de tweede noot, enzovoort.
-
-\subsubsection{Betekenis van de inhoud van de hulpvariabelen} 
-Stel, we beschouwen momenteel noot n van het muziekstukje. Dan zullen volgende stellingen gelden.\\ 
-Op positie \textit{past[i]} zal de waarde voor de probabiliteit staan van het beste pad van n noten dat eindigt op de noot `P+i-6'.\\ 
-Tijdens de uitvoering van het algoritme zal de \textit{current} array berekend worden. Dit gebeurt met als doelstelling dat \textit{current[i]} de waarde voor de probabiliteit van het beste pad van (n+1) noten dat eindigt op de noot `C+i-6' zal bevatten.\\ 
-De waarde van het element \textit{matrix[n][j]} verwijst naar vanwaar het beste pad van (n+1) noten komt dat eindigt op de noot `C+j-6'. Stel bijvoorbeeld dat \textit{matrix[n][j]}=k, dan betekent dit dat het beste pad van (n+1) noten dat eindigt op noot `C+j-6', een verlenging is van het beste pad van n noten dat eindigt op noot `P+k-6'.
-
-\subsubsection{Verduidelijking inhoud van de \textit{matrix}-variabele}
-In figuur \ref{figuur:matrix} wordt een voorbeeld van de inhoud van de \textit{matrix}-variabele weergegeven. Voor een zekere noot `n' uit het muziekstuk is nu voor 2 van de mogelijke 14 waarden naar waar deze kan getransformeerd worden ge\"illustreerd hoe de beste paden horende bij deze twee toonhoogtes teruggevonden kunnen worden.\\ 
-Een van deze paden wordt in het groen weergegeven, het andere in het oranje. De laatste 5 noten van het groene pad hebben als toonhoogte een die respectievelijk 2, 1, 1, -2 en -4 halve tonen hoger ligt dan hun overeenkomstige noot in de originele melodie. De laatste 5 noten van het oranje pad hebben als toonhoogte een die respectievelijk -3, -1, 0, 1 en 4 halve tonen hoger ligt dan hun overeenkomstige noot in de originele melodie. 
+Intern in het algoritme worden al deze $path$ relaties opgeslagen in een $(n\times 14)$-\textit{matrix}. voor elk van de $n$ posities in de melodie worden voor alle 14 noten waar theoretisch naar getransformeerd kan worden, de index bijgehouden van de noot op de vorige positie waarvan het optimale pad kwam. Een voorbeeld van hoe hier een pad uit gereconstrueerd kan worden, is afgebeeld in figuur \ref{figuur:matrix}. Voor twee verschillende noten op positie $i$ in het muziekstuk wordt het optimale pad om tot die noot te geraken afgebeeld. De waarden die in de vakjes staan zijn telkens indexen die verwijzen naar een noot op de vorige positie.
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.75\textwidth]{4_Efficient_Toepassen_Transformatie/matrix}
-  \caption{Illustratie van de \textit{matrix}-variabele. Illustratie van beste pad voor 2 verschillende toonhoogtes.}
+  \caption{Illustratie van de reconstructie van het optimale pad voor 2 verschillende noten op positie $i$.}
   \label{figuur:matrix}
 \end{figure}
-
-\subsubsection{Initialisatie}
-De eeste stap in het algoritme zal de noot op positie 1 als huidige noot beschouwen en de noot op positie 0 als vorige noot. De hulpvariabelen moeten dus ge\"initialiseerd worden zodat ze hieraan voldoen.\\ 
-Hierdoor zal de array \textit{past} voor al zijn posities een hele lage waarde meekrijgen (-100 als logaritme van de probabiliteit in de broncode weergegeven in appendix \ref{Broncode:algo1}) behalve voor de noot op positie 6. Deze noot staat namelijk voor dezelfde noot als oorspronkelijke noot en aangezien de oorspronkelijke noot op positie 0 nooit getransformeerd wordt, zal \textit{past[6] = 0}. Dit betekent dat dat kans op het behouden van de eerste noot gelijk is aan 1.\\ 
-De \textit{current} array krijgt voor al zijn posities zeer lage waarden mee. De bedoeling hiervan is dat eender welk pad dat als eerste gevonden wordt dat voortgaat op de vorige noot een hogere probabiliteit zal hebben dan deze waarde.\\ Tot slot zal ook elke waarde van \textit{matrix} op een arbitraire startwaarde 0 gezet worden. De waarde die hier in het begin gezet wordt is van geen belang, aangezien deze waarden toch overschreven zullen worden wanneer de beste paden berekend worden.
-
-\subsubsection{Een stap in het algoritme}
-Voor elke opeenvolgende noot in het muziekstukje, beginnend vanaf de noot op positie 1, zal een stap in het algoritme uitegevoerd worden. Stel dat we momenteel als huidige noot, de noot op positie n beschowen.\\ 
-Allereerst gaan we op \textit{current[6]} de waarde zetten van het beste pad dat de huidige noot niet transformeert. Om dit te doen gaan we kijken naar de probabiliteiten van de beste paden die eindigen op alle 14 mogelijke noten die als vorige noot zouden kunnen doorgaan. Deze probabiliteiten staan uiteraard gewoon in \textit{past}. Voor elk element \textit{past[i]} wordt nu zijn waarde bij de afstandsprobabiliteit ten opzichte van de huidig beschouwde noot opgeteld. Als deze waarde hoger is dan de huidige beste waarde van \textit{current[6]}, dan wordt de waarde van \textit{current[6]} overschreven en wordt de waarde \textit{matrix[n][6]} op i gezet.\\
-Als tweede stap gaan we voor elke mogelijk transformatie kijken naar welke noot `P+i-6' de huidige noot gaat afbeelden. En dit voor alle 14 waarden die de vorige noot kan aannemen. Stel nu dat de noot `P-i+6' de huidig beschouwde noot afbeeldt op noot `C+j-6'. Als nu de de som van \textit{past[i]} en de afstandsprobabiliteit tussen deze twee noten groter is dan de huidige waarde \textit{current[j]}, dan zal deze waarde overschreven worden. Alsook zal \textit{matrix[n][j]} gelijk gesteld worden aan i. Dit aangezien het nieuwe meest waarschijnlijke pad dat gevonden is dat eindigt op `C+j-6', komt van de noot `P+i-6'.\\
-In figuur \ref{figuur:stap_algo_1} wordt een voorbeeld gegeven van de mapping van probabiliteiten horende bij noten uit de \textit{past}-array naar nieuwe probabiliteiten horende bij noten uit de \textit{current}-array. Bij deze mapping werd gebruik gemaakt van 1 transformatie die gekarakteriseerd wordt door de waarden in tabel \ref{tabel:transformatie}. In dit voorbeeld wordt ook gesteld dat de huidige noot in het originele stuk 3 halve tonen hoger lag dan de vorige noot. Met de informatie van het verschil in toonhoogte tussen de huidige en de vorige noot en de gegeven transformatie kunnen nu de verschillende sprongen bepaald worden die de huidige noot zou ondergaan, afhankelijk van welke van de 14 noten uit de \textit{past}-array als vorige noot beschouwd wordt. De pijlen geven uiteindelijk nog aan naar welke cel in de \textit{current}-array al deze sprongen zouden leiden.\\ 
-Een waarde in de \textit{current}-array wordt enkel aangepast wanneer er een pijl is die aankomt in deze cel, die ook nog leidt tot een hogere score dan de waarde die al in die cel staat. De score waarover gesproken wordt is de som van de waarde in de \textit{past}-array waarvan de deze pijl vertrekt en het logaritme van de afstandswaarschijnlijkheid (\textit{proximity}-waarde van het RPK-Model).\\
-Wanneer dit uitgevoerd is, bevat \textit{current} de probabiliteiten van de beste paden van lengte (n+1) die eindigen op de 14 mogelijke toonhoogtes waarop de huidig beschouwde noot kan afgebeeld worden.\\
-Het enige wat nu nog rest is om de waarden van \textit{current} over te zetten naar \textit{past}. En om \textit{current} daarna terug te initialiseren op zeer lage waarden. Dit zodat de arrays klaar zijn voor het beschouwen van de volgende noot in het muziekstukje. 
-
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=0.75\textwidth]{4_Efficient_Toepassen_Transformatie/stap_algo_1}
-  \caption{Illustratie van de \textit{past}- en \textit{current} variabelen tijdens een stap in het algoritme. De weergave is enkel voor de transformatie weergegeven in tabel \ref{tabel:transformatie}. Dit is een voorbeeld voor het specifieke geval waarin de huidige noot in het originele stuk 3 halve tonen hoger ligt dan de vorige noot.}
-  \label{figuur:stap_algo_1}
-\end{figure}
-
-\begin{table}
-  \centering
-  \begin{tabular}{c | c  c  c  c  c  c  c  c }
-    diff mod 8 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
-    \hline
-    sprong & 5 & -4 & 1 & -3 & 1 & 1 & 2 & 3 \\
-  \end{tabular}
-  \caption{Voorstelling transformatie gebruik in figuur \ref{figuur:stap_algo_1}.}
-  \label{tabel:transformatie}
-\end{table}
-
-\subsubsection{Extractie van het beste pad}
-Na uitvoeren van het vorige gedeelte voor elke noot in het muziekstukje zal \textit{past} de probabiliteiten bevatten van de beste paden voor elk van de 14 mogelijke eindnoten van de nieuwe melodielijn. Als eerste zal er dus gekeken worden welke van deze 14 toonhoogtes als eindnoot het meest waarschijnlijke pad levert. Dit pad is het pad dat we zoeken in dit algoritme.\\ 
-Het enige wat nu nog rest is om vanaf dit punt het gevonden optimale pad te reconstueren. Dit gebeurt met behulp van de \textit{matrix} array. Beginnend bij de laatste noot en zo opschuivend terug naar voor wordt hiervoor het volgende gedaan. Stel we zitten bij noot n. Noem `C+i-6' de toonhoogte van de huidige noot die in dit beste pad zit. Noem nu \textit{matrix[n][i]} = j. Dan is de vorige noot van het optimale pad de noot met als toonhoogte `P+j-6', waarbij P de toonhoogte is van de overeenkomstige vorige noot in het originele muziekstuk.\\ \textit{matrix[n-1][j]} geeft dan weer aanleiding tot de noot die daarvoor staat in het optimale pad, enzovoort. Op deze manier kan het volledige optimale pad weer gereconstrueerd worden. Figuur \ref{figuur:matrix} kan nogmaals als illustratie dienen voor dit principe.
 
 \subsection{Performantie en geheugencomplexiteit}
 De eerste parameter waarvan het algoritme afhankelijk is, is de lengte van de melodielijn of met andere woorden het aantal noten (AN) in de invoer. Ook het aantal beschikbare transformaties (AT) heeft een invloed (in het voorbeeld beschreven in appendix \ref{Broncode:algo1} wordt gebruik gemaakt van slechts 2 transformaties, maar het algoritme werkt voor eender welk aantal transformaties dat gedefinieerd wordt).
