@@ -24,7 +24,14 @@ Een eerste mogelijkheid is dat de noot niet getransformeerd wordt en identiek ov
 \subsubsection{Bereik van een transformatie}
 Een belangrijke observatie is dat eender welke noot in het muziekstukje zelf op slechts maximaal 14 verschillende noten kan afgebeeld worden. Elke noot kan namelijk door transformatie enkel afgebeeld worden op een noot die maximaal 5 halve tonen lager ligt dan de oorspronkelijke noot en ook maximaal 6 halve tonen hoger ligt dan de originele noot (dit is een deel van de definitie van de soort transformaties die gebruikt worden in het algoritme, zie hoofdstuk \ref{MT:afstand_vorige}).
 
-Er is echter nog een speciaal geval waarbij een transformatie tot een van de twee extreme sprongen zou leiden (dus exact -5 of +6) en deze noot dan ook nog eens geen deel zou uitmaken van de toonaard. In dat geval is het mogelijk dat de noot nog een halve toon verder afgerond wordt om terug tot op een noot te komen die in de toonaard ligt.
+Er is echter nog een speciaal geval waarbij een transformatie tot een van de twee extreme sprongen zou leiden (dus exact -5 of +6) en deze noot dan ook nog eens geen deel zou uitmaken van de toonaard. In dat geval is het mogelijk dat de noot nog een halve toon verder afgerond wordt om terug tot op een noot te komen die in de toonaard ligt. Dit wordt ook ge\"illustreerd in figuur \ref{figuur:14}.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.75\textwidth]{4_Efficient_Toepassen_Transformatie/14}
+  \caption{Illustratie van de 14 mogelijkheden om een noot in het muziekstuk te transformeren.}
+  \label{figuur:14}
+\end{figure}
 
 Elke noot kan dus theoretisch gezien (na afronding) afgebeeld worden op eender welke noot die maximaal 6 halve tonen lager en maximaal 7 halve tonen hoger ligt dat zichzelf. Dit zijn in totaal 14 verschillende mogelijkheden.
 
@@ -128,14 +135,14 @@ Intern in het algoritme worden al deze $path$ relaties opgeslagen in een $(n\tim
 De eerste parameter waarvan het algoritme afhankelijk is, is de lengte van de melodielijn of met andere woorden het aantal noten (AN) in de invoer. Ook het aantal beschikbare transformaties (AT) heeft een invloed (in het voorbeeld beschreven in appendix \ref{Broncode:algo1} wordt gebruik gemaakt van slechts 2 transformaties, maar het algoritme werkt voor eender welk aantal transformaties dat gedefinieerd wordt).
 
 \subsubsection{Tijd} 
-De snelheid van het algoritme is lineair afhankelijk van beide van deze parameters. Indien de lengte van het originele melodietje met een factor f omhoog gaat en de rest constant blijft dan gaat ook het aantal stappen in het algoritme met een factor f omhoog. Het rekenwerk per stap blijft echter gelijk. Wanneer het aantal transformaties met een factor t omhoog gaat en de rest constant blijft, dan zal het aantal stappen onveranderd blijven. Het rekenwerk per stap gaat wel met een factor t omhoog (op het constante rekenwerk per stap van het `niet transformeren' na).
+De snelheid van het algoritme is lineair afhankelijk van beide van deze parameters. Indien de lengte van het originele melodietje met een factor $f$ omhoog gaat en de rest constant blijft dan gaat ook het aantal stappen in het algoritme met een factor $f$ omhoog. Het rekenwerk per stap blijft echter gelijk. Wanneer het aantal transformaties met een factor $t$ omhoog gaat en de rest constant blijft, dan zal het aantal stappen onveranderd blijven. Het rekenwerk per stap gaat wel met een factor $t$ omhoog (op het constante rekenwerk per stap van het `niet transformeren' na).
 
 \begin{center}
 \underline{Tijd:} $\mathcal{O}(AN \times AT)$
 \end{center}
 
 \subsubsection{Geheugen}
-De hoeveelheid geheugen die nodig is voor de uitvoer van het algoritme is lineair afhankelijk van de lengte van de originele melodie. Dit komt omdat de \textit{matrix} array als een van zijn dimensies deze lengte heeft. Wanneer de lengte van het originele stukje met een factor f omhoog gaat, zal de grootte van deze array dus ook met een factor f omhoog gaan. De grootte van de andere twee gebruikte arrays(\textit{past} en \textit{current}) is onveranderlijk ten opzichte van die lengte. De transformaties zelf moeten natuurlijk ook opgeslagen worden, waardoor de het geheugengebruik ook lineair afhankelijk is van het aantal transformaties. maar in het totale geheugengebruik is de \textit{matrix}-array dominant en opzichte van de opslag van de respresentaties van de transformaties, aangezien deze zo veel groter is. Het aantal gebruikte transformaties heeft dus weinig effect op het geheugengebruik van het algoritme. En in het algemeen kan er dus veronderstel worden dan het aantal gebruikte transformaties het geheugengebruik niet merkbaar be\"invloedt.
+De hoeveelheid geheugen die nodig is voor de uitvoer van het algoritme is lineair afhankelijk van de lengte van de originele melodie. Dit komt omdat de \textit{matrix} array als een van zijn dimensies deze lengte heeft. Wanneer de lengte van het originele stukje met een factor $f$ omhoog gaat, zal de grootte van deze array dus ook met een factor $f$ omhoog gaan. De grootte van de andere twee gebruikte arrays(\textit{past} en \textit{current}) is onveranderlijk ten opzichte van die lengte. De transformaties zelf moeten natuurlijk ook opgeslagen worden, waardoor de het geheugengebruik ook lineair afhankelijk is van het aantal transformaties. maar in het totale geheugengebruik is de \textit{matrix}-array dominant en opzichte van de opslag van de respresentaties van de transformaties, aangezien deze zo veel groter is. Het aantal gebruikte transformaties heeft dus weinig effect op het geheugengebruik van het algoritme. En in het algemeen kan er dus veronderstel worden dan het aantal gebruikte transformaties het geheugengebruik niet merkbaar be\"invloedt.
 
 \begin{center}
 \underline{Geheugen:} $\mathcal{O}(AN)$
@@ -300,21 +307,30 @@ $path(i,n,t)$ stelt het volledige pad voor dat optimaal is onder de gegeven voor
 
 Aangezien volledige beste paden bijgehouden worden moet er geen werk verricht worden om het beste pad te bepalen. Er moet enkel dat pad gekozen worden van lengte $AN$ dat de hoogste probabiliteit oplevert. Voor de combinatie van alle noten $c\in \mathcal{C}$ en transformaties $t\in \mathcal{T}$ is er zo een optimaal pad dat hier een kandidaat voor is. Van al deze kandidaten zal het pad met de hoogste probabiliteit het optimale pad zijn voor het geheel.
 
+\begin{framed}
+\noindent
+$optPath=argmax_{c\in \mathcal{C}, t\in \mathcal{T}}(prob(path(AN,c,t)))$
+\end{framed}
+
 \subsection{Performantie en geheugencomplexiteit}
 In dit algoritme zijn er drie parameters waar rekening mee dient gehouden te worden bij het bespreken van de tijds- en geheugencomplexiteit. Deze drie parameters zijn het aantal noten in de originele melodielijn (AN), het aantal beschikbare transformaties (AT) en de minimum transformatie lengte (ML).
 
 \subsubsection{Tijd}
-De performantie van het algoritme is lineair afhankelijk van het aantal noten. Dit komt doordat voor elke noot in het oorspronkelijk muziekstuk een stap in het algoritme moet uitgevoerd worden. Het rekenwerk per stap verandert niet wanneer de lengte van het stuk verandert.\\ 
-De snelheid van het algoritme is kwadratisch afhankelijk van het aantal toegestane transformaties. Dit komt omdat voor elke stap in het algoritme we voor elke transformatie gaan proberen een optimaal pad te vinden dat kan vertrekken van bij tussenoplossingen horende bij alle andere transformaties. Het aantal stappen in het algoritme verandert niet wanneer het aantal transformaties verandert. In totaal geeft dit dus een kwadratische afhankelijkheid.\\ 
-Tot slot is de snelheid van het algoritme ook afhankelijk van de minimum transformatie lengte volgens $\mathcal{O}(ML \times (AN-ML))$. zowel het aantal stappen in het algoritme als het aantal berekende paden per stap zal onveranderd blijven wanneer deze parameter verandert. Het extra rekenwerk dat gecre\"eerd wordt door het moeten uitbreiden van paden die ML korter zijn dan de huidige lengte is lineair afhankelijk van de grootte van ML. Maar het aantal paden dat zo berekend moet worden is lineair afhankelijk van (L-ML). Hierdoor zal de totale rekentijd afhankelijk zijn van het product van deze twee.
+De performantie van het algoritme is lineair afhankelijk van het aantal noten. Dit komt doordat voor elke noot in het oorspronkelijk muziekstuk een stap in het algoritme moet uitgevoerd worden. Het rekenwerk per stap verandert niet wanneer de lengte van het stuk verandert.
+ 
+De snelheid van het algoritme is kwadratisch afhankelijk van het aantal toegestane transformaties. Dit komt omdat voor elke stap in het algoritme we voor elke transformatie gaan proberen een optimaal pad te vinden dat kan vertrekken van bij tussenoplossingen horende bij alle andere transformaties. Het aantal stappen in het algoritme verandert niet wanneer het aantal transformaties verandert. In totaal geeft dit dus een kwadratische afhankelijkheid.
+
+Tot slot is de snelheid van het algoritme ook afhankelijk van de minimum transformatie lengte volgens $\mathcal{O}(ML \times (AN-ML))$. zowel het aantal stappen in het algoritme als het aantal berekende paden per stap zal onveranderd blijven wanneer deze parameter verandert. Het extra rekenwerk dat gecre\"eerd wordt door het moeten uitbreiden van paden die $ML$ korter zijn dan de huidige lengte is lineair afhankelijk van de grootte van $ML$. Maar het aantal paden dat zo berekend moet worden is lineair afhankelijk van $(AN-ML)$. Hierdoor zal de totale rekentijd afhankelijk zijn van het product van deze twee.
 
 \begin{center}
 \underline{Tijd:} $\mathcal{O}(AN \times ML \times (AN-ML) \times AT^2)$
 \end{center}
 
 \subsubsection{Geheugen}
-De totale opslagcapaciteit die noodzakelijk is voor de uitvoer van het algoritme is ten eerste lineair afhankelijk van de lengte van de invoersequentie van noten. Voor alle mogelijke transformaties zullen namelijk optimale paden bijgehouden worden en de lengte van deze paden is altijd van dezelfde grootte-orde als de lengte van het originele.\\ 
-Ten tweede is het geheugengebruik ook lineair afhankelijk van de minimum transformatie lengte. Er worden namelijk optimale sub paden bijgehouden in het algoritme voor de laatste ML beschouwde noten. De lengte van deze paden is ook elk van dezelfde grootte-orde.\\ 
+De totale opslagcapaciteit die noodzakelijk is voor de uitvoer van het algoritme is ten eerste lineair afhankelijk van de lengte van de invoer sequentie van noten. Voor alle mogelijke transformaties zullen namelijk optimale paden bijgehouden worden en de lengte van deze paden is altijd van dezelfde grootte-orde als de lengte van het originele.
+
+Ten tweede is het geheugengebruik ook lineair afhankelijk van de minimum transformatie lengte. Er worden namelijk optimale sub paden bijgehouden in het algoritme voor de laatste $ML$ beschouwde noten. De lengte van deze paden is ook elk van dezelfde grootte-orde.
+ 
 Tot slot is er nog het aantal transformaties. Ook deze parameter zal een lineaire invloed hebben op het geheugengebruik. Dit aangezien voor elke beschikbare transformatie even veel optimale paden bijgehouden worden die eindigen op deze transformatie.  
 
 \begin{center}

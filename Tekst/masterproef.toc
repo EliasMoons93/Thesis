@@ -52,22 +52,22 @@
 \contentsline {subsection}{\numberline {5.1.3}Werking van het algoritme}{27}{subsection.5.1.3}
 \contentsline {subsubsection}{Notatie}{27}{section*.17}
 \contentsline {subsubsection}{Maximale probabiliteit}{28}{section*.18}
-\contentsline {subsubsection}{Optimale pad}{28}{section*.19}
+\contentsline {subsubsection}{Optimale pad}{29}{section*.19}
 \contentsline {subsection}{\numberline {5.1.4}Performantie en geheugencomplexiteit}{29}{subsection.5.1.4}
-\contentsline {subsubsection}{Tijd}{29}{section*.20}
-\contentsline {subsubsection}{Geheugen}{30}{section*.21}
+\contentsline {subsubsection}{Tijd}{30}{section*.20}
+\contentsline {subsubsection}{Geheugen}{31}{section*.21}
 \contentsline {section}{\numberline {5.2}Beste sequentie met minimum transformatie lengte}{31}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Doelstelling}{31}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Idee van het algoritme}{31}{subsection.5.2.2}
 \contentsline {subsubsection}{Hoog niveau idee van het algoritme en notatie}{31}{section*.22}
-\contentsline {subsubsection}{Verschillende mogelijkheden om tot een optimaal pad te komen}{31}{section*.23}
+\contentsline {subsubsection}{Verschillende mogelijkheden om tot een optimaal pad te komen}{32}{section*.23}
 \contentsline {subsection}{\numberline {5.2.3}Werking van het algoritme}{32}{subsection.5.2.3}
 \contentsline {subsubsection}{Notatie}{32}{section*.24}
 \contentsline {subsubsection}{Optimale paden voor verschillende transformaties}{33}{section*.25}
-\contentsline {subsubsection}{Maximale probabiliteit}{34}{section*.26}
+\contentsline {subsubsection}{Maximale probabiliteit}{35}{section*.26}
 \contentsline {subsubsection}{Optimale pad}{36}{section*.27}
 \contentsline {subsection}{\numberline {5.2.4}Performantie en geheugencomplexiteit}{36}{subsection.5.2.4}
-\contentsline {subsubsection}{Tijd}{36}{section*.28}
+\contentsline {subsubsection}{Tijd}{37}{section*.28}
 \contentsline {subsubsection}{Geheugen}{37}{section*.29}
 \contentsline {chapter}{\chapternumberline {6}Experimenten en resultaten}{39}{chapter.6}
 \contentsline {section}{\numberline {6.1}Melodische transformaties}{39}{section.6.1}

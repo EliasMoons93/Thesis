@@ -26,7 +26,8 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Voorbeeld van toepassing transformatie afhankelijk van positie.}}{21}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Voorbeeld van toepassing van de transformatie afhankelijk van het interval ten opzichte van de vorige noot.}}{23}{figure.4.2}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Illustratie van de reconstructie van het optimale pad voor 2 verschillende noten op positie $i$.}}{30}{figure.5.1}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Illustratie van de 14 mogelijkheden om een noot in het muziekstuk te transformeren.}}{27}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Illustratie van de reconstructie van het optimale pad voor 2 verschillende noten op positie $i$.}}{30}{figure.5.2}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Resultaten van het experiment uitgevoerd in deel \ref {experiment:10}. Absolute waarde van de consonantiescore uitgezet t.o.v. de gemiddelde afstand in halve tonen tussen opeenvolgende noten in het muziekstuk.}}{43}{figure.6.1}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Resultaten van het experiment uitgevoerd in deel \ref {experiment:11}. Absolute waarde van de consonantiescore uitgezet t.o.v. de afstand tot de gemiddelde notendistributie in het Essencorpus.}}{44}{figure.6.2}
