@@ -8,7 +8,7 @@ Voor elke noot van de melodielijn heeft het algoritme de keuze om ofwel de noot 
 In gedeelte \ref{ETT:algo2} wordt een algoritme beschreven dat hetzelfde doel heeft maar voldoet aan een extra voorwaarde: een transformatie mag enkel toegepast worden indien dit gebeurt op een minimum aantal opeenvolgende noten van het muziekstuk. Deze extra voorwaarde gaat het \textit{overfitten} tegen, indien deze er niet zou zijn convergeert het algoritme te snel naar een uitgevlakte melodielijn.
 
 \subsubsection{Opmerking}
-Een eerste doel van deze algoritmen is om te deze gaan gebruiken om muziekstukken te gaan cre\"eren die goed zullen klinken. Er wordt nadrukkelijk geprobeerd om die melodielijn te vinden waarnaar getransformeerd kan worden die een zo hoog mogelijke consonantiescore heeft volgens het RPK-model. Wat het algoritme zal doen door de consonantie te verhogen, is ervoor zorgen dat het bekomen muziekstuk normaal gezien niet slecht zou mogen klinken aangezien verondersteld wordt dat het origineel goed klinkt en de score enkel verhoogt wordt. Er werd echter reeds aangehaald dat muziekstukken met een zeer hoge consonantiescore vaak niet interessant klinken (veel dezelfde noten en heel kleine sprongen tussen opeenvolgende noten). Het is ook belangrijk dit in het achterhoofd te houden. 
+Een eerste doel van deze algoritmen is om deze te gaan gebruiken om muziekstukken te cre\"eren die goed zullen klinken. Er wordt nadrukkelijk geprobeerd om die melodielijn te vinden waarnaar getransformeerd kan worden die een zo hoog mogelijke consonantiescore heeft volgens het RPK-model. Wat het algoritme zal doen door de consonantie te verhogen, is ervoor zorgen dat het bekomen muziekstuk normaal gezien niet slecht zou mogen klinken aangezien verondersteld wordt dat het origineel goed klinkt en de score enkel verhoogt wordt. Er werd echter reeds aangehaald dat muziekstukken met een zeer hoge consonantiescore vaak niet interessant klinken (veel dezelfde noten en heel kleine sprongen tussen opeenvolgende noten). Het is ook belangrijk dit in het achterhoofd te houden. 
 
 Een tweede opzet van deze algoritmen is om achteraf te kunnen bepalen hoe afhankelijk de consonantiescore zal zijn van het aantal transformaties dat toegepast wordt op het muziekstuk, wat de eventuele minimum transformatielengte als invloed heeft en hoe het aantal beschikbare transformaties de consonantiescore bepaalt.
 
@@ -39,7 +39,7 @@ Elke noot kan dus theoretisch gezien (na afronding) afgebeeld worden op eender w
 Het belangrijkste idee van het algoritme is gebaseerd op de principes van \textit{dynamic programming} \cite{url:DP}. Toegepast op dit algoritme komt het er op neer dat achtereenvolgens voor elke noot in het muziekstuk het beste pad (en bijhorende beste score) bijgehouden zal worden voor elk van de 14 mogelijke toonhoogtes die deze noot kan aannemen in de nieuwe melodielijn. En enkel op deze optimale paden zal verder gerekend worden om te bepalen wat de beste paden zijn tot de 14 mogelijke toonhoogtes die de volgende noot in het muziekstuk kan aannemen. Dit wordt dan verder herhaald tot alle noten van de originele melodielijn overlopen zijn.
 
 \subsection{Werking van het algoritme}
-In dit onderdeel zal de werking van het algoritme beschreven worden. Als extra referentie voor de lezer is de broncode bijgevoegd in appendix \ref{Broncode:algo1}. Tijdens de uitvoer van het algoritme zal achtereenvolgens elke noot in het muziekstuk overlopen worden. Telkens zal voor elk van de noten waar de beschouwde noot naartoe getransformeerd kan worden enkel de probabiliteit bijgehouden worden van het pad dat eindigt op deze noot en het meest waarschijnlijk is.
+In dit onderdeel zal de werking van het algoritme beschreven worden. Als extra referentie voor de lezer is de broncode bijgevoegd in appendix \ref{Broncode:algo1}. Tijdens de uitvoer van het algoritme zal achtereenvolgens elke noot in het muziekstuk overlopen worden. Telkens zal voor elk van de noten waar de beschouwde noot naartoe getransformeerd kan worden enkel het meest waarschijnlijke pad alsook zijn probabiliteit bijgehouden worden van alle paden die eindigen op deze noot.
 
 \subsubsection{Notatie}
 Voor het beschrijven van het algoritme worden een aantal notaties en functies beschreven. Allereerst wordt volgende notatie ingevoerd:
@@ -100,7 +100,7 @@ prob(c) = max(prob(p) + proxProb(p,c) + posProb(c)) \\
 Door deze functie achtereenvolgens toe te passen voor alle noten van het muziekstuk kan er bepaald worden wat de probabiliteit is van het beste pad, gebruik makend van de gegeven transformaties uit $\mathcal{T}$. Dit zal namelijk gelijk zijn aan de hoogste probabiliteit van alle noten $c\in \mathcal{C}$ in de laatste stap van het algoritme.
 
 \subsubsection{Optimale pad}
-We zijn natuurlijk niet enkel ge\"interesseerd in de probabiliteit van het optimale pad, maar ook dit pad zelf, want dit gaat de gevonden melodie weergeven. Daarom wordt er voor de elke combinatie van een positie in de melodie en de mogelijke noten die op die positie kunnen voorkomen, bijgehouden waarvan het optimale pad kwam dat uitkwam bij die exacte noot op die positie. Om deze paden voor te stellen wordt de functie $path$ gebruikt. Meer algemeen, stel we zijn op positie $i$ in het algoritme (we beschouwen dus de $i$-de noot van het muziekstuk), dan zal wanneer het optimale pad dat eindigt op noot $n$ komt van een zekere $m$, het volgende gelden:
+We zijn natuurlijk niet enkel ge\"interesseerd in de probabiliteit van het optimale pad, maar ook dit pad zelf, want dit gaat de gevonden melodie weergeven. Daarom wordt er voor elke combinatie van een positie in de melodie en de mogelijke noten die op die positie kunnen voorkomen, bijgehouden waarvan het optimale pad kwam dat uitkwam bij die exacte noot op die positie. Om deze paden voor te stellen wordt de functie $path$ gebruikt. Meer algemeen, stel we zijn op positie $i$ in het algoritme (we beschouwen dus de $i$-de noot van het muziekstuk), dan zal wanneer het optimale pad dat eindigt op noot $n$ komt van noot $m$, het volgende gelden:
 
 \begin{framed}
 \noindent
@@ -132,17 +132,17 @@ Intern in het algoritme worden al deze $path$ relaties opgeslagen in een $(n\tim
 \end{figure}
 
 \subsection{Performantie en geheugencomplexiteit}
-De eerste parameter waarvan het algoritme afhankelijk is, is de lengte van de melodielijn of met andere woorden het aantal noten (AN) in de invoer. Ook het aantal beschikbare transformaties (AT) heeft een invloed (in het voorbeeld beschreven in appendix \ref{Broncode:algo1} wordt gebruik gemaakt van slechts 2 transformaties, maar het algoritme werkt voor eender welk aantal transformaties dat gedefinieerd wordt).
+De eerste parameter waarvan het algoritme afhankelijk is, is de lengte van de melodielijn of met andere woorden het aantal noten ($AN$) in de invoer. Ook het aantal beschikbare transformaties ($AT$) heeft een invloed (in het voorbeeld beschreven in appendix \ref{Broncode:algo1} wordt gebruik gemaakt van slechts 2 transformaties, maar het algoritme werkt voor eender welk aantal transformaties dat gedefinieerd wordt).
 
 \subsubsection{Tijd} 
-De snelheid van het algoritme is lineair afhankelijk van beide van deze parameters. Indien de lengte van het originele melodietje met een factor $f$ omhoog gaat en de rest constant blijft dan gaat ook het aantal stappen in het algoritme met een factor $f$ omhoog. Het rekenwerk per stap blijft echter gelijk. Wanneer het aantal transformaties met een factor $t$ omhoog gaat en de rest constant blijft, dan zal het aantal stappen onveranderd blijven. Het rekenwerk per stap gaat wel met een factor $t$ omhoog (op het constante rekenwerk per stap van het `niet transformeren' na).
+De snelheid van het algoritme is lineair afhankelijk van beide van deze parameters. Indien de lengte van de originele melodie met een factor $f$ omhoog gaat en de rest van de parameters constant blijven, dan gaat ook het aantal stappen in het algoritme met een factor $f$ omhoog. Het rekenwerk per stap blijft echter gelijk. Wanneer het aantal transformaties met een factor $t$ omhoog gaat en de andere parameters constant blijven, dan zal het aantal stappen onveranderd blijven. Het rekenwerk per stap gaat wel met een factor $t$ omhoog.
 
 \begin{center}
 \underline{Tijd:} $\mathcal{O}(AN \times AT)$
 \end{center}
 
 \subsubsection{Geheugen}
-De hoeveelheid geheugen die nodig is voor de uitvoer van het algoritme is lineair afhankelijk van de lengte van de originele melodie. Dit komt omdat de \textit{matrix} array als een van zijn dimensies deze lengte heeft. Wanneer de lengte van het originele stukje met een factor $f$ omhoog gaat, zal de grootte van deze array dus ook met een factor $f$ omhoog gaan. De grootte van de andere twee gebruikte arrays(\textit{past} en \textit{current}) is onveranderlijk ten opzichte van die lengte. De transformaties zelf moeten natuurlijk ook opgeslagen worden, waardoor de het geheugengebruik ook lineair afhankelijk is van het aantal transformaties. maar in het totale geheugengebruik is de \textit{matrix}-array dominant en opzichte van de opslag van de respresentaties van de transformaties, aangezien deze zo veel groter is. Het aantal gebruikte transformaties heeft dus weinig effect op het geheugengebruik van het algoritme. En in het algemeen kan er dus veronderstel worden dan het aantal gebruikte transformaties het geheugengebruik niet merkbaar be\"invloedt.
+De hoeveelheid geheugen die nodig is voor de uitvoer van het algoritme is lineair afhankelijk van de lengte van de originele melodie. Dit komt omdat de array die gebruikt wordt voor de opslag van de optimale paden, als een van zijn dimensies deze lengte heeft. Wanneer de lengte van het originele stukje met een factor $f$ omhoog gaat, zal de grootte van deze array dus ook met een factor $f$ omhoog gaan. De transformaties zelf moeten natuurlijk ook opgeslagen worden, waardoor het geheugengebruik ook lineair afhankelijk is van het aantal transformaties. In het totale geheugengebruik is de opslag van de optimale paden echter dominant ten opzichte van de opslag van de representaties van de transformaties. Het aantal gebruikte transformaties heeft dus weinig effect op het totale geheugengebruik van het algoritme. In het algemeen kan er dus verondersteld worden dan het aantal gebruikte transformaties het geheugengebruik niet merkbaar be\"invloedt.
 
 \begin{center}
 \underline{Geheugen:} $\mathcal{O}(AN)$
@@ -160,7 +160,7 @@ Dit betekent dat het algoritme enkel een deel van de originele melodielijn mag t
 
 \subsection{Idee van het algoritme}
 \subsubsection{Hoog niveau idee van het algoritme en notatie}
-Ook nu zal er gebruik gemaakt worden van de principes van \textit{dynamic programming}. Dit zal enkel op een verschillende manier gebeuren dan bij het vorige algoritme, aangezien de opgegeven minimumlengte verhindert om eenzelfde data representatie te gebruiken. Ook zullen dezelfde regels gelden als in het overeenkomstige onderdeel uit \ref{ETT:algo1} wat het bereik van een tranformatie betreft.
+Ook nu zal er gebruik gemaakt worden van de principes van \textit{dynamic programming}. Dit zal enkel op een verschillende manier gebeuren dan bij het vorige algoritme, aangezien de opgegeven minimumlengte verhindert om eenzelfde data representatie te gebruiken, waarom dit het geval is wordt in onderdeel \ref{ETT:werking} besproken. Ook zullen dezelfde regels gelden als in het overeenkomstige onderdeel uit \ref{ETT:algo1} wat het bereik van een transformatie betreft.
 
 Het idee van het algoritme bestaat erin om elke noot van het muziekstukje chronologisch te overlopen. Bij elke noot uit het originele stuk zijn er dan een aantal mogelijkheden om het beste pad te bepalen dat eindigt op een van de 14 mogelijke noten waarnaar de originele noot getransformeerd kan worden.
  
@@ -169,13 +169,14 @@ Als in het vervolg van de tekst gesproken wordt over een ``geldig pad'', dan wor
 \subsubsection{Verschillende mogelijkheden om tot een optimaal pad te komen} 
 In dit onderdeel wordt een intu\"itieve beschrijving gegeven van hoe het optimale pad tot op een bepaalde positie in het muziekstuk kan berekend worden. Dit, gebruik makend van de optimale paden en bijhorende probabiliteiten van de noten op vorige posities in het muziekstuk.
 
-Een eerste mogelijkheid voor een optimaal pad is de uitbreiding van eender welk optimaal pad dat eindigt op een van de noten waar de vorige noot uit het muziekstuk naar getransformeerd kan worden.
+Een eerste mogelijkheid voor een optimaal pad is de uitbreiding van eender welk optimaal en geldig pad dat eindigt op een van de noten waar de vorige noot uit het muziekstuk naar getransformeerd kan worden.
  
-Een tweede mogelijkheid is het uitbreiden van een optimaal pad dat geldig is, eindigt op de vorige noot en eindigt met transformatie f uit te breiden met dezelfde transformatie f.
+Een tweede mogelijkheid is het uitbreiden van een optimaal pad dat geldig is, eindigt op de vorige noot en eindigt met transformatie $f$ uit te breiden met dezelfde transformatie $f$.
  
-Tot slot is er ook nog de mogelijkheid om eender welk optimaal en geldig pad dat een lengte ML korter is dan het huidige uit te breiden met ML keer dezelfde transformatie. Op deze manier kunnen alle optimale paden bekomen worden die aan de vooropgestelde eisen voldoen.
+Tot slot is er ook nog de mogelijkheid om eender welk optimaal en geldig pad dat een lengte $ML$ korter is dan het huidige uit te breiden met $ML$ keer dezelfde transformatie. Op deze manier kunnen alle optimale paden bekomen worden die aan de vooropgestelde eisen voldoen.
 
 \subsection{Werking van het algoritme}
+\label{ETT:werking}
 In dit onderdeel zal de werking van het algoritme beschreven worden. Als extra referentie voor de lezer is de broncode bijgevoegd in appendix \ref{Broncode:algo2}. Tijdens de uitvoer van het algoritme zal achtereenvolgens elke noot in het muziekstuk overlopen worden. Nu zal voor elke transformatie apart bijgehouden worden wat de optimale paden en probabiliteiten zijn voor alle verschillende noten waar de huidige noot naartoe getransformeerd kan worden en die eindigen met die specifieke transformatie. 
 
 \subsubsection{Notatie}
@@ -265,7 +266,7 @@ Het optimale pad van $W_1$ is nu geen geldig optimaal pad meer aangezien het doo
 \subsubsection{Maximale probabiliteit}
 $prob(c,t)$ geeft het logaritme van de probabiliteit weer van het meest waarschijnlijke pad dat eindigt op deze noot $c\in \mathcal{C}$. Deze noot (en zelfs minstens de laatste $ML$ noten) moet in dit geval bekomen zijn door gebruik van transformatie $t \in \mathcal{T}$.
 
-Wanneer de eerste noot van het muziekstuk beschouwd wordt en $x$ dus de waarde heeft van deze eerste noot, zal de probabiliteit van het pad dat eindigt op deze noot gelijk zijn aan 1. De probabiliteit van alle andere noten is gelijk aan 0. Dit komt omdat de eerste noot van een muziekstuk nooit getransformeerd wordt. Dit zal enkel het geval zijn voor de nultransformatie. Voor alle andere transformaties zal eender welke noot een kans 0 hebben om deel uit te maken van het optimale pad aangezien er geen enkel optimaal pad kan zijn dat eindigt op een transformatie als dat pad maar een noot kan bevatten. Aangezien het algoritme werkt met de logaritmen van deze probabiliteiten zullen de waarden respectievelijk op 0 en $-\infty$ gezet worden. Wanneer $x$ gelijk is aan de eerste noot van het originele muziekstuk en transformatie $t\in \mathcal{T}$ beschouwd wordt geldt dan:
+Wanneer de eerste noot van het muziekstuk beschouwd wordt en $x$ dus de waarde heeft van deze eerste noot, zal de probabiliteit van het pad dat eindigt op deze noot gelijk zijn aan 1. De probabiliteit van alle andere noten is gelijk aan 0. Dit komt omdat de eerste noot van een muziekstuk nooit getransformeerd wordt. Dit zal enkel het geval zijn voor de nultransformatie. Voor alle andere transformaties zal eender welke noot een kans 0 hebben om deel uit te maken van het optimale pad aangezien er geen enkel optimaal pad kan zijn dat eindigt op een transformatie als dat pad maar een noot kan bevatten. Aangezien het algoritme werkt met de logaritmen van deze probabiliteiten zullen de waarden respectievelijk op 0 en $-\infty$ gezet worden. Wanneer $x$ gelijk is aan de eerste noot van het originele muziekstuk en transformatie $t\in \mathcal{T}$ beschouwd wordt, geldt dan:
 
 \begin{framed}
 \noindent
@@ -313,7 +314,7 @@ $optPath=argmax_{c\in \mathcal{C}, t\in \mathcal{T}}(prob(path(AN,c,t)))$
 \end{framed}
 
 \subsection{Performantie en geheugencomplexiteit}
-In dit algoritme zijn er drie parameters waar rekening mee dient gehouden te worden bij het bespreken van de tijds- en geheugencomplexiteit. Deze drie parameters zijn het aantal noten in de originele melodielijn (AN), het aantal beschikbare transformaties (AT) en de minimum transformatie lengte (ML).
+In dit algoritme zijn er drie parameters waar rekening mee dient gehouden te worden bij het bespreken van de tijds- en geheugencomplexiteit. Deze drie parameters zijn het aantal noten in de originele melodielijn ($AN$), het aantal beschikbare transformaties ($AT$) en de minimum transformatie lengte ($ML$).
 
 \subsubsection{Tijd}
 De performantie van het algoritme is lineair afhankelijk van het aantal noten. Dit komt doordat voor elke noot in het oorspronkelijk muziekstuk een stap in het algoritme moet uitgevoerd worden. Het rekenwerk per stap verandert niet wanneer de lengte van het stuk verandert.

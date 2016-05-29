@@ -115,14 +115,15 @@
 \contentsline {section}{\numberline {7.2}Verder onderzoek}{58}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Uitbreiding context RPK-model}{58}{subsection.7.2.1}
 \contentsline {subsection}{\numberline {7.2.2}Algoritme dat combineert met als doel het behouden van de consonantiescore}{58}{subsection.7.2.2}
-\contentsline {appendix}{\chapternumberline {A}Broncode}{61}{appendix.A}
-\contentsline {section}{\numberline {A.1}Neuraal netwerk trainer}{61}{section.A.1}
-\contentsline {section}{\numberline {A.2}RPK-model}{67}{section.A.2}
-\contentsline {section}{\numberline {A.3}Beste sequentie}{71}{section.A.3}
-\contentsline {section}{\numberline {A.4}Beste sequentie met minimum transformatie lengte}{73}{section.A.4}
-\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{81}{appendix.B}
-\contentsline {appendix}{\chapternumberline {C}Poster}{89}{appendix.C}
-\contentsline {chapter}{Bibliografie}{91}{section*.55}
+\contentsline {subsection}{\numberline {7.2.3}Combinatie ritmische en melodische transformaties}{58}{subsection.7.2.3}
+\contentsline {appendix}{\chapternumberline {A}Broncode}{63}{appendix.A}
+\contentsline {section}{\numberline {A.1}Neuraal netwerk trainer}{63}{section.A.1}
+\contentsline {section}{\numberline {A.2}RPK-model}{69}{section.A.2}
+\contentsline {section}{\numberline {A.3}Beste sequentie}{73}{section.A.3}
+\contentsline {section}{\numberline {A.4}Beste sequentie met minimum transformatie lengte}{75}{section.A.4}
+\contentsline {appendix}{\chapternumberline {B}IEEE\_Paper}{83}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Poster}{91}{appendix.C}
+\contentsline {chapter}{Bibliografie}{93}{section*.55}
 \select@language {dutch}
 \select@language {dutch}
 \select@language {dutch}
