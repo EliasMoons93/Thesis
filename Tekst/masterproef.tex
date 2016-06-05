@@ -15,6 +15,7 @@
   assessor={Prof. dr. ir. T. Schrijvers\and Prof. dr. M.-F. Moens},
   assistant={Ir.\ V. Nys}}
 % 
+
 \setup{filingcard,   % Deze regel niet wijzigen
 %
 % Vul de vertaalde titel van jouw masterproef hieronder in tussen { en }.
@@ -30,7 +31,7 @@
 % Lege regels en het commando \par zijn niet toegelaten.
 % Wees voorzichtig met speciale TeX-tekens #$%&^_~{}\ !!
   shortabstract={%
-    Deze masterproef beschrijft methodes om melodielijnen van een muziekstuk te transformeren tot nieuwe melodielijnen. Er gaat ook aandacht uit naar een referentiekader waarin deze transformaties ge\"evalueerd kunnen worden. Tot slot wordt er gekeken naar wanneer bepaalde transformaties nuttig kunnen zijn om de consonantie van een muziekstuk te verhogen en hoe verschillende transformaties effici\"ent gecombineerd kunnen worden. Om dit te verwezenlijken ontwikkelden we een algoritme dat gebaseerd is op de principes van \textit{dynamic programming}. Dit algoritme zal, gegeven een aantal mogelijke transformaties en een melodielijn, de best mogelijke getransformeerde melodielijn teruggeven volgens het gedefini\"eerde referentiemodel.
+    Deze masterproef beschrijft methodes om melodielijnen van een muziekstuk te transformeren tot nieuwe melodielijnen. Er gaat ook aandacht uit naar een referentiekader waarin deze transformaties ge\"evalueerd kunnen worden. Tot slot wordt er gekeken naar wanneer bepaalde transformaties nuttig kunnen zijn om de consonantie van een muziekstuk te verhogen en hoe verschillende transformaties effici\"ent gecombineerd kunnen worden. Om dit te verwezenlijken ontwikkelden we een algoritme dat gebaseerd is op de principes van \textit{dynamic programming}. Dit algoritme zal, gegeven een aantal mogelijke transformaties en een melodielijn, de best mogelijke getransformeerde melodielijn teruggeven volgens het gedefinieerde referentiemodel.
    }}
 % Verwijder de "%" op de volgende lijn als je de kaft wil afdrukken
 %\setup{coverpageonly}
@@ -73,7 +74,9 @@
 \usepackage{amsmath} 
 \usepackage{algorithm}
 \usepackage{algpseudocode}
-
+\usepackage{hyperref}
+\usepackage{color}
+\hypersetup{linkcolor=black,citecolor=black}
 \begin{document}
 
 \begin{preface}
